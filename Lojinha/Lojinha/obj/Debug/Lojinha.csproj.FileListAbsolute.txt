@@ -1,0 +1,247 @@
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarProdutos.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.StatusDePedido.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.CaixaDeMensagem.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarProduto.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.TelaPrincipal.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.Properties.Resources.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.csproj.GenerateResource.Cache
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarEstoque.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Lojinha.exe.config
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Black.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-BlackItalic.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Bold.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-BoldItalic.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Italic.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Light.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-LightItalic.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Medium.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-MediumItalic.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Regular.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Thin.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-ThinItalic.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Bold.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-BoldItalic.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Italic.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Light.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-LightItalic.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Regular.ttf
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Lojinha.exe
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\bin\Debug\Lojinha.pdb
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarCategoria.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarFormaPagamento.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.CriarUsuario.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarClientes.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarPedidos.resources
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.exe
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.pdb
+C:\Users\User\documents\visual studio 2015\Projects\Lojinha\Lojinha\obj\Debug\Lojinha.csprojResolveAssemblyReference.cache
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Lojinha.exe.config
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.exe
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.pdb
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Black.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-BlackItalic.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Bold.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-BoldItalic.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Italic.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Light.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-LightItalic.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Medium.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-MediumItalic.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Regular.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Thin.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-ThinItalic.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Bold.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-BoldItalic.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Italic.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Light.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-LightItalic.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Regular.ttf
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Lojinha.exe
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\Lojinha.pdb
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.csprojResolveAssemblyReference.cache
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarCategoria.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarFormaPagamento.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.CriarUsuario.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarClientes.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarEstoque.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.StatusDePedido.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.CaixaDeMensagem.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarProduto.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.TelaPrincipal.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.Properties.Resources.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.csproj.GenerateResource.Cache
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.CadastroCliente.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.AlterarSenha.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.ExcluirUsuario.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.Estoque.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\obj\Debug\Lojinha.Teste.resources
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\BancoModel.dll
+C:\Users\joao.lazamboni\Desktop\Lojinha\Lojinha\bin\Debug\BancoModel.pdb
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Lojinha.exe.config
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.exe
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.pdb
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.csprojResolveAssemblyReference.cache
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarCategoria.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarFormaPagamento.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.AlterarSenha.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.CriarUsuario.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.Estoque.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.ExcluirUsuario.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarClientes.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.Teste.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarEstoque.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.CadastroCliente.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.StatusDePedido.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.CaixaDeMensagem.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarProduto.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.TelaPrincipal.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.Properties.Resources.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.csproj.GenerateResource.Cache
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Black.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-BlackItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Bold.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-BoldItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Italic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Light.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-LightItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Medium.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-MediumItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Regular.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Thin.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-ThinItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Bold.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-BoldItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Italic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Light.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-LightItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Regular.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Lojinha.exe
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\Lojinha.pdb
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\BancoModel.dll
+C:\Users\JGalarraga.DNNG2V1\Downloads\Lojinha\Lojinha\bin\Debug\BancoModel.pdb
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Lojinha.exe.config
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.exe
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.pdb
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Black.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-BlackItalic.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Bold.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-BoldItalic.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Italic.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Light.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-LightItalic.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Medium.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-MediumItalic.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Regular.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-Thin.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\Roboto-ThinItalic.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Bold.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-BoldItalic.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Italic.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Light.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-LightItalic.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Regular.ttf
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Lojinha.exe
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\Lojinha.pdb
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\BancoModel.dll
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\bin\Debug\BancoModel.pdb
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.csprojResolveAssemblyReference.cache
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarCategoria.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarFormaPagamento.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.AlterarSenha.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.CriarUsuario.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.Estoque.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.ExcluirUsuario.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarClientes.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.Teste.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.VisualizarEstoque.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.CadastroCliente.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.StatusDePedido.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.CaixaDeMensagem.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.AdicionarProduto.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.TelaPrincipal.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.Properties.Resources.resources
+C:\Users\juliana.lglucas\Downloads\Lojinha\Lojinha\obj\Debug\Lojinha.csproj.GenerateResource.Cache
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Lojinha.exe.config
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.exe
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.pdb
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Black.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-BlackItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Bold.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-BoldItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Italic.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Light.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-LightItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Medium.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-MediumItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Regular.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Thin.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-ThinItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Bold.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-BoldItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Italic.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Light.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-LightItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Regular.ttf
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Lojinha.exe
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\Lojinha.pdb
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\BancoModel.dll
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\bin\Debug\BancoModel.pdb
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.csprojResolveAssemblyReference.cache
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.AdicionarCategoria.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.AdicionarFormaPagamento.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.AlterarSenha.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.CriarUsuario.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.Estoque.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.ExcluirUsuario.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.VisualizarClientes.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.Teste.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.VisualizarEstoque.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.CadastroCliente.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.StatusDePedido.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.CaixaDeMensagem.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.AdicionarProduto.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.TelaPrincipal.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.Properties.Resources.resources
+C:\Users\JGalarraga.DNNG2V1\Desktop\LojinhaJoao\Lojinha\obj\Debug\Lojinha.csproj.GenerateResource.Cache
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Lojinha.exe.config
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.exe
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.pdb
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Black.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-BlackItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Bold.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-BoldItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Italic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Light.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-LightItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Medium.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-MediumItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Regular.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-Thin.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\Roboto-ThinItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Bold.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-BoldItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Italic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Light.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-LightItalic.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Resources\Fontes\RobotoCondensed-Regular.ttf
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Lojinha.exe
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\Lojinha.pdb
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\BancoModel.dll
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\bin\Debug\BancoModel.pdb
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.csprojResolveAssemblyReference.cache
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.AdicionarCategoria.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.AdicionarFormaPagamento.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.AlterarSenha.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.CriarUsuario.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.Estoque.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.ExcluirUsuario.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.VisualizarClientes.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.Teste.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.VisualizarEstoque.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.CadastroCliente.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.StatusDePedido.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.CaixaDeMensagem.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.AdicionarProduto.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.TelaPrincipal.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.Properties.Resources.resources
+C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.csproj.GenerateResource.Cache
