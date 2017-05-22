@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace BancoModel
 {
@@ -136,18 +137,34 @@ namespace BancoModel
             return Usuarios;
         }
 
-        public static void efetuarLogin(string usuario, string senha)
+        public int efetuarLogin(string usuario, string senha)
         {
-            string sql = "IF EXISTS(SELECT * FROM Usuario WHERE loginUsuario LIKE '"+ "@usuario" + "' AND senhaUsuario LIKE '" + "@senha" + "')";
+            // aqui eu poderia usar IF EXISTS..(?)
+            int userCount = 0;
+            string sql = "SELECT COUNT(*) FROM Usuario WHERE loginUsuario LIKE '"+ "@usuario" + "' AND senhaUsuario LIKE '" + "@senha" + "'";
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
             cmd.CommandText = sql;
 
-            cmd.Parameters.Add("@usuario", SqlDbType.VarChar, 50).Value = usuario;
-            cmd.Parameters.Add("@senha", SqlDbType.VarChar, 50).Value = senha;
+            cmd.Parameters.AddWithValue("@usuario", usuario);
+            cmd.Parameters.AddWithValue("@senha", senha);
 
-            bool loginOK = (bool) cmd.ExecuteScalar();
-            //SqlDataReader dr = cmd.ExecuteReader();
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                // se uma linha for encontrada
+                if (dr.HasRows)
+                {
+                    // quer dizer que existe um usuário
+                    userCount = 1;
+                    break;
+                }
+            }
+
+            // se o usuário for encontrado, o retorno é 1
+            // senão, o retorno é 0
+            return userCount;
         }
     }
 }

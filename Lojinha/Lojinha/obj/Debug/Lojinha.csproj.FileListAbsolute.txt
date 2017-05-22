@@ -245,3 +245,6 @@ C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.Adic
 C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.TelaPrincipal.resources
 C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.Properties.Resources.resources
 C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.csproj.GenerateResource.Cache
+C:\Users\JGalarraga.DNNG2V1\senac-pi\Lojinha\Lojinha\bin\Debug\Lojinha.exe.config
+C:\Users\JGalarraga.DNNG2V1\senac-pi\Lojinha\Lojinha\obj\Debug\Lojinha.exe
+C:\Users\JGalarraga.DNNG2V1\senac-pi\Lojinha\Lojinha\obj\Debug\Lojinha.pdb

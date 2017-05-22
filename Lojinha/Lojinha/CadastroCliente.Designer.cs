@@ -35,7 +35,6 @@
             this.nomeFormulario = new System.Windows.Forms.Label();
             this.coloredStripAdorn = new System.Windows.Forms.Panel();
             this.nomeCadClienteTxtBox = new System.Windows.Forms.TextBox();
-            this.telComCadClienteTxtBox = new System.Windows.Forms.TextBox();
             this.telResidenCadClienteTxtBox = new System.Windows.Forms.TextBox();
             this.celularCadClienteTxtBox = new System.Windows.Forms.TextBox();
             this.senhaCadClienteTxtBox = new System.Windows.Forms.TextBox();
@@ -71,7 +70,11 @@
             this.alterarCadClienteButton = new System.Windows.Forms.Button();
             this.excluirCadClienteButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.telComCadClienteTxtBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // minimizeButton
@@ -143,9 +146,9 @@
             this.nomeFormulario.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.nomeFormulario.Location = new System.Drawing.Point(50, 59);
             this.nomeFormulario.Name = "nomeFormulario";
-            this.nomeFormulario.Size = new System.Drawing.Size(233, 29);
+            this.nomeFormulario.Size = new System.Drawing.Size(226, 29);
             this.nomeFormulario.TabIndex = 30;
-            this.nomeFormulario.Text = "Cadastro de clientes";
+            this.nomeFormulario.Text = "Cadastro de Cliente";
             // 
             // coloredStripAdorn
             // 
@@ -157,59 +160,57 @@
             // 
             // nomeCadClienteTxtBox
             // 
-            this.nomeCadClienteTxtBox.Location = new System.Drawing.Point(87, 104);
+            this.nomeCadClienteTxtBox.Location = new System.Drawing.Point(320, 159);
+            this.nomeCadClienteTxtBox.Multiline = true;
             this.nomeCadClienteTxtBox.Name = "nomeCadClienteTxtBox";
-            this.nomeCadClienteTxtBox.Size = new System.Drawing.Size(252, 20);
+            this.nomeCadClienteTxtBox.Size = new System.Drawing.Size(299, 28);
             this.nomeCadClienteTxtBox.TabIndex = 31;
-            // 
-            // telComCadClienteTxtBox
-            // 
-            this.telComCadClienteTxtBox.Location = new System.Drawing.Point(494, 156);
-            this.telComCadClienteTxtBox.Name = "telComCadClienteTxtBox";
-            this.telComCadClienteTxtBox.Size = new System.Drawing.Size(100, 20);
-            this.telComCadClienteTxtBox.TabIndex = 33;
             // 
             // telResidenCadClienteTxtBox
             // 
-            this.telResidenCadClienteTxtBox.Location = new System.Drawing.Point(308, 156);
+            this.telResidenCadClienteTxtBox.Location = new System.Drawing.Point(535, 264);
+            this.telResidenCadClienteTxtBox.Multiline = true;
             this.telResidenCadClienteTxtBox.Name = "telResidenCadClienteTxtBox";
-            this.telResidenCadClienteTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.telResidenCadClienteTxtBox.Size = new System.Drawing.Size(205, 28);
             this.telResidenCadClienteTxtBox.TabIndex = 34;
             // 
             // celularCadClienteTxtBox
             // 
-            this.celularCadClienteTxtBox.Location = new System.Drawing.Point(113, 156);
+            this.celularCadClienteTxtBox.Location = new System.Drawing.Point(318, 264);
+            this.celularCadClienteTxtBox.Multiline = true;
             this.celularCadClienteTxtBox.Name = "celularCadClienteTxtBox";
-            this.celularCadClienteTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.celularCadClienteTxtBox.Size = new System.Drawing.Size(206, 28);
             this.celularCadClienteTxtBox.TabIndex = 35;
             // 
             // senhaCadClienteTxtBox
             // 
-            this.senhaCadClienteTxtBox.Location = new System.Drawing.Point(371, 130);
+            this.senhaCadClienteTxtBox.Location = new System.Drawing.Point(629, 211);
+            this.senhaCadClienteTxtBox.Multiline = true;
             this.senhaCadClienteTxtBox.Name = "senhaCadClienteTxtBox";
-            this.senhaCadClienteTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.senhaCadClienteTxtBox.Size = new System.Drawing.Size(181, 28);
             this.senhaCadClienteTxtBox.TabIndex = 36;
             // 
             // emailCadClienteTxtBox
             // 
-            this.emailCadClienteTxtBox.Location = new System.Drawing.Point(87, 130);
+            this.emailCadClienteTxtBox.Location = new System.Drawing.Point(318, 211);
+            this.emailCadClienteTxtBox.Multiline = true;
             this.emailCadClienteTxtBox.Name = "emailCadClienteTxtBox";
-            this.emailCadClienteTxtBox.Size = new System.Drawing.Size(237, 20);
+            this.emailCadClienteTxtBox.Size = new System.Drawing.Size(301, 28);
             this.emailCadClienteTxtBox.TabIndex = 37;
-            this.emailCadClienteTxtBox.TextChanged += new System.EventHandler(this.emailCadClienteTxtBox_TextChanged);
             // 
             // CpfCadClienteTxtBox
             // 
-            this.CpfCadClienteTxtBox.Location = new System.Drawing.Point(378, 104);
+            this.CpfCadClienteTxtBox.Location = new System.Drawing.Point(629, 159);
+            this.CpfCadClienteTxtBox.Multiline = true;
             this.CpfCadClienteTxtBox.Name = "CpfCadClienteTxtBox";
-            this.CpfCadClienteTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.CpfCadClienteTxtBox.Size = new System.Drawing.Size(218, 28);
             this.CpfCadClienteTxtBox.TabIndex = 38;
             // 
             // emailCadClienteLabel
             // 
             this.emailCadClienteLabel.AutoSize = true;
             this.emailCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.emailCadClienteLabel.Location = new System.Drawing.Point(47, 133);
+            this.emailCadClienteLabel.Location = new System.Drawing.Point(317, 195);
             this.emailCadClienteLabel.Name = "emailCadClienteLabel";
             this.emailCadClienteLabel.Size = new System.Drawing.Size(32, 13);
             this.emailCadClienteLabel.TabIndex = 39;
@@ -219,7 +220,7 @@
             // 
             this.senhaCadClienteLabel.AutoSize = true;
             this.senhaCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.senhaCadClienteLabel.Location = new System.Drawing.Point(327, 133);
+            this.senhaCadClienteLabel.Location = new System.Drawing.Point(630, 195);
             this.senhaCadClienteLabel.Name = "senhaCadClienteLabel";
             this.senhaCadClienteLabel.Size = new System.Drawing.Size(38, 13);
             this.senhaCadClienteLabel.TabIndex = 43;
@@ -229,7 +230,7 @@
             // 
             this.cpfCadClienteLabel.AutoSize = true;
             this.cpfCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.cpfCadClienteLabel.Location = new System.Drawing.Point(345, 107);
+            this.cpfCadClienteLabel.Location = new System.Drawing.Point(630, 143);
             this.cpfCadClienteLabel.Name = "cpfCadClienteLabel";
             this.cpfCadClienteLabel.Size = new System.Drawing.Size(27, 13);
             this.cpfCadClienteLabel.TabIndex = 44;
@@ -239,7 +240,7 @@
             // 
             this.nomeCadClienteLabel.AutoSize = true;
             this.nomeCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.nomeCadClienteLabel.Location = new System.Drawing.Point(47, 107);
+            this.nomeCadClienteLabel.Location = new System.Drawing.Point(317, 143);
             this.nomeCadClienteLabel.Name = "nomeCadClienteLabel";
             this.nomeCadClienteLabel.Size = new System.Drawing.Size(35, 13);
             this.nomeCadClienteLabel.TabIndex = 45;
@@ -249,7 +250,7 @@
             // 
             this.celularCadClienteLabel.AutoSize = true;
             this.celularCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.celularCadClienteLabel.Location = new System.Drawing.Point(47, 159);
+            this.celularCadClienteLabel.Location = new System.Drawing.Point(317, 248);
             this.celularCadClienteLabel.Name = "celularCadClienteLabel";
             this.celularCadClienteLabel.Size = new System.Drawing.Size(60, 13);
             this.celularCadClienteLabel.TabIndex = 46;
@@ -259,7 +260,7 @@
             // 
             this.telComCadClienteLabel.AutoSize = true;
             this.telComCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.telComCadClienteLabel.Location = new System.Drawing.Point(414, 159);
+            this.telComCadClienteLabel.Location = new System.Drawing.Point(753, 248);
             this.telComCadClienteLabel.Name = "telComCadClienteLabel";
             this.telComCadClienteLabel.Size = new System.Drawing.Size(74, 13);
             this.telComCadClienteLabel.TabIndex = 47;
@@ -269,7 +270,7 @@
             // 
             this.telResCadClienteLabel.AutoSize = true;
             this.telResCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.telResCadClienteLabel.Location = new System.Drawing.Point(219, 159);
+            this.telResCadClienteLabel.Location = new System.Drawing.Point(533, 248);
             this.telResCadClienteLabel.Name = "telResCadClienteLabel";
             this.telResCadClienteLabel.Size = new System.Drawing.Size(83, 13);
             this.telResCadClienteLabel.TabIndex = 48;
@@ -278,78 +279,83 @@
             // cadastrarCadClienteButton
             // 
             this.cadastrarCadClienteButton.Image = global::Lojinha.Properties.Resources.purbleButton;
-            this.cadastrarCadClienteButton.Location = new System.Drawing.Point(43, 458);
+            this.cadastrarCadClienteButton.Location = new System.Drawing.Point(514, 666);
             this.cadastrarCadClienteButton.Name = "cadastrarCadClienteButton";
             this.cadastrarCadClienteButton.Size = new System.Drawing.Size(149, 41);
             this.cadastrarCadClienteButton.TabIndex = 49;
             this.cadastrarCadClienteButton.Text = "Cadastrar";
             this.cadastrarCadClienteButton.UseVisualStyleBackColor = true;
+            this.cadastrarCadClienteButton.Click += new System.EventHandler(this.cadastrarCadClienteButton_Click);
             // 
             // dtNascCadClienteTxtBox
             // 
-            this.dtNascCadClienteTxtBox.Location = new System.Drawing.Point(572, 104);
+            this.dtNascCadClienteTxtBox.Location = new System.Drawing.Point(857, 159);
+            this.dtNascCadClienteTxtBox.Multiline = true;
             this.dtNascCadClienteTxtBox.Name = "dtNascCadClienteTxtBox";
-            this.dtNascCadClienteTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.dtNascCadClienteTxtBox.Size = new System.Drawing.Size(146, 28);
             this.dtNascCadClienteTxtBox.TabIndex = 50;
             // 
             // ufClienteTxtBox
             // 
-            this.ufClienteTxtBox.Location = new System.Drawing.Point(464, 236);
+            this.ufClienteTxtBox.Location = new System.Drawing.Point(952, 392);
+            this.ufClienteTxtBox.Multiline = true;
             this.ufClienteTxtBox.Name = "ufClienteTxtBox";
-            this.ufClienteTxtBox.Size = new System.Drawing.Size(44, 20);
+            this.ufClienteTxtBox.Size = new System.Drawing.Size(51, 28);
             this.ufClienteTxtBox.TabIndex = 51;
             // 
             // cidadeClienteTxtBox
             // 
-            this.cidadeClienteTxtBox.Location = new System.Drawing.Point(94, 236);
+            this.cidadeClienteTxtBox.Location = new System.Drawing.Point(695, 392);
+            this.cidadeClienteTxtBox.Multiline = true;
             this.cidadeClienteTxtBox.Name = "cidadeClienteTxtBox";
-            this.cidadeClienteTxtBox.Size = new System.Drawing.Size(197, 20);
+            this.cidadeClienteTxtBox.Size = new System.Drawing.Size(248, 28);
             this.cidadeClienteTxtBox.TabIndex = 52;
             // 
             // compleCadClienteTxtBox
             // 
-            this.compleCadClienteTxtBox.Location = new System.Drawing.Point(373, 208);
+            this.compleCadClienteTxtBox.Location = new System.Drawing.Point(514, 392);
+            this.compleCadClienteTxtBox.Multiline = true;
             this.compleCadClienteTxtBox.Name = "compleCadClienteTxtBox";
-            this.compleCadClienteTxtBox.Size = new System.Drawing.Size(299, 20);
+            this.compleCadClienteTxtBox.Size = new System.Drawing.Size(173, 28);
             this.compleCadClienteTxtBox.TabIndex = 53;
-            this.compleCadClienteTxtBox.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // cepCadClienteTxtBox
             // 
-            this.cepCadClienteTxtBox.Location = new System.Drawing.Point(190, 208);
+            this.cepCadClienteTxtBox.Location = new System.Drawing.Point(318, 392);
+            this.cepCadClienteTxtBox.Multiline = true;
             this.cepCadClienteTxtBox.Name = "cepCadClienteTxtBox";
-            this.cepCadClienteTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.cepCadClienteTxtBox.Size = new System.Drawing.Size(184, 28);
             this.cepCadClienteTxtBox.TabIndex = 54;
-            this.cepCadClienteTxtBox.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // nrResEndCadClienteTxtBox
             // 
-            this.nrResEndCadClienteTxtBox.Location = new System.Drawing.Point(75, 208);
+            this.nrResEndCadClienteTxtBox.Location = new System.Drawing.Point(904, 341);
+            this.nrResEndCadClienteTxtBox.Multiline = true;
             this.nrResEndCadClienteTxtBox.Name = "nrResEndCadClienteTxtBox";
-            this.nrResEndCadClienteTxtBox.Size = new System.Drawing.Size(73, 20);
+            this.nrResEndCadClienteTxtBox.Size = new System.Drawing.Size(99, 28);
             this.nrResEndCadClienteTxtBox.TabIndex = 55;
             // 
             // logadouroCadClienteTxtBox
             // 
-            this.logadouroCadClienteTxtBox.Location = new System.Drawing.Point(301, 182);
+            this.logadouroCadClienteTxtBox.Location = new System.Drawing.Point(493, 341);
+            this.logadouroCadClienteTxtBox.Multiline = true;
             this.logadouroCadClienteTxtBox.Name = "logadouroCadClienteTxtBox";
-            this.logadouroCadClienteTxtBox.Size = new System.Drawing.Size(371, 20);
+            this.logadouroCadClienteTxtBox.Size = new System.Drawing.Size(399, 28);
             this.logadouroCadClienteTxtBox.TabIndex = 56;
-            this.logadouroCadClienteTxtBox.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // tipoEndCadClienteTxtBox
             // 
-            this.tipoEndCadClienteTxtBox.Location = new System.Drawing.Point(131, 182);
+            this.tipoEndCadClienteTxtBox.Location = new System.Drawing.Point(318, 341);
+            this.tipoEndCadClienteTxtBox.Multiline = true;
             this.tipoEndCadClienteTxtBox.Name = "tipoEndCadClienteTxtBox";
-            this.tipoEndCadClienteTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.tipoEndCadClienteTxtBox.Size = new System.Drawing.Size(164, 28);
             this.tipoEndCadClienteTxtBox.TabIndex = 57;
-            this.tipoEndCadClienteTxtBox.TextChanged += new System.EventHandler(this.tipoEndCadClienteTxtBox_TextChanged);
             // 
             // nascCadClienteLabel
             // 
             this.nascCadClienteLabel.AutoSize = true;
             this.nascCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.nascCadClienteLabel.Location = new System.Drawing.Point(484, 107);
+            this.nascCadClienteLabel.Location = new System.Drawing.Point(854, 143);
             this.nascCadClienteLabel.Name = "nascCadClienteLabel";
             this.nascCadClienteLabel.Size = new System.Drawing.Size(80, 13);
             this.nascCadClienteLabel.TabIndex = 58;
@@ -360,18 +366,17 @@
             // 
             this.tipoEndCadClienteLabel.AutoSize = true;
             this.tipoEndCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.tipoEndCadClienteLabel.Location = new System.Drawing.Point(46, 185);
+            this.tipoEndCadClienteLabel.Location = new System.Drawing.Point(317, 325);
             this.tipoEndCadClienteLabel.Name = "tipoEndCadClienteLabel";
             this.tipoEndCadClienteLabel.Size = new System.Drawing.Size(77, 13);
             this.tipoEndCadClienteLabel.TabIndex = 59;
             this.tipoEndCadClienteLabel.Text = "Tipo Endereço";
-            this.tipoEndCadClienteLabel.Click += new System.EventHandler(this.tipoEndCadClienteLabel_Click);
             // 
             // logadouroCadClienteLabel
             // 
             this.logadouroCadClienteLabel.AutoSize = true;
             this.logadouroCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.logadouroCadClienteLabel.Location = new System.Drawing.Point(237, 185);
+            this.logadouroCadClienteLabel.Location = new System.Drawing.Point(494, 325);
             this.logadouroCadClienteLabel.Name = "logadouroCadClienteLabel";
             this.logadouroCadClienteLabel.Size = new System.Drawing.Size(58, 13);
             this.logadouroCadClienteLabel.TabIndex = 60;
@@ -381,7 +386,7 @@
             // 
             this.nrResEndCadClienteLabel.AutoSize = true;
             this.nrResEndCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.nrResEndCadClienteLabel.Location = new System.Drawing.Point(48, 208);
+            this.nrResEndCadClienteLabel.Location = new System.Drawing.Point(901, 325);
             this.nrResEndCadClienteLabel.Name = "nrResEndCadClienteLabel";
             this.nrResEndCadClienteLabel.Size = new System.Drawing.Size(19, 13);
             this.nrResEndCadClienteLabel.TabIndex = 61;
@@ -391,7 +396,7 @@
             // 
             this.cepCadClienteLabel.AutoSize = true;
             this.cepCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.cepCadClienteLabel.Location = new System.Drawing.Point(154, 211);
+            this.cepCadClienteLabel.Location = new System.Drawing.Point(317, 376);
             this.cepCadClienteLabel.Name = "cepCadClienteLabel";
             this.cepCadClienteLabel.Size = new System.Drawing.Size(28, 13);
             this.cepCadClienteLabel.TabIndex = 62;
@@ -401,7 +406,7 @@
             // 
             this.compleCadClienteLabel.AutoSize = true;
             this.compleCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.compleCadClienteLabel.Location = new System.Drawing.Point(296, 211);
+            this.compleCadClienteLabel.Location = new System.Drawing.Point(513, 376);
             this.compleCadClienteLabel.Name = "compleCadClienteLabel";
             this.compleCadClienteLabel.Size = new System.Drawing.Size(71, 13);
             this.compleCadClienteLabel.TabIndex = 63;
@@ -411,7 +416,7 @@
             // 
             this.cidadeCadClienteLabel.AutoSize = true;
             this.cidadeCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.cidadeCadClienteLabel.Location = new System.Drawing.Point(48, 239);
+            this.cidadeCadClienteLabel.Location = new System.Drawing.Point(694, 376);
             this.cidadeCadClienteLabel.Name = "cidadeCadClienteLabel";
             this.cidadeCadClienteLabel.Size = new System.Drawing.Size(40, 13);
             this.cidadeCadClienteLabel.TabIndex = 64;
@@ -419,16 +424,17 @@
             // 
             // paisClienteTxtBox
             // 
-            this.paisClienteTxtBox.Location = new System.Drawing.Point(331, 236);
+            this.paisClienteTxtBox.Location = new System.Drawing.Point(318, 443);
+            this.paisClienteTxtBox.Multiline = true;
             this.paisClienteTxtBox.Name = "paisClienteTxtBox";
-            this.paisClienteTxtBox.Size = new System.Drawing.Size(100, 20);
+            this.paisClienteTxtBox.Size = new System.Drawing.Size(100, 35);
             this.paisClienteTxtBox.TabIndex = 65;
             // 
             // paisCadClienteLabel
             // 
             this.paisCadClienteLabel.AutoSize = true;
             this.paisCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.paisCadClienteLabel.Location = new System.Drawing.Point(296, 239);
+            this.paisCadClienteLabel.Location = new System.Drawing.Point(317, 428);
             this.paisCadClienteLabel.Name = "paisCadClienteLabel";
             this.paisCadClienteLabel.Size = new System.Drawing.Size(29, 13);
             this.paisCadClienteLabel.TabIndex = 66;
@@ -438,7 +444,7 @@
             // 
             this.ufCadClienteLabel.AutoSize = true;
             this.ufCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.ufCadClienteLabel.Location = new System.Drawing.Point(438, 239);
+            this.ufCadClienteLabel.Location = new System.Drawing.Point(949, 376);
             this.ufCadClienteLabel.Name = "ufCadClienteLabel";
             this.ufCadClienteLabel.Size = new System.Drawing.Size(21, 13);
             this.ufCadClienteLabel.TabIndex = 67;
@@ -456,7 +462,7 @@
             // alterarCadClienteButton
             // 
             this.alterarCadClienteButton.Image = global::Lojinha.Properties.Resources.purbleButton;
-            this.alterarCadClienteButton.Location = new System.Drawing.Point(213, 458);
+            this.alterarCadClienteButton.Location = new System.Drawing.Point(684, 666);
             this.alterarCadClienteButton.Name = "alterarCadClienteButton";
             this.alterarCadClienteButton.Size = new System.Drawing.Size(149, 41);
             this.alterarCadClienteButton.TabIndex = 70;
@@ -466,7 +472,7 @@
             // excluirCadClienteButton
             // 
             this.excluirCadClienteButton.Image = global::Lojinha.Properties.Resources.purbleButton;
-            this.excluirCadClienteButton.Location = new System.Drawing.Point(385, 459);
+            this.excluirCadClienteButton.Location = new System.Drawing.Point(856, 667);
             this.excluirCadClienteButton.Name = "excluirCadClienteButton";
             this.excluirCadClienteButton.Size = new System.Drawing.Size(149, 41);
             this.excluirCadClienteButton.TabIndex = 71;
@@ -476,11 +482,35 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 262);
+            this.dataGridView1.Location = new System.Drawing.Point(320, 496);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(629, 177);
+            this.dataGridView1.Size = new System.Drawing.Size(683, 154);
             this.dataGridView1.TabIndex = 72;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // telComCadClienteTxtBox
+            // 
+            this.telComCadClienteTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.telComCadClienteTxtBox.Location = new System.Drawing.Point(755, 264);
+            this.telComCadClienteTxtBox.Multiline = true;
+            this.telComCadClienteTxtBox.Name = "telComCadClienteTxtBox";
+            this.telComCadClienteTxtBox.Size = new System.Drawing.Size(200, 28);
+            this.telComCadClienteTxtBox.TabIndex = 74;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.LightCoral;
+            this.label1.Location = new System.Drawing.Point(753, 262);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 32);
+            this.label1.TabIndex = 75;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(47, 159);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(229, 491);
+            this.dataGridView2.TabIndex = 76;
             // 
             // VisualizarClientes
             // 
@@ -489,6 +519,9 @@
             this.BackgroundImage = global::Lojinha.Properties.Resources.otherScreensBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 756);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.telComCadClienteTxtBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.excluirCadClienteButton);
             this.Controls.Add(this.alterarCadClienteButton);
@@ -523,7 +556,6 @@
             this.Controls.Add(this.senhaCadClienteTxtBox);
             this.Controls.Add(this.celularCadClienteTxtBox);
             this.Controls.Add(this.telResidenCadClienteTxtBox);
-            this.Controls.Add(this.telComCadClienteTxtBox);
             this.Controls.Add(this.nomeCadClienteTxtBox);
             this.Controls.Add(this.nomeFormulario);
             this.Controls.Add(this.coloredStripAdorn);
@@ -536,8 +568,8 @@
             this.Name = "VisualizarClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VisualizarClientes";
-            this.Load += new System.EventHandler(this.VisualizarClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -551,7 +583,6 @@
         private System.Windows.Forms.Label nomeFormulario;
         private System.Windows.Forms.Panel coloredStripAdorn;
         private System.Windows.Forms.TextBox nomeCadClienteTxtBox;
-        private System.Windows.Forms.TextBox telComCadClienteTxtBox;
         private System.Windows.Forms.TextBox telResidenCadClienteTxtBox;
         private System.Windows.Forms.TextBox celularCadClienteTxtBox;
         private System.Windows.Forms.TextBox senhaCadClienteTxtBox;
@@ -587,5 +618,8 @@
         private System.Windows.Forms.Button alterarCadClienteButton;
         private System.Windows.Forms.Button excluirCadClienteButton;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox telComCadClienteTxtBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
