@@ -70,7 +70,7 @@ namespace BancoModel
             cn.Dispose();
         }
 
-        public static List<clsUsuario> SelecionarClientes()
+        public static List<clsUsuario> SelecionarUsuarios()
         {
             string sql = "SELECT idUsuario, loginUsuario, senhaUsuario, nomeUsuario, tipoPerfil, usuarioAtivo FROM dbo.Usuario";
             SqlConnection cn = clsConexao.Conectar();
@@ -103,7 +103,7 @@ namespace BancoModel
             return Usuarios;
         }
 
-        public static List<clsUsuario> SelecionarClientes(int idUsuario)
+        public static List<clsUsuario> SelecionarUsuarios(int idUsuario)
         {
             string sql = "SELECT idUsuario, loginUsuario, senhaUsuario, nomeUsuario, tipoPerfil, usuarioAtivo FROM dbo.Usuario" + 
                 "WHERE idUsuario = @idUsuario";
@@ -137,11 +137,12 @@ namespace BancoModel
             return Usuarios;
         }
 
-        public int efetuarLogin(string usuario, string senha)
+        public int validarLogin(string usuario, string senha)
         {
             // aqui eu poderia usar IF EXISTS..(?)
-            int userCount = 0;
-            string sql = "SELECT COUNT(*) FROM Usuario WHERE loginUsuario LIKE '"+ "@usuario" + "' AND senhaUsuario LIKE '" + "@senha" + "'";
+            //int userCount = 0;
+            string sql = "SELECT COUNT(*) FROM Usuario WHERE loginUsuario LIKE '"+ usuario +
+                "' AND senhaUsuario LIKE '" + senha + "'";
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
             cmd.CommandText = sql;
@@ -149,18 +150,7 @@ namespace BancoModel
             cmd.Parameters.AddWithValue("@usuario", usuario);
             cmd.Parameters.AddWithValue("@senha", senha);
 
-            SqlDataReader dr = cmd.ExecuteReader();
-
-            while (dr.Read())
-            {
-                // se uma linha for encontrada
-                if (dr.HasRows)
-                {
-                    // quer dizer que existe um usuário
-                    userCount = 1;
-                    break;
-                }
-            }
+            int userCount = (int)cmd.ExecuteScalar();
 
             // se o usuário for encontrado, o retorno é 1
             // senão, o retorno é 0

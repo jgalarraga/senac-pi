@@ -112,27 +112,31 @@ namespace BancoModel
 
         // filtar categoria por nome E/OU categoria
         // este método deve ser chamado no evento do botão pesquisar
-        public static List<clsEstoque> SelecionarEstoque(TextBox nomeProdTextBox, ComboBox categoriaComboBox)
+        public static List<clsEstoque> SelecionarEstoque(string nomeProd, string categoria)
         {
             List<clsEstoque> Estoque = new List<clsEstoque>();
-            string sql = "SELECT dbo.Produto.nomeProduto AS [Produto], dbo.Estoque.qtdProdutoDisponivel, dbo.Categoria.nomeCategoria " +
+            string sql = "SELECT Produto.idProduto, dbo.Produto.nomeProduto, dbo.Estoque.qtdProdutoDisponivel, dbo.Categoria.nomeCategoria " +
                    "FROM dbo.Produto INNER JOIN dbo.Estoque " +
                    "ON dbo.Produto.idProduto = dbo.Estoque.idProduto " +
                    "INNER JOIN dbo.Categoria " +
                    "ON dbo.Categoria.idCategoria = dbo.Produto.idCategoria " +
-                   "WHERE dbo.Produto.nomeProduto LIKE '%" + "@field" + "%'";
+                   "WHERE dbo.Produto.nomeProduto LIKE '%" + nomeProd + "%'";
+            //LIKE '%" + "@field" + "%'";
 
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
             cmd.CommandText = sql;
-            cmd.Parameters.AddWithValue("@field", nomeProdTextBox.Text);
+            //cmd.Parameters.Add("@field", SqlDbType.VarChar,50).Value = nomeProd;
+            //cmd.Parameters.AddWithValue("@field", nomeProdTextBox.Text);
 
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
                 clsEstoque E = new clsEstoque();
                 E.idProduto = dr.GetInt32(dr.GetOrdinal("idProduto"));
+                E.nomeProduto = dr.GetString(dr.GetOrdinal("nomeProduto"));
                 E.qtdProdutoDisponivel = dr.GetInt32(dr.GetOrdinal("qtdProdutoDisponivel"));
+                E.nomeCategoria = dr.GetString(dr.GetOrdinal("nomeCategoria"));
                 Estoque.Add(E);
             }
 
