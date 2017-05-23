@@ -120,14 +120,14 @@ namespace BancoModel
                    "ON dbo.Produto.idProduto = dbo.Estoque.idProduto " +
                    "INNER JOIN dbo.Categoria " +
                    "ON dbo.Categoria.idCategoria = dbo.Produto.idCategoria " +
-                   "WHERE dbo.Produto.nomeProduto LIKE '%" + nomeProd + "%'";
+                   "WHERE dbo.Produto.nomeProduto LIKE @field" ;
             //LIKE '%" + "@field" + "%'";
 
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
             cmd.CommandText = sql;
-            //cmd.Parameters.Add("@field", SqlDbType.VarChar,50).Value = nomeProd;
-            //cmd.Parameters.AddWithValue("@field", nomeProdTextBox.Text);
+            //cmd.Parameters.Add("@field", SqlDbType.VarChar,50).Value = "%" + nomeProd + "%";
+            cmd.Parameters.AddWithValue("@field","%" + nomeProd + "%");
 
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
