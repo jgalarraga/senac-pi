@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace BancoModel
 {
@@ -69,7 +70,7 @@ namespace BancoModel
             cn.Dispose();
         }
 
-        public static List<clsUsuario> SelecionarClientes()
+        public static List<clsUsuario> SelecionarUsuarios()
         {
             string sql = "SELECT idUsuario, loginUsuario, senhaUsuario, nomeUsuario, tipoPerfil, usuarioAtivo FROM dbo.Usuario";
             SqlConnection cn = clsConexao.Conectar();
@@ -102,7 +103,7 @@ namespace BancoModel
             return Usuarios;
         }
 
-        public static List<clsUsuario> SelecionarClientes(int idUsuario)
+        public static List<clsUsuario> SelecionarUsuarios(int idUsuario)
         {
             string sql = "SELECT idUsuario, loginUsuario, senhaUsuario, nomeUsuario, tipoPerfil, usuarioAtivo FROM dbo.Usuario" + 
                 "WHERE idUsuario = @idUsuario";
@@ -136,18 +137,24 @@ namespace BancoModel
             return Usuarios;
         }
 
-        public static void efetuarLogin(string usuario, string senha)
+        public int validarLogin(string usuario, string senha)
         {
-            string sql = "IF EXISTS(SELECT * FROM Usuario WHERE loginUsuario LIKE '"+ "@usuario" + "' AND senhaUsuario LIKE '" + "@senha" + "')";
+            // aqui eu poderia usar IF EXISTS..(?)
+            //int userCount = 0;
+            string sql = "SELECT COUNT(*) FROM Usuario " +
+                "WHERE loginUsuario LIKE @usuario AND senhaUsuario LIKE @senha";
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
             cmd.CommandText = sql;
 
-            cmd.Parameters.Add("@usuario", SqlDbType.VarChar, 50).Value = usuario;
-            cmd.Parameters.Add("@senha", SqlDbType.VarChar, 50).Value = senha;
+            cmd.Parameters.AddWithValue("@usuario", "%" + usuario + "%");
+            cmd.Parameters.AddWithValue("@senha", "%" + senha + "%");
 
-            bool loginOK = (bool) cmd.ExecuteScalar();
-            //SqlDataReader dr = cmd.ExecuteReader();
+            int userCount = (int)cmd.ExecuteScalar();
+
+            // se o usuário for encontrado, o retorno é 1
+            // senão, o retorno é 0
+            return userCount;
         }
     }
 }

@@ -83,7 +83,7 @@ namespace Lojinha
 
         private void pesqEstoqueButton_Click(object sender, EventArgs e)
         {
-            List<clsEstoque> estoque = clsEstoque.SelecionarEstoque(nomeProdTextBox, categoriaComboBox);
+            List<clsEstoque> estoque = clsEstoque.SelecionarEstoque(nomeProdTextBox.Text, categoriaComboBox.Text);
             EstoqueDataGridView.DataSource = estoque;
         }
 
