@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BancoModel;
 
@@ -13,6 +7,9 @@ namespace Lojinha
 {
     public partial class VisualizarClientes : Form
     {
+        // crio um vetor de textboxes 
+        private textBoxUserControl[] textboxes;
+
         public VisualizarClientes()
         {
             InitializeComponent();
@@ -20,6 +17,25 @@ namespace Lojinha
             List<clsCliente> clientes = clsCliente.SelecionarClientes();
             // mostro a listagem na grid view
             dataGridView1.DataSource = clientes;
+
+            // inicializo o vetor de textbox
+            // com as textboxes obrigatórias
+            textboxes = new textBoxUserControl[]
+            {
+                nomeCadTxtBox,
+                cpfCadTextBox,
+                emailCadTextBox
+               ///nomeCadClienteTextBox,
+                //CpfCadClienteTextBox,
+                //emailCadClienteTextBox
+                //senhaCadClienteTxtBox,
+                //celularCadClienteTxtBox,
+                //logadouroCadClienteTxtBox,
+                //nrResEndCadClienteTxtBox,
+                //cepCadClienteTxtBox,
+                //cidadeClienteTxtBox,
+                //ufClienteTxtBox
+            };
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -27,44 +43,29 @@ namespace Lojinha
             this.Close();
         }
 
-        private void emailCadClienteTxtBox_TextChanged(object sender, EventArgs e)
+        private void cadastrarCadClienteButton_Click(object sender, EventArgs e)
         {
+            bool valido = true;
 
-        }
+            // se alguma das textboxes obrigatórias não estiver preenchida
+            foreach (textBoxUserControl t in textboxes)
+            {
+                if (t.Text.Length == 0)
+                {
+                    // mostro um aviso
+                    t.Texto = "Obrigatório >:|";
+                    t.textBoxEscrever_Error();
+                    // deixo inválido
+                    valido = false;
+                }
+            }
 
-        private void tipoEndCadClienteLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tipoEndCadClienteTxtBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void VisualizarClientes_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            if (valido)
+            {
+                // cadastro o cliente 
+                clsCliente cliente = new clsCliente();
+                cliente.Salvar();
+            }
         }
     }
 }

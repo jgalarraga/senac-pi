@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BancoModel;
+using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,6 +16,22 @@ namespace Lojinha
         {
             InitializeComponent();
 
+            adicionarProdutoBtn2.Visible = false;
+
+            string tipoPerfil = Login.tipoUsuario;
+
+            // se o usuário não for administrador
+            if (!tipoPerfil.Equals("A"))
+            {
+                // bloqueio os formulários
+                // e exibo uma mensagem
+                adicionarProdutoBtn2.Visible = true;
+                visualizarProdutosBtn2.Visible = true;
+                visualizarClientesBtn2.Visible = true;
+                criarUsuarioBtn2.Visible = true;
+                visualizarPedidosBtn2.Visible = true;
+                adicionarCategoriaBtn2.Visible = true;
+            }
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -181,6 +198,36 @@ namespace Lojinha
         {
             this.WindowState = FormWindowState.Normal;
             normalSizeButton.Visible = false;
+        }
+
+        private void visualizarEstoqueBtn2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você não tem permissão para adicionar produtos da loja.");
+        }
+
+        private void visualizarClientesBtn2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você não tem permissão para acessar visualizar os clientes da loja.");
+        }
+
+        private void visualizarProdutosBtn2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você não tem permissão para acessar visualizar os produtos da loja.");
+        }
+
+        private void criarUsuarioBtn2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você não tem permissão para criar usuários.");
+        }
+
+        private void visualizarPedidosBtn2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você não tem permissão para visualizar os pedidos da loja.");
+        }
+
+        private void adicionarCategoriaBtn2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Você não tem permissão para adicionar categorias.");
         }
     }
 }

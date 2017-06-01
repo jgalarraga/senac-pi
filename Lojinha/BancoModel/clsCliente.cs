@@ -100,7 +100,10 @@ namespace BancoModel
                 C.emailCliente = dr.GetString(dr.GetOrdinal("emailCliente"));
                 C.senhaCliente = dr.GetString(dr.GetOrdinal("senhaCliente"));
                 C.cpfCliente = dr.GetString(dr.GetOrdinal("CPFCliente"));
-                C.celularCliente = dr.GetString(dr.GetOrdinal("celularCliente"));
+                if (!dr.IsDBNull(dr.GetOrdinal("celularCliente")))
+                {
+                    C.celularCliente = dr.GetString(dr.GetOrdinal("celularCliente"));
+                }
                 if (!dr.IsDBNull(dr.GetOrdinal("telComercialCliente")))
                 {
                     C.telComercialCliente = dr.GetString(dr.GetOrdinal("telComercialCliente"));
@@ -109,8 +112,14 @@ namespace BancoModel
                 {
                     C.telResidencialCliente = dr.GetString(dr.GetOrdinal("telResidencialCliente"));
                 }
-                C.dtNascCliente = dr.GetDateTime(dr.GetOrdinal("dtNascCliente"));
-                C.recebeNewsLetter = dr.GetBoolean(dr.GetOrdinal("recebeNewsLetter"));
+                if (!dr.IsDBNull(dr.GetOrdinal("dtNascCliente")))
+                {
+                    C.dtNascCliente = dr.GetDateTime(dr.GetOrdinal("dtNascCliente"));
+                }
+                if (!dr.IsDBNull(dr.GetOrdinal("recebeNewsLetter")))
+                {
+                    C.recebeNewsLetter = dr.GetBoolean(dr.GetOrdinal("recebeNewsLetter"));
+                }
                 Clientes.Add(C);
             }
 

@@ -137,10 +137,9 @@ namespace BancoModel
             return Usuarios;
         }
 
+        // RECADO PARA A JU: TRANSFORMAR MÉTODOS EM UMA COISA SÓ! MUITO REPETIVO
         public int validarLogin(string usuario, string senha)
         {
-            // aqui eu poderia usar IF EXISTS..(?)
-            //int userCount = 0;
             string sql = "SELECT COUNT(*) FROM Usuario " +
                 "WHERE loginUsuario LIKE @usuario AND senhaUsuario LIKE @senha";
             SqlConnection cn = clsConexao.Conectar();
@@ -155,6 +154,25 @@ namespace BancoModel
             // se o usuário for encontrado, o retorno é 1
             // senão, o retorno é 0
             return userCount;
+        }
+
+        public string selecionarTipoPerfil(string usuario, string senha)
+        {
+            string sql = "SELECT tipoPerfil FROM Usuario " +
+               "WHERE loginUsuario LIKE @usuario AND senhaUsuario LIKE @senha";
+            SqlConnection cn = clsConexao.Conectar();
+            SqlCommand cmd = cn.CreateCommand();
+            cmd.CommandText = sql;
+
+            cmd.Parameters.AddWithValue("@usuario", "%" + usuario + "%");
+            cmd.Parameters.AddWithValue("@senha", "%" + senha + "%");
+
+            string perfilUsuario = (string)cmd.ExecuteScalar();
+
+            // retorna "A" para administrador
+            // ou diferente da "A" para outro
+            // só o adm pode mexer no estoque
+            return perfilUsuario;
         }
     }
 }

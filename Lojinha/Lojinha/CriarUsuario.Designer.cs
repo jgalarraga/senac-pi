@@ -218,7 +218,7 @@
             this.addUsuarioButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
             this.addUsuarioButton.Location = new System.Drawing.Point(36, 260);
             this.addUsuarioButton.Name = "addUsuarioButton";
-            this.addUsuarioButton.Size = new System.Drawing.Size(149, 41);
+            this.addUsuarioButton.Size = new System.Drawing.Size(149, 38);
             this.addUsuarioButton.TabIndex = 39;
             this.addUsuarioButton.Text = "Adicionar";
             this.addUsuarioButton.UseVisualStyleBackColor = true;
