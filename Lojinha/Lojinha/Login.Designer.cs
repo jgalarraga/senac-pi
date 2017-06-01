@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.usuarioTextBox = new System.Windows.Forms.TextBox();
             this.senhaTextBox = new System.Windows.Forms.TextBox();
@@ -36,10 +37,16 @@
             this.loginErrorPanel = new System.Windows.Forms.Panel();
             this.cryImagePanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+=======
+            this.usuarioTextBox = new System.Windows.Forms.TextBox();
+            this.senhaTextBox = new System.Windows.Forms.TextBox();
+            this.loginBtn = new System.Windows.Forms.Button();
+>>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.SuspendLayout();
             // 
             // usuarioTextBox
             // 
+<<<<<<< HEAD
             this.usuarioTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usuarioTextBox.Location = new System.Drawing.Point(90, 58);
             this.usuarioTextBox.Name = "usuarioTextBox";
@@ -53,10 +60,25 @@
             this.senhaTextBox.Location = new System.Drawing.Point(90, 116);
             this.senhaTextBox.Name = "senhaTextBox";
             this.senhaTextBox.Size = new System.Drawing.Size(176, 13);
+=======
+            this.usuarioTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.usuarioTextBox.Location = new System.Drawing.Point(46, 122);
+            this.usuarioTextBox.Name = "usuarioTextBox";
+            this.usuarioTextBox.Size = new System.Drawing.Size(196, 20);
+            this.usuarioTextBox.TabIndex = 0;
+            // 
+            // senhaTextBox
+            // 
+            this.senhaTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.senhaTextBox.Location = new System.Drawing.Point(46, 159);
+            this.senhaTextBox.Name = "senhaTextBox";
+            this.senhaTextBox.Size = new System.Drawing.Size(196, 20);
+>>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.senhaTextBox.TabIndex = 1;
             // 
             // loginBtn
             // 
+<<<<<<< HEAD
             this.loginBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.loginBtn.BackgroundImage = global::Lojinha.Properties.Resources.button;
             this.loginBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -96,10 +118,21 @@
             this.cryImagePanel.Size = new System.Drawing.Size(117, 157);
             this.cryImagePanel.TabIndex = 4;
             // 
+=======
+            this.loginBtn.Location = new System.Drawing.Point(46, 197);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(196, 33);
+            this.loginBtn.TabIndex = 2;
+            this.loginBtn.Text = "Login";
+            this.loginBtn.UseVisualStyleBackColor = true;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            // 
+>>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackgroundImage = global::Lojinha.Properties.Resources.telaLogin;
             this.ClientSize = new System.Drawing.Size(800, 492);
             this.Controls.Add(this.cryImagePanel);
@@ -112,6 +145,16 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+=======
+            this.ClientSize = new System.Drawing.Size(295, 329);
+            this.Controls.Add(this.loginBtn);
+            this.Controls.Add(this.senhaTextBox);
+            this.Controls.Add(this.usuarioTextBox);
+            this.Name = "Login";
+            this.Text = "Login";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+>>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
 
         }
 
@@ -120,8 +163,11 @@
         private System.Windows.Forms.TextBox usuarioTextBox;
         private System.Windows.Forms.TextBox senhaTextBox;
         private System.Windows.Forms.Button loginBtn;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel loginErrorPanel;
         private System.Windows.Forms.Panel cryImagePanel;
+=======
+>>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
     }
 }
