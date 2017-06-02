@@ -248,7 +248,6 @@ C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\Lojinha\obj\Debug\Lojinha.cspr
 C:\Users\JGalarraga.DNNG2V1\senac-pi\Lojinha\Lojinha\bin\Debug\Lojinha.exe.config
 C:\Users\JGalarraga.DNNG2V1\senac-pi\Lojinha\Lojinha\obj\Debug\Lojinha.exe
 C:\Users\JGalarraga.DNNG2V1\senac-pi\Lojinha\Lojinha\obj\Debug\Lojinha.pdb
-<<<<<<< HEAD
 C:\Users\User\Programas\senac-pi-master\Lojinha\Lojinha\bin\Debug\Lojinha.exe.config
 C:\Users\User\Programas\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.exe
 C:\Users\User\Programas\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.pdb
@@ -426,5 +425,3 @@ C:\Users\User\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.Properti
 C:\Users\User\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.csproj.GenerateResource.Cache
 C:\Users\User\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.exe
 C:\Users\User\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.pdb
-=======
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e

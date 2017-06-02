@@ -6,7 +6,6 @@ namespace Lojinha
 {
     public partial class Login : Form
     {
-<<<<<<< HEAD
         // sem o static, não consigo acessar no outro form ;A; não sei o por quê
         public static string tipoUsuario { get; set; }
 
@@ -16,11 +15,6 @@ namespace Lojinha
             senhaTextBox.PasswordChar = '*';
             loginErrorPanel.Visible = false;
             cryImagePanel.Visible = false;
-=======
-        public Login()
-        {
-            InitializeComponent();
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
         }
 
         // MÉTODOS
@@ -31,18 +25,12 @@ namespace Lojinha
             // variável userCount recebe o retorno do método efetuarLogin que está na classe clsUsuario
             // se um registro for encontrado, a classe retorna 1
             // senão, retorna 0
-<<<<<<< HEAD
             int userCount = usuario.validarLogin(usuarioTextBox.Text, senhaTextBox.Text);
 
-=======
-            int userCount = usuario.efetuarLogin(usuarioTextBox.Text, senhaTextBox.Text);
-   
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             if (userCount > 0)
             {
                 // usuário existe no banco
                 MessageBox.Show("Usuário Encontrado! Yay :3");
-<<<<<<< HEAD
                 tipoUsuario = usuario.selecionarTipoPerfil(usuarioTextBox.Text, senhaTextBox.Text);
 
                 TelaPrincipal tp = new TelaPrincipal();
@@ -63,13 +51,5 @@ namespace Lojinha
             loginErrorPanel.Visible = false;
             cryImagePanel.Visible = false;
         }
-=======
-            } else
-            {
-                // usuário não existe no banco
-                MessageBox.Show("Usuário não encontrado! :/");
-            }
-        }
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
     }
 }

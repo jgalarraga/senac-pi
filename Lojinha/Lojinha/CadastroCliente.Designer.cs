@@ -34,10 +34,6 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.nomeFormulario = new System.Windows.Forms.Label();
             this.coloredStripAdorn = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
-=======
-            this.nomeCadClienteTxtBox = new System.Windows.Forms.TextBox();
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.telResidenCadClienteTxtBox = new System.Windows.Forms.TextBox();
             this.celularCadClienteTxtBox = new System.Windows.Forms.TextBox();
             this.senhaCadClienteTxtBox = new System.Windows.Forms.TextBox();
@@ -74,12 +70,9 @@
             this.telComCadClienteTxtBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-<<<<<<< HEAD
             this.nomeCadTxtBox = new Lojinha.textBoxUserControl();
             this.cpfCadTextBox = new Lojinha.textBoxUserControl();
             this.emailCadTextBox = new Lojinha.textBoxUserControl();
-=======
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -165,17 +158,6 @@
             this.coloredStripAdorn.Size = new System.Drawing.Size(629, 5);
             this.coloredStripAdorn.TabIndex = 29;
             // 
-<<<<<<< HEAD
-=======
-            // nomeCadClienteTxtBox
-            // 
-            this.nomeCadClienteTxtBox.Location = new System.Drawing.Point(320, 159);
-            this.nomeCadClienteTxtBox.Multiline = true;
-            this.nomeCadClienteTxtBox.Name = "nomeCadClienteTxtBox";
-            this.nomeCadClienteTxtBox.Size = new System.Drawing.Size(299, 28);
-            this.nomeCadClienteTxtBox.TabIndex = 31;
-            // 
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             // telResidenCadClienteTxtBox
             // 
             this.telResidenCadClienteTxtBox.Location = new System.Drawing.Point(535, 264);
@@ -194,35 +176,12 @@
             // 
             // senhaCadClienteTxtBox
             // 
-<<<<<<< HEAD
             this.senhaCadClienteTxtBox.Location = new System.Drawing.Point(639, 209);
-=======
-            this.senhaCadClienteTxtBox.Location = new System.Drawing.Point(629, 211);
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.senhaCadClienteTxtBox.Multiline = true;
             this.senhaCadClienteTxtBox.Name = "senhaCadClienteTxtBox";
             this.senhaCadClienteTxtBox.Size = new System.Drawing.Size(181, 28);
             this.senhaCadClienteTxtBox.TabIndex = 36;
             // 
-<<<<<<< HEAD
-=======
-            // emailCadClienteTxtBox
-            // 
-            this.emailCadClienteTxtBox.Location = new System.Drawing.Point(318, 211);
-            this.emailCadClienteTxtBox.Multiline = true;
-            this.emailCadClienteTxtBox.Name = "emailCadClienteTxtBox";
-            this.emailCadClienteTxtBox.Size = new System.Drawing.Size(301, 28);
-            this.emailCadClienteTxtBox.TabIndex = 37;
-            // 
-            // CpfCadClienteTxtBox
-            // 
-            this.CpfCadClienteTxtBox.Location = new System.Drawing.Point(629, 159);
-            this.CpfCadClienteTxtBox.Multiline = true;
-            this.CpfCadClienteTxtBox.Name = "CpfCadClienteTxtBox";
-            this.CpfCadClienteTxtBox.Size = new System.Drawing.Size(218, 28);
-            this.CpfCadClienteTxtBox.TabIndex = 38;
-            // 
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             // emailCadClienteLabel
             // 
             this.emailCadClienteLabel.AutoSize = true;
@@ -237,11 +196,7 @@
             // 
             this.senhaCadClienteLabel.AutoSize = true;
             this.senhaCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-<<<<<<< HEAD
             this.senhaCadClienteLabel.Location = new System.Drawing.Point(639, 195);
-=======
-            this.senhaCadClienteLabel.Location = new System.Drawing.Point(630, 195);
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.senhaCadClienteLabel.Name = "senhaCadClienteLabel";
             this.senhaCadClienteLabel.Size = new System.Drawing.Size(38, 13);
             this.senhaCadClienteLabel.TabIndex = 43;
@@ -251,11 +206,7 @@
             // 
             this.cpfCadClienteLabel.AutoSize = true;
             this.cpfCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-<<<<<<< HEAD
             this.cpfCadClienteLabel.Location = new System.Drawing.Point(636, 143);
-=======
-            this.cpfCadClienteLabel.Location = new System.Drawing.Point(630, 143);
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.cpfCadClienteLabel.Name = "cpfCadClienteLabel";
             this.cpfCadClienteLabel.Size = new System.Drawing.Size(27, 13);
             this.cpfCadClienteLabel.TabIndex = 44;
@@ -314,11 +265,7 @@
             // 
             // dtNascCadClienteTxtBox
             // 
-<<<<<<< HEAD
             this.dtNascCadClienteTxtBox.Location = new System.Drawing.Point(957, 159);
-=======
-            this.dtNascCadClienteTxtBox.Location = new System.Drawing.Point(857, 159);
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.dtNascCadClienteTxtBox.Multiline = true;
             this.dtNascCadClienteTxtBox.Name = "dtNascCadClienteTxtBox";
             this.dtNascCadClienteTxtBox.Size = new System.Drawing.Size(146, 28);
@@ -384,11 +331,7 @@
             // 
             this.nascCadClienteLabel.AutoSize = true;
             this.nascCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-<<<<<<< HEAD
             this.nascCadClienteLabel.Location = new System.Drawing.Point(949, 143);
-=======
-            this.nascCadClienteLabel.Location = new System.Drawing.Point(854, 143);
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.nascCadClienteLabel.Name = "nascCadClienteLabel";
             this.nascCadClienteLabel.Size = new System.Drawing.Size(80, 13);
             this.nascCadClienteLabel.TabIndex = 58;
@@ -544,7 +487,6 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(229, 491);
             this.dataGridView2.TabIndex = 76;
-<<<<<<< HEAD
             // 
             // nomeCadTxtBox
             // 
@@ -572,8 +514,6 @@
             this.emailCadTextBox.Size = new System.Drawing.Size(316, 32);
             this.emailCadTextBox.TabIndex = 79;
             this.emailCadTextBox.Texto = "";
-=======
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             // 
             // VisualizarClientes
             // 
@@ -582,12 +522,9 @@
             this.BackgroundImage = global::Lojinha.Properties.Resources.otherScreensBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 756);
-<<<<<<< HEAD
             this.Controls.Add(this.emailCadTextBox);
             this.Controls.Add(this.cpfCadTextBox);
             this.Controls.Add(this.nomeCadTxtBox);
-=======
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.telComCadClienteTxtBox);
             this.Controls.Add(this.label1);
@@ -623,10 +560,6 @@
             this.Controls.Add(this.senhaCadClienteTxtBox);
             this.Controls.Add(this.celularCadClienteTxtBox);
             this.Controls.Add(this.telResidenCadClienteTxtBox);
-<<<<<<< HEAD
-=======
-            this.Controls.Add(this.nomeCadClienteTxtBox);
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
             this.Controls.Add(this.nomeFormulario);
             this.Controls.Add(this.coloredStripAdorn);
             this.Controls.Add(this.minimizeButton);
@@ -652,10 +585,6 @@
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label nomeFormulario;
         private System.Windows.Forms.Panel coloredStripAdorn;
-<<<<<<< HEAD
-=======
-        private System.Windows.Forms.TextBox nomeCadClienteTxtBox;
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
         private System.Windows.Forms.TextBox telResidenCadClienteTxtBox;
         private System.Windows.Forms.TextBox celularCadClienteTxtBox;
         private System.Windows.Forms.TextBox senhaCadClienteTxtBox;
@@ -692,11 +621,8 @@
         private System.Windows.Forms.TextBox telComCadClienteTxtBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView2;
-<<<<<<< HEAD
         private textBoxUserControl nomeCadTxtBox;
         private textBoxUserControl cpfCadTextBox;
         private textBoxUserControl emailCadTextBox;
-=======
->>>>>>> 3b95b64970949f7a702db7382e92321347b5e16e
     }
 }
