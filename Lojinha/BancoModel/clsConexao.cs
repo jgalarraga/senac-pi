@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace BancoModel
 {
@@ -18,7 +19,13 @@ namespace BancoModel
             sb.InitialCatalog = "foxtrot";
 
             SqlConnection cn = new SqlConnection(sb.ConnectionString);
-            cn.Open();
+            try
+            {
+                cn.Open();
+            } catch (System.Data.SqlClient.SqlException e)
+            {
+                MessageBox.Show("Falha na conexão com o banco! Tente novamente.");
+            }
             return cn;
         }
     }

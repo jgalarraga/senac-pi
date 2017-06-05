@@ -151,12 +151,13 @@
             // addUsuarioButton
             // 
             this.addUsuarioButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
-            this.addUsuarioButton.Location = new System.Drawing.Point(460, 315);
+            this.addUsuarioButton.Location = new System.Drawing.Point(478, 303);
             this.addUsuarioButton.Name = "addUsuarioButton";
             this.addUsuarioButton.Size = new System.Drawing.Size(149, 38);
             this.addUsuarioButton.TabIndex = 39;
             this.addUsuarioButton.Text = "Adicionar";
             this.addUsuarioButton.UseVisualStyleBackColor = true;
+            this.addUsuarioButton.Click += new System.EventHandler(this.addUsuarioButton_Click);
             // 
             // CadastroUsuario
             // 
@@ -182,7 +183,6 @@
             this.Name = "CadastroUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CriarUsuario";
-            this.Load += new System.EventHandler(this.CriarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

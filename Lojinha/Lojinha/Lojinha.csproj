@@ -155,6 +155,8 @@
     <Compile Include="VisualizarPedidos.Designer.cs">
       <DependentUpon>VisualizarPedidos.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\photoAdd.jpg" />
+    <None Include="Resources\noPhoto.jpg" />
     <None Include="Resources\NaoBtn.jpg" />
     <None Include="Resources\SimBtn.jpg" />
     <None Include="Resources\removeUserButton.jpg" />

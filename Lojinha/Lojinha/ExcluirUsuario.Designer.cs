@@ -29,50 +29,35 @@
         private void InitializeComponent()
         {
             this.senhaExcluirLabel = new System.Windows.Forms.Label();
-            this.senhaExcluirTxtBox = new System.Windows.Forms.TextBox();
             this.loginExcluirLabel = new System.Windows.Forms.Label();
-            this.loginExcluirTextBox = new System.Windows.Forms.TextBox();
             this.nomeFormulario = new System.Windows.Forms.Label();
             this.coloredStripAdorn = new System.Windows.Forms.Panel();
             this.excUsuarioButton = new System.Windows.Forms.Button();
             this.confirSenhaExcluirLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.loginTextBox = new Lojinha.TextBoxPequenaUserControl();
+            this.senhaTextBox = new Lojinha.TextBoxPequenaUserControl();
+            this.senhaTextBox2 = new Lojinha.TextBoxPequenaUserControl();
             this.SuspendLayout();
             // 
             // senhaExcluirLabel
             // 
             this.senhaExcluirLabel.AutoSize = true;
             this.senhaExcluirLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.senhaExcluirLabel.Location = new System.Drawing.Point(466, 164);
+            this.senhaExcluirLabel.Location = new System.Drawing.Point(446, 168);
             this.senhaExcluirLabel.Name = "senhaExcluirLabel";
             this.senhaExcluirLabel.Size = new System.Drawing.Size(44, 13);
             this.senhaExcluirLabel.TabIndex = 57;
             this.senhaExcluirLabel.Text = "Senha: ";
-            this.senhaExcluirLabel.Click += new System.EventHandler(this.senhaExcluirLabel_Click);
-            // 
-            // senhaExcluirTxtBox
-            // 
-            this.senhaExcluirTxtBox.Location = new System.Drawing.Point(569, 161);
-            this.senhaExcluirTxtBox.Name = "senhaExcluirTxtBox";
-            this.senhaExcluirTxtBox.Size = new System.Drawing.Size(100, 20);
-            this.senhaExcluirTxtBox.TabIndex = 56;
             // 
             // loginExcluirLabel
             // 
             this.loginExcluirLabel.AutoSize = true;
             this.loginExcluirLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.loginExcluirLabel.Location = new System.Drawing.Point(465, 135);
+            this.loginExcluirLabel.Location = new System.Drawing.Point(445, 135);
             this.loginExcluirLabel.Name = "loginExcluirLabel";
             this.loginExcluirLabel.Size = new System.Drawing.Size(36, 13);
             this.loginExcluirLabel.TabIndex = 53;
             this.loginExcluirLabel.Text = "Login:";
-            // 
-            // loginExcluirTextBox
-            // 
-            this.loginExcluirTextBox.Location = new System.Drawing.Point(569, 135);
-            this.loginExcluirTextBox.Name = "loginExcluirTextBox";
-            this.loginExcluirTextBox.Size = new System.Drawing.Size(100, 20);
-            this.loginExcluirTextBox.TabIndex = 50;
             // 
             // nomeFormulario
             // 
@@ -85,7 +70,6 @@
             this.nomeFormulario.Size = new System.Drawing.Size(208, 33);
             this.nomeFormulario.TabIndex = 49;
             this.nomeFormulario.Text = "Excluir usuário";
-            this.nomeFormulario.Click += new System.EventHandler(this.nomeFormulario_Click);
             // 
             // coloredStripAdorn
             // 
@@ -98,29 +82,47 @@
             // excUsuarioButton
             // 
             this.excUsuarioButton.BackgroundImage = global::Lojinha.Properties.Resources.noBtn;
-            this.excUsuarioButton.Location = new System.Drawing.Point(468, 223);
+            this.excUsuarioButton.Location = new System.Drawing.Point(490, 249);
             this.excUsuarioButton.Name = "excUsuarioButton";
             this.excUsuarioButton.Size = new System.Drawing.Size(149, 41);
             this.excUsuarioButton.TabIndex = 58;
             this.excUsuarioButton.Text = "Excluir";
             this.excUsuarioButton.UseVisualStyleBackColor = true;
+            this.excUsuarioButton.Click += new System.EventHandler(this.excUsuarioButton_Click);
             // 
             // confirSenhaExcluirLabel
             // 
             this.confirSenhaExcluirLabel.AutoSize = true;
             this.confirSenhaExcluirLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.confirSenhaExcluirLabel.Location = new System.Drawing.Point(465, 191);
+            this.confirSenhaExcluirLabel.Location = new System.Drawing.Point(445, 198);
             this.confirSenhaExcluirLabel.Name = "confirSenhaExcluirLabel";
             this.confirSenhaExcluirLabel.Size = new System.Drawing.Size(89, 13);
             this.confirSenhaExcluirLabel.TabIndex = 63;
             this.confirSenhaExcluirLabel.Text = "Confirmar senha: ";
             // 
-            // textBox1
+            // loginTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(568, 188);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 62;
+            this.loginTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loginTextBox.Location = new System.Drawing.Point(454, 124);
+            this.loginTextBox.Name = "loginTextBox";
+            this.loginTextBox.Size = new System.Drawing.Size(243, 34);
+            this.loginTextBox.TabIndex = 64;
+            // 
+            // senhaTextBox
+            // 
+            this.senhaTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.senhaTextBox.Location = new System.Drawing.Point(454, 158);
+            this.senhaTextBox.Name = "senhaTextBox";
+            this.senhaTextBox.Size = new System.Drawing.Size(243, 34);
+            this.senhaTextBox.TabIndex = 65;
+            // 
+            // senhaTextBox2
+            // 
+            this.senhaTextBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.senhaTextBox2.Location = new System.Drawing.Point(454, 192);
+            this.senhaTextBox2.Name = "senhaTextBox2";
+            this.senhaTextBox2.Size = new System.Drawing.Size(243, 34);
+            this.senhaTextBox2.TabIndex = 66;
             // 
             // ExcluirUsuario
             // 
@@ -130,14 +132,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 756);
             this.Controls.Add(this.confirSenhaExcluirLabel);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.excUsuarioButton);
             this.Controls.Add(this.senhaExcluirLabel);
-            this.Controls.Add(this.senhaExcluirTxtBox);
             this.Controls.Add(this.loginExcluirLabel);
-            this.Controls.Add(this.loginExcluirTextBox);
             this.Controls.Add(this.nomeFormulario);
             this.Controls.Add(this.coloredStripAdorn);
+            this.Controls.Add(this.loginTextBox);
+            this.Controls.Add(this.senhaTextBox);
+            this.Controls.Add(this.senhaTextBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExcluirUsuario";
             this.Text = "ExcluirUsuario";
@@ -149,13 +151,13 @@
         #endregion
 
         private System.Windows.Forms.Label senhaExcluirLabel;
-        private System.Windows.Forms.TextBox senhaExcluirTxtBox;
         private System.Windows.Forms.Label loginExcluirLabel;
-        private System.Windows.Forms.TextBox loginExcluirTextBox;
         private System.Windows.Forms.Label nomeFormulario;
         private System.Windows.Forms.Panel coloredStripAdorn;
         private System.Windows.Forms.Button excUsuarioButton;
         private System.Windows.Forms.Label confirSenhaExcluirLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private TextBoxPequenaUserControl loginTextBox;
+        private TextBoxPequenaUserControl senhaTextBox;
+        private TextBoxPequenaUserControl senhaTextBox2;
     }
 }

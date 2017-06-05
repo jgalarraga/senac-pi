@@ -70,6 +70,21 @@ namespace BancoModel
             cn.Dispose();
         }
 
+        public void Excluir(string login)
+        {
+            SqlConnection cn = clsConexao.Conectar();
+            SqlCommand cmd = cn.CreateCommand();
+
+            cmd.CommandText = "Delete from Usuario " +
+                                "WHERE loginUsuario = @loginUsuario";
+
+            cmd.Parameters.Add("loginUsuario", SqlDbType.VarChar).Value = login;
+
+            cmd.ExecuteNonQuery();
+
+            cn.Close();
+            cn.Dispose();
+        }
         public static List<clsUsuario> SelecionarUsuarios()
         {
             string sql = "SELECT idUsuario, loginUsuario, senhaUsuario, nomeUsuario, tipoPerfil, usuarioAtivo FROM dbo.Usuario";
@@ -175,4 +190,5 @@ namespace BancoModel
             return perfilUsuario;
         }
     }
+
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BancoModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,15 +16,41 @@ namespace Lojinha
         public ExcluirUsuario()
         {
             InitializeComponent();
-        }
-        private void nomeFormulario_Click(object sender, EventArgs e)
+            inicializarUserControls();
+        } 
+
+        private void inicializarUserControls()
         {
-
+            TextBoxPequenaUserControl loginTextBox = new TextBoxPequenaUserControl();
+            TextBoxPequenaUserControl senhaTextBox = new TextBoxPequenaUserControl();
+            TextBoxPequenaUserControl senhaTextBox2 = new TextBoxPequenaUserControl();
         }
-
-        private void senhaExcluirLabel_Click(object sender, EventArgs e)
+        private void excUsuarioButton_Click(object sender, EventArgs e)
         {
+            if (senhaTextBox.Text.Equals(senhaTextBox2.Text))
+            {
+                clsUsuario usuario = new clsUsuario();
 
+                // valido o login
+                // variável userCount recebe o retorno do método efetuarLogin que está na classe clsUsuario
+                // se um registro for encontrado, a classe retorna 1
+                // senão, retorna 0
+                int userCount = usuario.validarLogin(loginTextBox.Text, senhaTextBox.Text);
+
+                // se for válido
+                if (userCount > 0)
+                {
+                    // deixo o usuário excluir
+                    usuario.Excluir(loginTextBox.Text);
+                }
+                else
+                {
+                    // senão, não permito
+                    loginTextBox.textBoxEscrever_Error();
+                }
+            }
         }
+
+
     }
 }

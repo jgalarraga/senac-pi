@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.formName = new System.Windows.Forms.Label();
             this.coloredStripAdorn = new System.Windows.Forms.Panel();
-            this.productPicture = new System.Windows.Forms.PictureBox();
             this.nomeProdTextBox = new System.Windows.Forms.TextBox();
             this.precoTextBox = new System.Windows.Forms.TextBox();
             this.descProdTextBox = new System.Windows.Forms.TextBox();
@@ -45,18 +44,25 @@
             this.DescriptionLabel = new System.Windows.Forms.Label();
             this.categoryLabel = new System.Windows.Forms.Label();
             this.ativoLabel = new System.Windows.Forms.Label();
-            this.addButton = new System.Windows.Forms.Button();
-            this.filtrarButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.categoryComboBox = new System.Windows.Forms.ComboBox();
-            this.alterarButton = new System.Windows.Forms.Button();
-            this.excluirButton = new System.Windows.Forms.Button();
+            this.filtroComboBox = new System.Windows.Forms.ComboBox();
             this.produtoDataGrid = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.CategoriaComboBox = new System.Windows.Forms.ComboBox();
             this.ativoComboBox = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.productPicture)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.filtroComboBox2 = new System.Windows.Forms.ComboBox();
+            this.filtroTextBox = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.limparFiltroButton = new System.Windows.Forms.Button();
+            this.excluirButton = new System.Windows.Forms.Button();
+            this.alterarButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.productPicture = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox2BG = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.produtoDataGrid)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // formName
@@ -76,17 +82,8 @@
             this.coloredStripAdorn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(199)))), ((int)(((byte)(235)))));
             this.coloredStripAdorn.Location = new System.Drawing.Point(110, 93);
             this.coloredStripAdorn.Name = "coloredStripAdorn";
-            this.coloredStripAdorn.Size = new System.Drawing.Size(921, 5);
+            this.coloredStripAdorn.Size = new System.Drawing.Size(921, 3);
             this.coloredStripAdorn.TabIndex = 5;
-            // 
-            // productPicture
-            // 
-            this.productPicture.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.productPicture.Location = new System.Drawing.Point(105, 152);
-            this.productPicture.Name = "productPicture";
-            this.productPicture.Size = new System.Drawing.Size(206, 203);
-            this.productPicture.TabIndex = 7;
-            this.productPicture.TabStop = false;
             // 
             // nomeProdTextBox
             // 
@@ -194,81 +191,36 @@
             this.ativoLabel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ativoLabel.Location = new System.Drawing.Point(495, 305);
             this.ativoLabel.Name = "ativoLabel";
-            this.ativoLabel.Size = new System.Drawing.Size(31, 13);
+            this.ativoLabel.Size = new System.Drawing.Size(37, 13);
             this.ativoLabel.TabIndex = 21;
-            this.ativoLabel.Text = "Ativo";
-            // 
-            // addButton
-            // 
-            this.addButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
-            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addButton.Location = new System.Drawing.Point(323, 374);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(149, 41);
-            this.addButton.TabIndex = 24;
-            this.addButton.Text = "Adicionar";
-            this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
-            // 
-            // filtrarButton
-            // 
-            this.filtrarButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
-            this.filtrarButton.Location = new System.Drawing.Point(451, 466);
-            this.filtrarButton.Name = "filtrarButton";
-            this.filtrarButton.Size = new System.Drawing.Size(149, 41);
-            this.filtrarButton.TabIndex = 30;
-            this.filtrarButton.Text = "Filtrar";
-            this.filtrarButton.UseVisualStyleBackColor = true;
-            this.filtrarButton.Click += new System.EventHandler(this.filtrarButton_Click);
+            this.ativoLabel.Text = "Status";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(113, 463);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label1.Location = new System.Drawing.Point(3, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Filtrar por";
+            this.label1.Text = "Filtrar por:";
             // 
-            // categoryComboBox
+            // filtroComboBox
             // 
-            this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Items.AddRange(new object[] {
+            this.filtroComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.filtroComboBox.FormattingEnabled = true;
+            this.filtroComboBox.Items.AddRange(new object[] {
             "Categoria",
             "ID",
             "Nome",
             "Preço",
             "Desconto",
             "Quantidade"});
-            this.categoryComboBox.Location = new System.Drawing.Point(108, 479);
-            this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(121, 21);
-            this.categoryComboBox.TabIndex = 28;
-            // 
-            // alterarButton
-            // 
-            this.alterarButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
-            this.alterarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.alterarButton.Location = new System.Drawing.Point(505, 374);
-            this.alterarButton.Name = "alterarButton";
-            this.alterarButton.Size = new System.Drawing.Size(149, 41);
-            this.alterarButton.TabIndex = 31;
-            this.alterarButton.Text = "Alterar";
-            this.alterarButton.UseVisualStyleBackColor = true;
-            this.alterarButton.Click += new System.EventHandler(this.alterarButton_Click);
-            // 
-            // excluirButton
-            // 
-            this.excluirButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
-            this.excluirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.excluirButton.Location = new System.Drawing.Point(686, 374);
-            this.excluirButton.Name = "excluirButton";
-            this.excluirButton.Size = new System.Drawing.Size(149, 41);
-            this.excluirButton.TabIndex = 32;
-            this.excluirButton.Text = "Excluir";
-            this.excluirButton.UseVisualStyleBackColor = true;
-            this.excluirButton.Click += new System.EventHandler(this.excluirButton_Click);
+            this.filtroComboBox.Location = new System.Drawing.Point(170, 496);
+            this.filtroComboBox.Name = "filtroComboBox";
+            this.filtroComboBox.Size = new System.Drawing.Size(121, 21);
+            this.filtroComboBox.TabIndex = 28;
+            this.filtroComboBox.TextChanged += new System.EventHandler(this.filtroComboBox_TextChanged);
             // 
             // produtoDataGrid
             // 
@@ -279,26 +231,26 @@
             this.produtoDataGrid.AllowUserToResizeRows = false;
             this.produtoDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.produtoDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.produtoDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.produtoDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.produtoDataGrid.ColumnHeadersHeight = 30;
             this.produtoDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.produtoDataGrid.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.produtoDataGrid.DefaultCellStyle = dataGridViewCellStyle4;
             this.produtoDataGrid.GridColor = System.Drawing.Color.Gainsboro;
-            this.produtoDataGrid.Location = new System.Drawing.Point(108, 516);
+            this.produtoDataGrid.Location = new System.Drawing.Point(108, 521);
             this.produtoDataGrid.Name = "produtoDataGrid";
             this.produtoDataGrid.ReadOnly = true;
             this.produtoDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -312,14 +264,6 @@
             this.produtoDataGrid.Size = new System.Drawing.Size(921, 150);
             this.produtoDataGrid.TabIndex = 37;
             this.produtoDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.produtoDataGrid_CellClick);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(240, 479);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(205, 21);
-            this.comboBox1.TabIndex = 38;
             // 
             // CategoriaComboBox
             // 
@@ -337,6 +281,123 @@
             this.ativoComboBox.Size = new System.Drawing.Size(101, 21);
             this.ativoComboBox.TabIndex = 40;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(199)))), ((int)(((byte)(235)))));
+            this.panel1.Location = new System.Drawing.Point(108, 550);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(900, 3);
+            this.panel1.TabIndex = 6;
+            // 
+            // filtroComboBox2
+            // 
+            this.filtroComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.filtroComboBox2.FormattingEnabled = true;
+            this.filtroComboBox2.Location = new System.Drawing.Point(312, 496);
+            this.filtroComboBox2.Name = "filtroComboBox2";
+            this.filtroComboBox2.Size = new System.Drawing.Size(137, 21);
+            this.filtroComboBox2.TabIndex = 41;
+            this.filtroComboBox2.Visible = false;
+            this.filtroComboBox2.SelectedIndexChanged += new System.EventHandler(this.filtroComboBox2_SelectedIndexChanged);
+            // 
+            // filtroTextBox
+            // 
+            this.filtroTextBox.Location = new System.Drawing.Point(306, 497);
+            this.filtroTextBox.Name = "filtroTextBox";
+            this.filtroTextBox.Size = new System.Drawing.Size(202, 20);
+            this.filtroTextBox.TabIndex = 42;
+            this.filtroTextBox.TextChanged += new System.EventHandler(this.filtroTextBox_TextChanged);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(108, 491);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(921, 30);
+            this.panel3.TabIndex = 45;
+            // 
+            // limparFiltroButton
+            // 
+            this.limparFiltroButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
+            this.limparFiltroButton.Location = new System.Drawing.Point(882, 677);
+            this.limparFiltroButton.Name = "limparFiltroButton";
+            this.limparFiltroButton.Size = new System.Drawing.Size(149, 34);
+            this.limparFiltroButton.TabIndex = 31;
+            this.limparFiltroButton.Text = "Limpar Filtro";
+            this.limparFiltroButton.UseVisualStyleBackColor = true;
+            this.limparFiltroButton.Click += new System.EventHandler(this.limparFiltroButton_Click);
+            // 
+            // excluirButton
+            // 
+            this.excluirButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
+            this.excluirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.excluirButton.Location = new System.Drawing.Point(686, 374);
+            this.excluirButton.Name = "excluirButton";
+            this.excluirButton.Size = new System.Drawing.Size(149, 41);
+            this.excluirButton.TabIndex = 32;
+            this.excluirButton.Text = "Excluir";
+            this.excluirButton.UseVisualStyleBackColor = true;
+            this.excluirButton.Click += new System.EventHandler(this.excluirButton_Click);
+            // 
+            // alterarButton
+            // 
+            this.alterarButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
+            this.alterarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.alterarButton.Location = new System.Drawing.Point(505, 374);
+            this.alterarButton.Name = "alterarButton";
+            this.alterarButton.Size = new System.Drawing.Size(149, 41);
+            this.alterarButton.TabIndex = 31;
+            this.alterarButton.Text = "Alterar";
+            this.alterarButton.UseVisualStyleBackColor = true;
+            this.alterarButton.Click += new System.EventHandler(this.alterarButton_Click);
+            // 
+            // addButton
+            // 
+            this.addButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
+            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addButton.Location = new System.Drawing.Point(323, 374);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(149, 41);
+            this.addButton.TabIndex = 24;
+            this.addButton.Text = "Adicionar";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // productPicture
+            // 
+            this.productPicture.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.productPicture.BackgroundImage = global::Lojinha.Properties.Resources.noPhoto;
+            this.productPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.productPicture.Location = new System.Drawing.Point(114, 165);
+            this.productPicture.Name = "productPicture";
+            this.productPicture.Size = new System.Drawing.Size(177, 153);
+            this.productPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.productPicture.TabIndex = 7;
+            this.productPicture.TabStop = false;
+            this.productPicture.Click += new System.EventHandler(this.productPicture_Click);
+            this.productPicture.MouseEnter += new System.EventHandler(this.productPicture_MouseEnter);
+            this.productPicture.MouseLeave += new System.EventHandler(this.productPicture_MouseLeave);
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::Lojinha.Properties.Resources.txtBoxSmall;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(164, 493);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(133, 28);
+            this.panel2.TabIndex = 43;
+            // 
+            // comboBox2BG
+            // 
+            this.comboBox2BG.BackgroundImage = global::Lojinha.Properties.Resources.txtBoxSmall;
+            this.comboBox2BG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.comboBox2BG.Location = new System.Drawing.Point(303, 493);
+            this.comboBox2BG.Name = "comboBox2BG";
+            this.comboBox2BG.Size = new System.Drawing.Size(155, 28);
+            this.comboBox2BG.TabIndex = 44;
+            this.comboBox2BG.Visible = false;
+            // 
             // AdicionarProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,15 +405,16 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 756);
+            this.Controls.Add(this.limparFiltroButton);
+            this.Controls.Add(this.filtroTextBox);
+            this.Controls.Add(this.filtroComboBox2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.ativoComboBox);
             this.Controls.Add(this.CategoriaComboBox);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.produtoDataGrid);
             this.Controls.Add(this.excluirButton);
             this.Controls.Add(this.alterarButton);
-            this.Controls.Add(this.filtrarButton);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.categoryComboBox);
+            this.Controls.Add(this.filtroComboBox);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.ativoLabel);
             this.Controls.Add(this.categoryLabel);
@@ -369,12 +431,17 @@
             this.Controls.Add(this.productPicture);
             this.Controls.Add(this.formName);
             this.Controls.Add(this.coloredStripAdorn);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.comboBox2BG);
+            this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdicionarProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StatusPedido";
-            ((System.ComponentModel.ISupportInitialize)(this.productPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoDataGrid)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,14 +465,19 @@
         private System.Windows.Forms.Label categoryLabel;
         private System.Windows.Forms.Label ativoLabel;
         private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.Button filtrarButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox categoryComboBox;
+        private System.Windows.Forms.ComboBox filtroComboBox;
         private System.Windows.Forms.Button alterarButton;
         private System.Windows.Forms.Button excluirButton;
         private System.Windows.Forms.DataGridView produtoDataGrid;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox CategoriaComboBox;
         private System.Windows.Forms.ComboBox ativoComboBox;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox filtroComboBox2;
+        private System.Windows.Forms.TextBox filtroTextBox;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel comboBox2BG;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button limparFiltroButton;
     }
 }

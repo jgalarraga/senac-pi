@@ -353,6 +353,16 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap noPhoto {
+            get {
+                object obj = ResourceManager.GetObject("noPhoto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap normalSizeButton {
             get {
                 object obj = ResourceManager.GetObject("normalSizeButton", resourceCulture);
@@ -376,6 +386,16 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap otherScreensBG1 {
             get {
                 object obj = ResourceManager.GetObject("otherScreensBG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photoAdd {
+            get {
+                object obj = ResourceManager.GetObject("photoAdd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
