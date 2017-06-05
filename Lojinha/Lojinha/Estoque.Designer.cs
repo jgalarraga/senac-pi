@@ -404,6 +404,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label qtdRegistros;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        private textBoxUserControl textBoxUserControl1;
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
 =======
         private textBoxUserControl textBoxUserControl1;
 >>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7

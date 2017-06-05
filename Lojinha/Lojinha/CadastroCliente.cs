@@ -13,6 +13,7 @@ namespace Lojinha
         public VisualizarClientes()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             textBoxUserControl nomeCadClienteTextBox = new textBoxUserControl();
             textBoxUserControl CpfCadClienteTextBox = new textBoxUserControl();
             textBoxUserControl dtNasCadClienteTextBox = new textBoxUserControl();
@@ -29,6 +30,11 @@ namespace Lojinha
             textBoxUserControl cidadeClienteTxtBox = new textBoxUserControl();
             textBoxUserControl ufClienteTxtBox = new textBoxUserControl();
             textBoxUserControl paisCadClienteTxtBox = new textBoxUserControl();
+=======
+            textBoxUserControl nomeCadTxtBox = new textBoxUserControl();
+            textBoxUserControl cpfCadTextBox = new textBoxUserControl();
+            textBoxUserControl emailCadTextBox = new textBoxUserControl();
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
 =======
             textBoxUserControl nomeCadTxtBox = new textBoxUserControl();
             textBoxUserControl cpfCadTextBox = new textBoxUserControl();
@@ -51,6 +57,7 @@ namespace Lojinha
             ClientedataGridView.Columns[8].Visible = false;
             ClientedataGridView.Columns[9].Visible = false;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             // inicializo o vetor de textbox com as textboxes obrigatórias
             textboxes = new textBoxUserControl[]
@@ -76,6 +83,12 @@ namespace Lojinha
             // com as textboxes obrigatórias
             textboxes = new textBoxUserControl[]
             {
+=======
+            // inicializo o vetor de textbox
+            // com as textboxes obrigatórias
+            textboxes = new textBoxUserControl[]
+            {
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
                 nomeCadTxtBox,
                 cpfCadTextBox,
                 emailCadTextBox
@@ -89,6 +102,9 @@ namespace Lojinha
                 //cepCadClienteTxtBox,
                 //cidadeClienteTxtBox,
                 //ufClienteTxtBox
+<<<<<<< HEAD
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
+=======
 >>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
             };
         }

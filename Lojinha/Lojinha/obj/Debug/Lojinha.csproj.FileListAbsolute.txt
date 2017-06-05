@@ -426,6 +426,7 @@ C:\Users\User\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.csproj.G
 C:\Users\User\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.exe
 C:\Users\User\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\Lojinha\bin\Debug\Lojinha.exe.config
 C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.exe
 C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.pdb
@@ -470,5 +471,7 @@ C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.Adici
 C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.TelaPrincipal.resources
 C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.Properties.Resources.resources
 C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\Lojinha\obj\Debug\Lojinha.csproj.GenerateResource.Cache
+=======
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
 =======
 >>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7

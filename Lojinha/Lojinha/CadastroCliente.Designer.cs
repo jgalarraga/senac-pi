@@ -35,6 +35,12 @@
             this.nomeFormulario = new System.Windows.Forms.Label();
             this.coloredStripAdorn = new System.Windows.Forms.Panel();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            this.telResidenCadClienteTxtBox = new System.Windows.Forms.TextBox();
+            this.celularCadClienteTxtBox = new System.Windows.Forms.TextBox();
+            this.senhaCadClienteTxtBox = new System.Windows.Forms.TextBox();
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
 =======
             this.telResidenCadClienteTxtBox = new System.Windows.Forms.TextBox();
             this.celularCadClienteTxtBox = new System.Windows.Forms.TextBox();
@@ -177,7 +183,10 @@
             this.coloredStripAdorn.TabIndex = 29;
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
             // telResidenCadClienteTxtBox
             // 
             this.telResidenCadClienteTxtBox.Location = new System.Drawing.Point(535, 264);
@@ -202,6 +211,9 @@
             this.senhaCadClienteTxtBox.Size = new System.Drawing.Size(181, 28);
             this.senhaCadClienteTxtBox.TabIndex = 36;
             // 
+<<<<<<< HEAD
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
+=======
 >>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
             // emailCadClienteLabel
             // 
@@ -674,6 +686,33 @@
             this.emailCadTextBox.TabIndex = 79;
             this.emailCadTextBox.Texto = "";
             // 
+            // nomeCadTxtBox
+            // 
+            this.nomeCadTxtBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nomeCadTxtBox.Location = new System.Drawing.Point(314, 158);
+            this.nomeCadTxtBox.Name = "nomeCadTxtBox";
+            this.nomeCadTxtBox.Size = new System.Drawing.Size(316, 32);
+            this.nomeCadTxtBox.TabIndex = 77;
+            this.nomeCadTxtBox.Texto = "";
+            // 
+            // cpfCadTextBox
+            // 
+            this.cpfCadTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cpfCadTextBox.Location = new System.Drawing.Point(632, 158);
+            this.cpfCadTextBox.Name = "cpfCadTextBox";
+            this.cpfCadTextBox.Size = new System.Drawing.Size(316, 32);
+            this.cpfCadTextBox.TabIndex = 78;
+            this.cpfCadTextBox.Texto = "";
+            // 
+            // emailCadTextBox
+            // 
+            this.emailCadTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.emailCadTextBox.Location = new System.Drawing.Point(314, 209);
+            this.emailCadTextBox.Name = "emailCadTextBox";
+            this.emailCadTextBox.Size = new System.Drawing.Size(316, 32);
+            this.emailCadTextBox.TabIndex = 79;
+            this.emailCadTextBox.Texto = "";
+            // 
             // VisualizarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -681,6 +720,7 @@
             this.BackgroundImage = global::Lojinha.Properties.Resources.otherScreensBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1158, 756);
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.paisCadClienteTxtBox);
@@ -692,6 +732,8 @@
             this.Controls.Add(this.logadouroCadClienteTxtBox);
             this.Controls.Add(this.tipoEndCadClienteTxtBox);
 =======
+=======
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
             this.Controls.Add(this.emailCadTextBox);
             this.Controls.Add(this.cpfCadTextBox);
             this.Controls.Add(this.nomeCadTxtBox);
@@ -727,6 +769,12 @@
             this.Controls.Add(this.senhaCadClienteLabel);
             this.Controls.Add(this.emailCadClienteLabel);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            this.Controls.Add(this.senhaCadClienteTxtBox);
+            this.Controls.Add(this.celularCadClienteTxtBox);
+            this.Controls.Add(this.telResidenCadClienteTxtBox);
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
 =======
             this.Controls.Add(this.senhaCadClienteTxtBox);
             this.Controls.Add(this.celularCadClienteTxtBox);
@@ -758,6 +806,12 @@
         private System.Windows.Forms.Label nomeFormulario;
         private System.Windows.Forms.Panel coloredStripAdorn;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.TextBox telResidenCadClienteTxtBox;
+        private System.Windows.Forms.TextBox celularCadClienteTxtBox;
+        private System.Windows.Forms.TextBox senhaCadClienteTxtBox;
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
 =======
         private System.Windows.Forms.TextBox telResidenCadClienteTxtBox;
         private System.Windows.Forms.TextBox celularCadClienteTxtBox;
@@ -811,6 +865,9 @@
         private textBoxUserControl nomeCadTxtBox;
         private textBoxUserControl cpfCadTextBox;
         private textBoxUserControl emailCadTextBox;
+<<<<<<< HEAD
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
+=======
 >>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
     }
 }
