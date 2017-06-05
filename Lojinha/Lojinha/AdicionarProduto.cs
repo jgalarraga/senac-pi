@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BancoModel;
 
@@ -86,26 +80,6 @@ namespace Lojinha
             produtoDataGrid.Refresh();
         }
 
-        private void produtoDataGrid_SelectionChanged(object sender, EventArgs e)
-        {
-            if (produtoDataGrid.SelectedRows.Count > 0)
-            {
-                nomeProdTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[1].Value.ToString();
-                descProdTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[2].Value.ToString();
-                precoTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[3].Value.ToString();
-                descontoTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[4].Value.ToString();
-                qntMinTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[8].Value.ToString();
-                CategoriaComboBox.Text = produtoDataGrid.SelectedRows[0].Cells[9].Value.ToString();
-                if((string)produtoDataGrid.SelectedRows[0].Cells[6].Value == "1")
-                {
-                    ativoComboBox.Text = "Ativo";
-                }else
-                {
-                    ativoComboBox.Text = "Desativado";
-                }
-            }
-        }
-
         private void excluirButton_Click(object sender, EventArgs e)
         {
             //funcao do demo para converter objeto em inteiro
@@ -121,6 +95,41 @@ namespace Lojinha
             produtoDataGrid.Refresh();
         }
 
+        private void filtrarButton_Click(object sender, EventArgs e)
+        {
+            // preenche o dataGridView
+            List<clsProduto> produtos = clsProduto.SelecionarProdutos(categoryComboBox.Text, comboBox1.Text);
+            produtoDataGrid.DataSource = produtos;
+            // preenche o comboBox de categorias
+            List<clsCategoria> categorias = clsCategoria.SelecionarCategorias();
+            CategoriaComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            CategoriaComboBox.DataSource = categorias;
+            //NOME DO CAMPO QUE REPRESENTA A IDENTIFICAÇÃO DE CADA ITEM DO COMBOBOX
+            CategoriaComboBox.ValueMember = "idCategoria";
+            //TEXTO QUE SERÁ MOSTRADO NO COMBOBOX
+            CategoriaComboBox.DisplayMember = "nomeCategoria";
+        }
+
+        private void produtoDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (produtoDataGrid.SelectedRows.Count > 0)
+            {
+                nomeProdTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[1].Value.ToString();
+                descProdTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[2].Value.ToString();
+                precoTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[3].Value.ToString();
+                descontoTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[4].Value.ToString();
+                qntMinTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[8].Value.ToString();
+                CategoriaComboBox.Text = produtoDataGrid.SelectedRows[0].Cells[9].Value.ToString();
+                if ((string)produtoDataGrid.SelectedRows[0].Cells[6].Value == "1")
+                {
+                    ativoComboBox.Text = "Ativo";
+                }
+                else
+                {
+                    ativoComboBox.Text = "Desativado";
+                }
+            }
+        }
     }
-    }
+ }
 

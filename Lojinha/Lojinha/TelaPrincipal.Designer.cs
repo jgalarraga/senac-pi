@@ -68,12 +68,13 @@
             this.normalSizeButton = new System.Windows.Forms.Button();
             this.visualizarClientesBtn = new System.Windows.Forms.Button();
             this.adicionarProdutoBtn2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.visualizarClientesBtn2 = new System.Windows.Forms.Button();
             this.adicionarCategoriaBtn2 = new System.Windows.Forms.Button();
             this.criarUsuarioBtn2 = new System.Windows.Forms.Button();
             this.visualizarProdutosBtn2 = new System.Windows.Forms.Button();
             this.visualizarPedidosBtn2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.removeUserButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.helpBalloon2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.retroGirlImage)).BeginInit();
@@ -177,7 +178,6 @@
             // 
             this.adicionarStatusDePedidoToolStripMenuItem.Name = "adicionarStatusDePedidoToolStripMenuItem";
             resources.ApplyResources(this.adicionarStatusDePedidoToolStripMenuItem, "adicionarStatusDePedidoToolStripMenuItem");
-            this.adicionarStatusDePedidoToolStripMenuItem.Click += new System.EventHandler(this.adicionarStatusDePedidoToolStripMenuItem_Click);
             // 
             // adicionarFormaDePagamentoToolStripMenuItem
             // 
@@ -215,7 +215,6 @@
             // 
             this.versãoToolStripMenuItem.Name = "versãoToolStripMenuItem";
             resources.ApplyResources(this.versãoToolStripMenuItem, "versãoToolStripMenuItem");
-            this.versãoToolStripMenuItem.Click += new System.EventHandler(this.versãoToolStripMenuItem_Click);
             // 
             // ajudaParaEsteFormulárioToolStripMenuItem
             // 
@@ -227,7 +226,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.SystemColors.MenuBar;
             this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // adicionarProdutoBtn
             // 
@@ -286,11 +284,10 @@
             // addPaymentButton
             // 
             resources.ApplyResources(this.addPaymentButton, "addPaymentButton");
-            this.addPaymentButton.BackgroundImage = global::Lojinha.Properties.Resources.addPaymentButton;
+            this.addPaymentButton.BackgroundImage = global::Lojinha.Properties.Resources.removeUserBtn;
             this.addPaymentButton.FlatAppearance.BorderSize = 0;
             this.addPaymentButton.Name = "addPaymentButton";
             this.addPaymentButton.UseVisualStyleBackColor = true;
-            this.addPaymentButton.Click += new System.EventHandler(this.addPaymentButton_Click);
             // 
             // minimizeButton
             // 
@@ -319,7 +316,6 @@
             resources.ApplyResources(this.helpBalloon2, "helpBalloon2");
             this.helpBalloon2.Name = "helpBalloon2";
             this.helpBalloon2.TabStop = false;
-            this.helpBalloon2.Click += new System.EventHandler(this.helpBalloon2_Click);
             // 
             // retroGirlImage
             // 
@@ -327,16 +323,14 @@
             resources.ApplyResources(this.retroGirlImage, "retroGirlImage");
             this.retroGirlImage.Name = "retroGirlImage";
             this.retroGirlImage.TabStop = false;
-            this.retroGirlImage.Click += new System.EventHandler(this.retroGirlImage_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Desktop;
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox2.BackgroundImage = global::Lojinha.Properties.Resources.logoLoja;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // maximizeButton
             // 
@@ -399,11 +393,6 @@
             this.adicionarProdutoBtn2.UseVisualStyleBackColor = true;
             this.adicionarProdutoBtn2.Click += new System.EventHandler(this.visualizarEstoqueBtn2_Click);
             // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
             // visualizarClientesBtn2
             // 
             resources.ApplyResources(this.visualizarClientesBtn2, "visualizarClientesBtn2");
@@ -449,16 +438,31 @@
             this.visualizarPedidosBtn2.UseVisualStyleBackColor = true;
             this.visualizarPedidosBtn2.Click += new System.EventHandler(this.visualizarPedidosBtn2_Click);
             // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Name = "label2";
+            // 
+            // removeUserButton
+            // 
+            resources.ApplyResources(this.removeUserButton, "removeUserButton");
+            this.removeUserButton.BackgroundImage = global::Lojinha.Properties.Resources.removeUserButton;
+            this.removeUserButton.FlatAppearance.BorderSize = 0;
+            this.removeUserButton.Name = "removeUserButton";
+            this.removeUserButton.UseVisualStyleBackColor = true;
+            // 
             // TelaPrincipal
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::Lojinha.Properties.Resources.mainScreenBG;
+            this.Controls.Add(this.removeUserButton);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.visualizarPedidosBtn2);
             this.Controls.Add(this.adicionarCategoriaBtn2);
             this.Controls.Add(this.visualizarClientesBtn2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.adicionarProdutoBtn2);
             this.Controls.Add(this.visualizarClientesBtn);
             this.Controls.Add(this.normalSizeButton);
@@ -485,7 +489,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TelaPrincipal";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.helpBalloon2)).EndInit();
@@ -537,12 +540,13 @@
         private System.Windows.Forms.Button visualizarClientesBtn;
         private System.Windows.Forms.ToolStripMenuItem alterarSenhaToolStripMenuItem;
         private System.Windows.Forms.Button adicionarProdutoBtn2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button visualizarClientesBtn2;
         private System.Windows.Forms.Button adicionarCategoriaBtn2;
         private System.Windows.Forms.Button criarUsuarioBtn2;
         private System.Windows.Forms.Button visualizarProdutosBtn2;
         private System.Windows.Forms.Button visualizarPedidosBtn2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button removeUserButton;
     }
 }
 

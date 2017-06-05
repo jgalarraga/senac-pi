@@ -96,14 +96,10 @@ namespace Lojinha
         {
             List<clsEstoque> estoque = clsEstoque.SelecionarEstoque(nomeProdTextBox.Text, categoriaComboBox.Text);
             EstoqueDataGridView.DataSource = estoque;
-
-            textBox1.Text = nomeProdTextBox.Text;
-            textBox2.Text = categoriaComboBox.Text;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Text = "Entrou aqui";
             List<clsEstoque> estoque = clsEstoque.SelecionarEstoque(textBox3.Text);
             EstoqueDataGridView.DataSource = estoque;
         }

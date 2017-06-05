@@ -82,23 +82,24 @@
             // 
             // noButton
             // 
-            this.noButton.BackgroundImage = global::Lojinha.Properties.Resources.yesBtn;
+            this.noButton.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.noButton.BackgroundImage = global::Lojinha.Properties.Resources.NaoBtn;
             this.noButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.noButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.noButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.noButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noButton.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.noButton.Location = new System.Drawing.Point(66, 149);
+            this.noButton.Location = new System.Drawing.Point(55, 148);
             this.noButton.Name = "noButton";
-            this.noButton.Size = new System.Drawing.Size(151, 42);
+            this.noButton.Size = new System.Drawing.Size(153, 50);
             this.noButton.TabIndex = 4;
-            this.noButton.Text = "NÃO";
-            this.noButton.UseVisualStyleBackColor = true;
+            this.noButton.UseVisualStyleBackColor = false;
             this.noButton.Click += new System.EventHandler(this.noButton_Click);
             // 
             // yesButton
             // 
-            this.yesButton.BackgroundImage = global::Lojinha.Properties.Resources.noBtn;
+            this.yesButton.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.yesButton.BackgroundImage = global::Lojinha.Properties.Resources.SimBtn;
             this.yesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.yesButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.yesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -106,10 +107,9 @@
             this.yesButton.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.yesButton.Location = new System.Drawing.Point(231, 149);
             this.yesButton.Name = "yesButton";
-            this.yesButton.Size = new System.Drawing.Size(151, 42);
+            this.yesButton.Size = new System.Drawing.Size(152, 42);
             this.yesButton.TabIndex = 5;
-            this.yesButton.Text = "SIM";
-            this.yesButton.UseVisualStyleBackColor = true;
+            this.yesButton.UseVisualStyleBackColor = false;
             this.yesButton.Click += new System.EventHandler(this.yesButton_Click);
             // 
             // CaixaDeMensagem

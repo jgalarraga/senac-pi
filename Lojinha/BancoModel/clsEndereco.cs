@@ -114,6 +114,47 @@ namespace BancoModel
 
             return Enderecos;
         }
+
+        public static List<clsEndereco> SelecionarEnderecos(string nomeCliente)
+        {
+            string sql = "SELECT idEndereco, Cliente.idCliente, nomeEndereco,  logradouroEndereco, numeroEndereco, CEPEndereco, complementoEndereco, cidadeEndereco, paisEndereco, UFEndereco " +
+             "FROM Endereco INNER JOIN Cliente ON Endereco.idCliente = Cliente.idCliente " +
+             "WHERE Cliente.nomeCompletoCliente LIKE @nome";
+
+            SqlConnection cn = clsConexao.Conectar();
+            SqlCommand cmd = cn.CreateCommand();
+            cmd.CommandText = sql;
+            cmd.Parameters.AddWithValue("@nome", "%" + nomeCliente + "%");
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            List<clsEndereco> Enderecos = new List<clsEndereco>();
+            while (dr.Read())
+            {
+                clsEndereco E = new clsEndereco();
+                E.idEndereco = dr.GetInt32(dr.GetOrdinal("idEndereco"));
+                E.idCliente = dr.GetInt32(dr.GetOrdinal("idCliente"));
+                E.nomeEndereco = dr.GetString(dr.GetOrdinal("nomeEndereco"));
+                E.logradouroEndereco = dr.GetString(dr.GetOrdinal("logradouroEndereco"));
+                E.numeroEndereco = dr.GetString(dr.GetOrdinal("numeroEndereco"));
+                E.CEPEndereco = dr.GetString(dr.GetOrdinal("CEPEndereco"));
+                E.cidadeEndereco = dr.GetString(dr.GetOrdinal("cidadeEndereco")); ;
+                if (!dr.IsDBNull(dr.GetOrdinal("complementoEndereco")))
+                {
+                    E.complementoEndereco = dr.GetString(dr.GetOrdinal("complementoEndereco"));
+                }
+                if (!dr.IsDBNull(dr.GetOrdinal("paisEndereco")))
+                {
+                    E.paisEndereco = dr.GetString(dr.GetOrdinal("paisEndereco"));
+                }
+                if (!dr.IsDBNull(dr.GetOrdinal("UFEndereco")))
+                {
+                    E.UFEndereco = dr.GetString(dr.GetOrdinal("UFEndereco"));
+                }
+                Enderecos.Add(E);
+            }
+
+            return Enderecos;
+        }
         public static List<clsEndereco> SelecionarEnderecos(int id)
         {
             //string sql = "SELECT idEndereco, nomeEndereco, logradouroEndereco, numeroEndereco, CEPEndereco, complementoEndereco, cidadeEndereco, paisEndereco, UFEndereco FROM dbo.Endereco WHERE idCliente = @id";
@@ -152,6 +193,5 @@ namespace BancoModel
 
             return Enderecos;
         }
-
     }
 }

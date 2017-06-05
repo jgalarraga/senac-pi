@@ -142,7 +142,7 @@ namespace BancoModel
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
             cmd.CommandText = sql;
-            cmd.Parameters.Add("@field", SqlDbType.VarChar, 50).Value = "%" + nomeProd + "%";
+            //cmd.Parameters.Add("@field", SqlDbType.VarChar, 50).Value = "%" + nomeProd + "%";
             cmd.Parameters.AddWithValue("@nomeProd", "%" + nomeProd + "%");
             cmd.Parameters.AddWithValue("@nomeCat", "%" + nomeCat + "%");
 

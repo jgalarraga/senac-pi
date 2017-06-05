@@ -63,6 +63,16 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addCategoriaButton {
+            get {
+                object obj = ResourceManager.GetObject("addCategoriaButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap addCategoriaLocked {
             get {
                 object obj = ResourceManager.GetObject("addCategoriaLocked", resourceCulture);
@@ -76,16 +86,6 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap addCategoryButton {
             get {
                 object obj = ResourceManager.GetObject("addCategoryButton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap addPaymentButton {
-            get {
-                object obj = ResourceManager.GetObject("addPaymentButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +116,26 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap addProductLocked {
             get {
                 object obj = ResourceManager.GetObject("addProductLocked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addProdutoButton {
+            get {
+                object obj = ResourceManager.GetObject("addProdutoButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addUsuarioButton {
+            get {
+                object obj = ResourceManager.GetObject("addUsuarioButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +223,16 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap excluirUsuarioButton {
+            get {
+                object obj = ResourceManager.GetObject("excluirUsuarioButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap helpButton {
             get {
                 object obj = ResourceManager.GetObject("helpButton", resourceCulture);
@@ -226,6 +256,16 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap loginFormError {
             get {
                 object obj = ResourceManager.GetObject("loginFormError", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,6 +303,16 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Menu {
+            get {
+                object obj = ResourceManager.GetObject("Menu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MessageBoxBG {
             get {
                 object obj = ResourceManager.GetObject("MessageBoxBG", resourceCulture);
@@ -276,6 +326,16 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap minimizeButton {
             get {
                 object obj = ResourceManager.GetObject("minimizeButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NaoBtn {
+            get {
+                object obj = ResourceManager.GetObject("NaoBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,6 +373,16 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap otherScreensBG1 {
+            get {
+                object obj = ResourceManager.GetObject("otherScreensBG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap purbleButton {
             get {
                 object obj = ResourceManager.GetObject("purbleButton", resourceCulture);
@@ -343,6 +413,26 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap removeUserBtn {
+            get {
+                object obj = ResourceManager.GetObject("removeUserBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap removeUserButton {
+            get {
+                object obj = ResourceManager.GetObject("removeUserButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap retroGirl {
             get {
                 object obj = ResourceManager.GetObject("retroGirl", resourceCulture);
@@ -356,6 +446,16 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap retroGirlHelp {
             get {
                 object obj = ResourceManager.GetObject("retroGirlHelp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SimBtn {
+            get {
+                object obj = ResourceManager.GetObject("SimBtn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +483,9 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap txtBox1 {
+        internal static System.Drawing.Bitmap txtBoxBasic {
             get {
-                object obj = ResourceManager.GetObject("txtBox1", resourceCulture);
+                object obj = ResourceManager.GetObject("txtBoxBasic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,9 +503,69 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap txtBoxError3 {
+        internal static System.Drawing.Bitmap txtBoxEnterValueMedium {
             get {
-                object obj = ResourceManager.GetObject("txtBoxError3", resourceCulture);
+                object obj = ResourceManager.GetObject("txtBoxEnterValueMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxEnterValueSmall {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxEnterValueSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxEnterValueTiny {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxEnterValueTiny", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxError {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxError", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxErrorMedium {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxErrorMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxErrorSmall {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxErrorSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxErrorTiny {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxErrorTiny", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +586,66 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap txtBoxFocus {
             get {
                 object obj = ResourceManager.GetObject("txtBoxFocus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxFocusMedium {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxFocusMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxFocusSmall {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxFocusSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxFocusTiny {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxFocusTiny", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxMedium {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxSmall {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap txtBoxTiny {
+            get {
+                object obj = ResourceManager.GetObject("txtBoxTiny", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +726,46 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap viewStorageButton2 {
             get {
                 object obj = ResourceManager.GetObject("viewStorageButton2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visualizarClientesButton {
+            get {
+                object obj = ResourceManager.GetObject("visualizarClientesButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visualizarEstoqueButton {
+            get {
+                object obj = ResourceManager.GetObject("visualizarEstoqueButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visualizarPedidosButton {
+            get {
+                object obj = ResourceManager.GetObject("visualizarPedidosButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visualizarProdutosButton {
+            get {
+                object obj = ResourceManager.GetObject("visualizarProdutosButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

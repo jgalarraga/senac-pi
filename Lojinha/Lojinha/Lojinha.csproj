@@ -64,11 +64,11 @@
     <Compile Include="AlterarSenha.Designer.cs">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="CriarUsuario.cs">
+    <Compile Include="CadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CriarUsuario.Designer.cs">
-      <DependentUpon>CriarUsuario.cs</DependentUpon>
+    <Compile Include="CadastroUsuario.Designer.cs">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Estoque.cs">
       <SubType>Form</SubType>
@@ -88,19 +88,16 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="StatusDePedido.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StatusDePedido.Designer.cs">
-      <DependentUpon>StatusDePedido.cs</DependentUpon>
     </Compile>
     <Compile Include="CaixaDeMensagem.cs">
       <SubType>Form</SubType>
@@ -128,30 +125,58 @@
     <Compile Include="CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="textBoxUserControl.cs">
+    <Compile Include="User Controls\TextBoxGrandeUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="textBoxUserControl.Designer.cs">
-      <DependentUpon>textBoxUserControl.cs</DependentUpon>
+    <Compile Include="User Controls\TextBoxGrandeUserControl.Designer.cs">
+      <DependentUpon>TextBoxGrandeUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="txtBoxUserControl.cs">
+    <Compile Include="User Controls\TextBoxMediaUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="txtBoxUserControl.Designer.cs">
-      <DependentUpon>txtBoxUserControl.cs</DependentUpon>
+    <Compile Include="User Controls\TextBoxMediaUserControl.Designer.cs">
+      <DependentUpon>TextBoxMediaUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="VisualizarEstoque.cs">
+    <Compile Include="User Controls\TextBoxMuitoPequenaUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\TextBoxMuitoPequenaUserControl.Designer.cs">
+      <DependentUpon>TextBoxMuitoPequenaUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\TextBoxPequenaUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\TextBoxPequenaUserControl.Designer.cs">
+      <DependentUpon>TextBoxPequenaUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarPedidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VisualizarEstoque.Designer.cs">
-      <DependentUpon>VisualizarEstoque.cs</DependentUpon>
+    <Compile Include="VisualizarPedidos.Designer.cs">
+      <DependentUpon>VisualizarPedidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdicionarPedido.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdicionarPedido.Designer.cs">
-      <DependentUpon>AdicionarPedido.cs</DependentUpon>
-    </Compile>
+    <None Include="Resources\NaoBtn.jpg" />
+    <None Include="Resources\SimBtn.jpg" />
+    <None Include="Resources\removeUserButton.jpg" />
+    <None Include="Resources\visualizarPedidosButton.jpg" />
+    <None Include="Resources\visualizarClientesButton.jpg" />
+    <None Include="Resources\visualizarEstoqueButton.jpg" />
+    <None Include="Resources\visualizarProdutosButton.jpg" />
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\Menu.jpg" />
+    <None Include="Resources\otherScreensBG1.jpg" />
+    <None Include="Resources\txtBoxErrorTiny.jpg" />
+    <None Include="Resources\txtBoxTiny.jpg" />
+    <None Include="Resources\txtBoxSmall.jpg" />
+    <None Include="Resources\txtBoxMedium.jpg" />
+    <None Include="Resources\txtBoxFocusTiny.jpg" />
+    <None Include="Resources\txtBoxFocusSmall.jpg" />
+    <None Include="Resources\txtBoxFocusMedium.jpg" />
+    <None Include="Resources\txtBoxErrorSmall.jpg" />
+    <None Include="Resources\txtBoxErrorMedium.jpg" />
+    <None Include="Resources\txtBoxEnterValueTiny.jpg" />
+    <None Include="Resources\txtBoxEnterValueSmall.jpg" />
+    <None Include="Resources\txtBoxEnterValueMedium.jpg" />
     <None Include="Resources\viewSalesLocked.jpg" />
     <None Include="Resources\viewProductsLocked.jpg" />
     <None Include="Resources\viewClientsLocked.jpg" />
@@ -192,9 +217,6 @@
     <None Include="Resources\yellowButton.jpg" />
     <None Include="Resources\purbleButton1.jpg" />
     <None Include="Resources\purbleButton.jpg" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\Lojinha.csproj.GenerateResource.Cache" />
     <None Include="Resources\retroGirlHelp.jpg" />
     <None Include="Resources\helpButton.png" />
     <None Include="Resources\logoLoja.png" />
@@ -214,8 +236,8 @@
     <EmbeddedResource Include="AlterarSenha.resx">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CriarUsuario.resx">
-      <DependentUpon>CriarUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="CadastroUsuario.resx">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estoque.resx">
       <DependentUpon>Estoque.cs</DependentUpon>
@@ -226,32 +248,28 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\Lojinha.AdicionarProduto.resources" />
-    <EmbeddedResource Include="obj\Debug\Lojinha.CaixaDeMensagem.resources" />
-    <EmbeddedResource Include="obj\Debug\Lojinha.Properties.Resources.resources" />
-    <EmbeddedResource Include="obj\Debug\Lojinha.StatusDePedido.resources" />
-    <EmbeddedResource Include="obj\Debug\Lojinha.TelaPrincipal.resources" />
-    <EmbeddedResource Include="obj\Debug\Lojinha.VisualizarEstoque.resources" />
-    <EmbeddedResource Include="obj\Debug\Lojinha.VisualizarProdutos.resources" />
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="textBoxUserControl.resx">
-      <DependentUpon>textBoxUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="User Controls\TextBoxGrandeUserControl.resx">
+      <DependentUpon>TextBoxGrandeUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="txtBoxUserControl.resx">
-      <DependentUpon>txtBoxUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="User Controls\TextBoxMediaUserControl.resx">
+      <DependentUpon>TextBoxMediaUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VisualizarEstoque.resx">
-      <DependentUpon>VisualizarEstoque.cs</DependentUpon>
+    <EmbeddedResource Include="User Controls\TextBoxMuitoPequenaUserControl.resx">
+      <DependentUpon>TextBoxMuitoPequenaUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdicionarPedido.resx">
-      <DependentUpon>AdicionarPedido.cs</DependentUpon>
+    <EmbeddedResource Include="User Controls\TextBoxPequenaUserControl.resx">
+      <DependentUpon>TextBoxPequenaUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualizarPedidos.resx">
+      <DependentUpon>VisualizarPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Resources\status.jpg" />
-    <EmbeddedResource Include="StatusDePedido.resx">
-      <DependentUpon>StatusDePedido.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CaixaDeMensagem.resx">
       <DependentUpon>CaixaDeMensagem.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,15 +306,15 @@
     <Content Include="bin\Debug\Lojinha.exe" />
     <Content Include="bin\Debug\Lojinha.pdb" />
     <Content Include="bin\Debug\Lojinha.vshost.exe" />
-    <Content Include="obj\Debug\Lojinha.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\TempPE\DataSet1.Designer.cs.dll" />
-    <Content Include="obj\Debug\TempPE\Lojinha.Designer.cs.dll" />
-    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <None Include="Resources\blueButton.jpg" />
     <None Include="Resources\cry.jpg" />
     <None Include="Resources\addProductLocked.jpg" />
     <None Include="Resources\addCategoriaLocked.jpg" />
     <None Include="Resources\createUserLocked.jpg" />
+    <None Include="Resources\addProdutoButton.jpg" />
+    <None Include="Resources\excluirUsuarioButton.jpg" />
+    <None Include="Resources\addUsuarioButton.jpg" />
+    <None Include="Resources\addCategoriaButton.jpg" />
     <Content Include="Resources\Fontes\Roboto-Black.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -368,7 +386,6 @@
     <Folder Include="bin\Release\" />
     <Folder Include="Formularios\" />
     <Folder Include="obj\Nova pasta\" />
-    <Folder Include="User Controls\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BancoModel\BancoModel.csproj">

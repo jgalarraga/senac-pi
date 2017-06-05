@@ -31,15 +31,11 @@ namespace Lojinha
                 criarUsuarioBtn2.Visible = true;
                 visualizarPedidosBtn2.Visible = true;
                 adicionarCategoriaBtn2.Visible = true;
+                removeUserButton.Visible = true;
             }
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
@@ -63,10 +59,6 @@ namespace Lojinha
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         // minimiza a aplicação quando o usuário clica no "[]" (canto superior direito da tela)
         private void minimizeButton_Click(object sender, EventArgs e)
@@ -84,69 +76,83 @@ namespace Lojinha
         // abre o formulário "Adicionar Produto"
         private void addProductButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AdicionarProduto ap = new AdicionarProduto();
-            ap.Show();
+            ap.TopLevel = false;
+            Menu m = new Menu(ap);
+            m.ShowDialog();
+            this.Close();
         }
 
         // abre o formulário "Visualizar Estoque"
         private void viewStorageButton_Click(object sender, EventArgs e)
         {
-            VisualizarEstoque ve = new VisualizarEstoque();
-            ve.Show();
-        }
-
-        private void addPaymentButton_Click(object sender, EventArgs e)
-        {
-            AdicionarFormaPagamento afp = new AdicionarFormaPagamento();
-            afp.Show();
+            this.Hide();
+            Estoque es = new Estoque();
+            es.TopLevel = false;
+            Menu m = new Menu(es);
+            m.ShowDialog();
+            this.Close();
         }
 
         private void createUserButton_Click(object sender, EventArgs e)
         {
-            CriarUsuario cru = new CriarUsuario();
-            cru.Show();
+            this.Hide();
+            CadastroUsuario cu = new CadastroUsuario();
+            cu.TopLevel = false;
+            Menu m = new Menu(cu);
+            m.ShowDialog();
+            this.Close();
         }
 
         private void viewClientsButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             VisualizarClientes vc = new VisualizarClientes();
-            vc.Show();
+            vc.TopLevel = false;
+            Menu m = new Menu(vc);
+            m.ShowDialog();
+            this.Close();
         }
 
         private void viewOrdersButton_Click(object sender, EventArgs e)
         {
-            VisualizarClientes vp = new VisualizarClientes();
-            vp.Show();
+            this.Hide();
+            CadastroCliente cc = new CadastroCliente();
+            cc.TopLevel = false;
+            Menu m = new Menu(cc);
+            m.ShowDialog();
+            this.Close();
         }
 
         private void addCategoryButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AdicionarCategoria ac = new AdicionarCategoria();
-            ac.Show();
+            ac.TopLevel = false;
+            Menu m = new Menu(ac);
+            m.ShowDialog();
+            this.Close(); ;
         }
 
         private void visualizarEstoqueToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            VisualizarEstoque ve = new VisualizarEstoque();
-            ve.Show();
-        }
-
-        // abre o formulário "Status de Pedido" quando o usuário clica nesta opção
-        private void adicionarStatusDePedidoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            StatusDePedido sdp = new StatusDePedido();
-            sdp.Show();
+            this.Hide();
+            Estoque es = new Estoque();
+            es.TopLevel = false;
+            Menu m = new Menu(es);
+            m.ShowDialog();
+            this.Close();
         }
 
         private void cadastrarUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CriarUsuario cru = new CriarUsuario();
-            cru.Show();
-        }
-
-        private void versãoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            CadastroUsuario cu = new CadastroUsuario();
+            cu.TopLevel = false;
+            Menu m = new Menu(cu);
+            m.ShowDialog();
+            this.Close();
         }
 
         private async void helpButton_Click(object sender, EventArgs e)
@@ -157,21 +163,6 @@ namespace Lojinha
             helpBalloon2.Visible = true;
             await Task.Delay(1000);
             closeButton.Visible = true;
-
-        }
-
-        private void retroGirlImage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void helpBalloon2_Click(object sender, EventArgs e)
-        {
 
         }
 

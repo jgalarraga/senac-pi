@@ -8,124 +8,208 @@ namespace Lojinha
     public partial class VisualizarClientes : Form
     {
         // crio um vetor de textboxes 
-        private textBoxUserControl[] textboxes;
+        //private textBoxUserControl[] textboxes; //vetor de user control obrigatórios
+        private TextBoxGrandeUserControl[] textboxesGrandes;
+        private TextBoxMediaUserControl[] textboxesMedias;
+        private TextBoxPequenaUserControl[] textboxesPequenas;
+        private TextBoxMuitoPequenaUserControl[] textboxesMuitoPequenas;
 
         public VisualizarClientes()
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            textBoxUserControl nomeCadClienteTextBox = new textBoxUserControl();
-            textBoxUserControl CpfCadClienteTextBox = new textBoxUserControl();
-            textBoxUserControl dtNasCadClienteTextBox = new textBoxUserControl();
-            textBoxUserControl emailCadClienteTextBox = new textBoxUserControl();
-            textBoxUserControl senhaCadClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl celularCadClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl telResCadClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl telComCadClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl tipoEndCadClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl logadouroCadClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl nrResEndCadClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl cepCadClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl compleCadClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl cidadeClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl ufClienteTxtBox = new textBoxUserControl();
-            textBoxUserControl paisCadClienteTxtBox = new textBoxUserControl();
-=======
-            textBoxUserControl nomeCadTxtBox = new textBoxUserControl();
-            textBoxUserControl cpfCadTextBox = new textBoxUserControl();
-            textBoxUserControl emailCadTextBox = new textBoxUserControl();
->>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
-=======
-            textBoxUserControl nomeCadTxtBox = new textBoxUserControl();
-            textBoxUserControl cpfCadTextBox = new textBoxUserControl();
-            textBoxUserControl emailCadTextBox = new textBoxUserControl();
->>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
+            instanciarUserControls();
 
             InitializeComponent();
             // listagem dos clientes cadastrados
             List<clsCliente> clientes = clsCliente.SelecionarClientes();
             // mostro a listagem na grid view
-            ClientedataGridView.DataSource = clientes;
+            clienteDataGridView.DataSource = clientes;
             //Escondendo os campos indesejados do gridview, deixando só o nome do cliente
-            ClientedataGridView.Columns[0].Visible = false;
-            ClientedataGridView.Columns[2].Visible = false;
-            ClientedataGridView.Columns[3].Visible = false;
-            ClientedataGridView.Columns[4].Visible = false;
-            ClientedataGridView.Columns[5].Visible = false;
-            ClientedataGridView.Columns[6].Visible = false;
-            ClientedataGridView.Columns[7].Visible = false;
-            ClientedataGridView.Columns[8].Visible = false;
-            ClientedataGridView.Columns[9].Visible = false;
+            esconderColunas();
+            configurarColunas();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-            // inicializo o vetor de textbox com as textboxes obrigatórias
-            textboxes = new textBoxUserControl[]
+            // inicializo o vetor de textbox
+            // com as textboxes obrigatórias
+            textboxesGrandes = new TextBoxGrandeUserControl[]
             {
                 nomeCadClienteTextBox,
-                CpfCadClienteTextBox,
-                dtNasCadClienteTextBox,
                 emailCadClienteTextBox,
-                senhaCadClienteTxtBox,
-                celularCadClienteTxtBox,
-                telResCadClienteTxtBox,
-                telComCadClienteTxtBox,
-                tipoEndCadClienteTxtBox,
-                logadouroCadClienteTxtBox,
-                nrResEndCadClienteTxtBox,
-                cepCadClienteTxtBox,
-                compleCadClienteTxtBox,
-                cidadeClienteTxtBox,
-                ufClienteTxtBox,
-                paisCadClienteTxtBox
-=======
-            // inicializo o vetor de textbox
-            // com as textboxes obrigatórias
-            textboxes = new textBoxUserControl[]
-            {
-=======
-            // inicializo o vetor de textbox
-            // com as textboxes obrigatórias
-            textboxes = new textBoxUserControl[]
-            {
->>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
-                nomeCadTxtBox,
-                cpfCadTextBox,
-                emailCadTextBox
-               ///nomeCadClienteTextBox,
-                //CpfCadClienteTextBox,
-                //emailCadClienteTextBox
-                //senhaCadClienteTxtBox,
-                //celularCadClienteTxtBox,
-                //logadouroCadClienteTxtBox,
-                //nrResEndCadClienteTxtBox,
-                //cepCadClienteTxtBox,
-                //cidadeClienteTxtBox,
-                //ufClienteTxtBox
-<<<<<<< HEAD
->>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
-=======
->>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7
+                logradouroCadClienteTextBox
             };
+
+            textboxesMedias = new TextBoxMediaUserControl[]
+            {
+                 cpfCadClienteTextBox,
+            };
+
+            textboxesPequenas = new TextBoxPequenaUserControl[]
+            {
+                 dtNascCadClienteTextBox,
+                 senhaCadClienteTextBox,
+                 tipoEndCadClienteTextBox,
+                 cidadeEndCadClienteTextBox,
+                 cepEndCadClienteTextBox
+            };
+
+            textboxesMuitoPequenas = new TextBoxMuitoPequenaUserControl[]
+            {
+                numEndCadClienteTextBox
+            };
+
+
         }
 
+        // MÉTODOS COMUNS
+        // caso haja algum problema no carregamento dos user controls
+        // através deste método consigo instanciá-los novamente no formulário
+        public void instanciarUserControls()
+        {
+            // DADOS DO CLIENTE
+            TextBoxGrandeUserControl nomeCadTxtBox = new TextBoxGrandeUserControl();
+            TextBoxMediaUserControl cpfCadClienteTextBox = new TextBoxMediaUserControl();
+            TextBoxPequenaUserControl dtNascCadClienteTextBox = new TextBoxPequenaUserControl();
+            TextBoxGrandeUserControl emailCadClienteTextBox = new TextBoxGrandeUserControl();
+            TextBoxPequenaUserControl senhaCadClienteTextBox = new TextBoxPequenaUserControl();
+            TextBoxPequenaUserControl celularCadClienteTextBox = new TextBoxPequenaUserControl();
+            TextBoxPequenaUserControl telResCadClienteTextBox = new TextBoxPequenaUserControl();
+            TextBoxPequenaUserControl telComCadClienteTextBox = new TextBoxPequenaUserControl();
+
+            // ENDEREÇO
+            TextBoxPequenaUserControl tipoEndCadClienteTextBox = new TextBoxPequenaUserControl();
+            TextBoxGrandeUserControl logradouroCadClienteTextBox = new TextBoxGrandeUserControl();
+            TextBoxMuitoPequenaUserControl numEndCadClienteTextBox = new TextBoxMuitoPequenaUserControl();
+            TextBoxPequenaUserControl cepEndCadClienteTextBox = new TextBoxPequenaUserControl();
+            TextBoxMediaUserControl complEndCadClienteTextBox = new TextBoxMediaUserControl();
+            TextBoxPequenaUserControl cidadeEndCadClienteTextBox = new TextBoxPequenaUserControl();
+            TextBoxMuitoPequenaUserControl ufEndCadClienteTextBox = new TextBoxMuitoPequenaUserControl();
+            TextBoxPequenaUserControl paisEndCadClienteTextBox = new TextBoxPequenaUserControl();
+        }
+
+        public void esconderColunas()
+        {
+            // DataGridView do nome do cliente
+            clienteDataGridView.Columns[0].Visible = false;
+            clienteDataGridView.Columns[2].Visible = false;
+            clienteDataGridView.Columns[3].Visible = false;
+            clienteDataGridView.Columns[4].Visible = false;
+            clienteDataGridView.Columns[5].Visible = false;
+            clienteDataGridView.Columns[6].Visible = false;
+            clienteDataGridView.Columns[7].Visible = false;
+            clienteDataGridView.Columns[8].Visible = false;
+            clienteDataGridView.Columns[9].Visible = false;
+        }
+
+        public void configurarColunas()
+        {
+            clienteDataGridView.Columns[1].Width = 491;
+            clienteDataGridView.Columns["nomeCompletoCliente"].HeaderText = "Nome do Cliente";
+        }
+
+        // EVENTOS
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        private void clienteDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (clienteDataGridView.SelectedRows.Count > 0)
+            {
+                //colocando o valor nos txtBox
+                nomeCadClienteTextBox.Text = clienteDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+                cpfCadClienteTextBox.Text = clienteDataGridView.SelectedRows[0].Cells[4].Value.ToString();
+                if (clienteDataGridView.SelectedRows[0].Cells[5].Value != null)
+                {
+                    dtNascCadClienteTextBox.Text = clienteDataGridView.SelectedRows[0].Cells[8].Value.ToString();
+                }
+                emailCadClienteTextBox.Text = clienteDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+                senhaCadClienteTextBox.Text = clienteDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+                if (clienteDataGridView.SelectedRows[0].Cells[5].Value != null)
+                {
+                    celularCadClienteTextBox.Text = clienteDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+                }
+                if (clienteDataGridView.SelectedRows[0].Cells[7].Value != null)
+                {
+                    telResCadClienteTextBox.Text = clienteDataGridView.SelectedRows[0].Cells[7].Value.ToString();
+                }
+                if (clienteDataGridView.SelectedRows[0].Cells[6].Value != null)
+                {
+                    telComCadClienteTextBox.Text = clienteDataGridView.SelectedRows[0].Cells[6].Value.ToString();
+                }
+                //adicionando os endereços no gridview dos endereço
+                //List<clsEndereco> enderecos = clsEndereco.SelecionarEnderecos((int)Convert.ChangeType(textBox1.Text, typeof(int)));
+                List<clsEndereco> enderecos = clsEndereco.SelecionarEnderecos(nomeCadClienteTextBox.Text);
+                enderecoDataGridView.DataSource = enderecos;
+
+                //DataGridView dos endereços do cliente
+                enderecoDataGridView.Columns[0].Visible = false;
+                enderecoDataGridView.Columns[1].Visible = false;
+
+                if (enderecoDataGridView.SelectedRows.Count > 0)
+                {
+                    tipoEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+                    logradouroCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+                    numEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[4].Value.ToString();
+                    cepEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+                    if (enderecoDataGridView.SelectedRows[0].Cells[6].Value != null)
+                    {
+                        complEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[6].Value.ToString();
+                    }
+                    cidadeEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[7].Value.ToString();
+                    ufEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[8].Value.ToString();
+                    paisEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[9].Value.ToString();
+                }
+            }
+        }
+
+        // BOTÕES
         private void cadastrarCadClienteButton_Click(object sender, EventArgs e)
         {
             bool valido = true;
 
             // se alguma das textboxes obrigatórias não estiver preenchida
-            foreach (textBoxUserControl t in textboxes)
+            foreach (TextBoxGrandeUserControl u in textboxesGrandes)
             {
-                if (t.Text.Length == 0)
+                if (u.Text.Length == 0)
                 {
                     // mostro um aviso
-                    t.Texto = "Obrigatório >:|";
-                    t.textBoxEscrever_Error();
+                    //u.Text = "Obrigatório >:|";
+                    u.textBoxEscrever_Error();
+                    // deixo inválido
+                    valido = false;
+                }
+            }
+
+            foreach (TextBoxMediaUserControl u in textboxesMedias)
+            {
+                if (u.Text.Length == 0)
+                {
+                    // mostro um aviso
+                    //u.Text = "Obrigatório >:|";
+                    u.textBoxEscrever_Error();
+                    // deixo inválido
+                    valido = false;
+                }
+            }
+
+            foreach(TextBoxPequenaUserControl u in textboxesPequenas)
+            {
+                if (u.Text.Length == 0)
+                {
+                    // mostro um aviso
+                    //u.Text = "Obrigatório >:|";
+                    u.textBoxEscrever_Error();
+                    // deixo inválido
+                    valido = false;
+                }
+            }
+
+            foreach(TextBoxMuitoPequenaUserControl u in textboxesMuitoPequenas)
+            {
+                if (u.Text.Length == 0)
+                {
+                    // mostro um aviso
+                    //u.Text = "Obrigatório >:|";
+                    u.textBoxEscrever_Error();
                     // deixo inválido
                     valido = false;
                 }
@@ -139,36 +223,14 @@ namespace Lojinha
             }
         }
 
-        private void ClientedataGridView_SelectionChanged(object sender, EventArgs e)
+        private void alterarCadClienteButton_Click(object sender, EventArgs e)
         {
-            if (ClientedataGridView.SelectedRows.Count > 0)
-            {
-                //colocando o valor nos txtBox
-                nomeCadClienteTextBox.Text = ClientedataGridView.SelectedRows[0].Cells[1].Value.ToString();
-                CpfCadClienteTextBox.Text = ClientedataGridView.SelectedRows[0].Cells[4].Value.ToString();
-                if (ClientedataGridView.SelectedRows[0].Cells[5].Value != null)
-                {
-                    dtNasCadClienteTextBox.Text = ClientedataGridView.SelectedRows[0].Cells[8].Value.ToString();
-                }
-                emailCadClienteTextBox.Text = ClientedataGridView.SelectedRows[0].Cells[2].Value.ToString();
-                senhaCadClienteTxtBox.Text = ClientedataGridView.SelectedRows[0].Cells[3].Value.ToString();
-                if(ClientedataGridView.SelectedRows[0].Cells[5].Value != null)
-                {
-                    celularCadClienteTxtBox.Text = ClientedataGridView.SelectedRows[0].Cells[5].Value.ToString();
-                }
-                if (ClientedataGridView.SelectedRows[0].Cells[7].Value != null)
-                {
-                    telResCadClienteTxtBox.Text = ClientedataGridView.SelectedRows[0].Cells[7].Value.ToString();
-                }
-                if (ClientedataGridView.SelectedRows[0].Cells[6].Value != null)
-                {
-                    telComCadClienteTxtBox.Text = ClientedataGridView.SelectedRows[0].Cells[6].Value.ToString();
-                }
-                //adicionando os endereços no gridview dos endereço
-                textBox1.Text = ClientedataGridView.SelectedRows[0].Cells[0].Value.ToString();
-                List<clsEndereco> enderecos = clsEndereco.SelecionarEnderecos((int)Convert.ChangeType(textBox1.Text, typeof(int)));
-                EnderecodataGridView.DataSource = enderecos;
-            }
+
+        }
+
+        private void excluirCadClienteButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

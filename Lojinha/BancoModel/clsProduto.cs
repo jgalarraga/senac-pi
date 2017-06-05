@@ -68,7 +68,7 @@ namespace BancoModel
             cmd.Parameters.Add("@IdCategoria", SqlDbType.Int, 50).Value = this.IdCategoria;
             cmd.Parameters.Add("@ativoProduto", SqlDbType.Char, 1).Value = this.ativoProduto;
             cmd.Parameters.Add("@IdUsuario", SqlDbType.Int, 50).Value = this.IdUsuario;
-            cmd.Parameters.Add("@qtdMinEstoque", SqlDbType.Int,50).Value = this.qtdMinEstoque;
+            cmd.Parameters.Add("@qtdMinEstoque", SqlDbType.Int, 50).Value = this.qtdMinEstoque;
             cmd.ExecuteNonQuery();
 
             if (inserir)
@@ -95,25 +95,16 @@ namespace BancoModel
                 clsProduto P = new clsProduto();
                 P.idProduto = dr.GetInt32(dr.GetOrdinal("idProduto"));
                 P.nomeProduto = dr.GetString(dr.GetOrdinal("nomeProduto"));
-                if (!dr.IsDBNull(dr.GetOrdinal("descProduto")))
-                {
-                    P.descProduto = dr.GetString(dr.GetOrdinal("descProduto"));
-                }
+                P.descProduto = dr.GetString(dr.GetOrdinal("descProduto"));
                 P.precProduto = dr.GetDecimal(dr.GetOrdinal("precProduto"));
-                if (!dr.IsDBNull(dr.GetOrdinal("descontoPromocao")))
-                {
-                    P.descontoPromocao = dr.GetDecimal(dr.GetOrdinal("descontoPromocao"));
-                }
+                P.descontoPromocao = dr.GetDecimal(dr.GetOrdinal("descontoPromocao"));
                 P.IdCategoria = dr.GetInt32(dr.GetOrdinal("IdCategoria"));
                 P.ativoProduto = dr.GetString(dr.GetOrdinal("ativoProduto"));
                 if (!dr.IsDBNull(dr.GetOrdinal("IdUsuario")))
                 {
                     P.IdUsuario = dr.GetInt32(dr.GetOrdinal("IdUsuario"));
                 }
-                if (!dr.IsDBNull(dr.GetOrdinal("qtdMinEstoque")))
-                {
-                    P.qtdMinEstoque = dr.GetInt32(dr.GetOrdinal("qtdMinEstoque"));
-                }
+                P.qtdMinEstoque = dr.GetInt32(dr.GetOrdinal("qtdMinEstoque"));
                 P.nomeCategoria = dr.GetString(dr.GetOrdinal("nomeCategoria"));
                 Produtos.Add(P);
             }
@@ -164,6 +155,58 @@ namespace BancoModel
 
             cn.Close();
             cn.Dispose();
+        }
+
+        public static List<clsProduto> SelecionarProdutos(string tipoFiltro, string filtro)
+        {
+            List<clsEstoque> Estoque = new List<clsEstoque>();
+            string sql = "SELECT Produto.idProduto, Produto.nomeProduto, Produto.descProduto, Produto.precProduto, Produto.descontoPromocao, Categoria.nomeCategoria, " +
+                "Produto.ativoProduto, Estoque.qtdProdutoDisponivel " +
+                "FROM dbo.Produto INNER JOIN dbo.Estoque ON dbo.Produto.idProduto = dbo.Estoque.idProduto " +
+                "INNER JOIN dbo.Categoria ON dbo.Categoria.idCategoria = dbo.Produto.idCategoria ";
+
+            switch (tipoFiltro)
+            {
+                case "Categoria":
+                    sql += "WHERE Categoria.nomeCategoria LIKE @filtro";
+                    break;
+                case "ID":
+                    sql += "WHERE Produto.idProduto = @filtro";
+                    break;
+                case "Preço":
+                    sql += "WHERE Produto.precProduto = @filtro";
+                    break;
+                case "Desconto":
+                    sql += "WHERE Produto.descProduto = @filtro";
+                    break;
+                case "Quantidade":
+                    sql += "WHERE Estoque.qtdProdutoDisponivel = @filtro";
+                    break;
+                case "Nome":
+                    sql += "WHERE Produto.nomeProduto = @filtro";
+                    break;
+            }
+
+            SqlConnection cn = clsConexao.Conectar();
+            SqlCommand cmd = cn.CreateCommand();
+            cmd.CommandText = sql;
+            cmd.Parameters.AddWithValue("@filtro", "%" + filtro + "%"); ;
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            List<clsProduto> Produtos = new List<clsProduto>();
+            while (dr.Read())
+            {
+                clsProduto P = new clsProduto();
+                P.idProduto = dr.GetInt32(dr.GetOrdinal("idProduto"));
+                P.nomeProduto = dr.GetString(dr.GetOrdinal("nomeProduto"));
+                P.descProduto = dr.GetString(dr.GetOrdinal("descProduto"));
+                P.precProduto = dr.GetDecimal(dr.GetOrdinal("precProduto"));
+                P.descontoPromocao = dr.GetDecimal(dr.GetOrdinal("descontoPromocao"));
+                P.ativoProduto = dr.GetString(dr.GetOrdinal("ativoProduto"));
+                Produtos.Add(P);
+            }
+
+            return Produtos;
         }
     }
 }

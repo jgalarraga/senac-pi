@@ -30,12 +30,15 @@ namespace Lojinha
             if (userCount > 0)
             {
                 // usuário existe no banco
-                MessageBox.Show("Usuário Encontrado! Yay :3");
+                //MessageBox.Show("Usuário Encontrado! Yay :3");
                 tipoUsuario = usuario.selecionarTipoPerfil(usuarioTextBox.Text, senhaTextBox.Text);
 
+                //TelaPrincipal tp = new TelaPrincipal();
+                //tp.Show();
                 TelaPrincipal tp = new TelaPrincipal();
-                tp.Show();
-
+                this.Hide();
+                tp.ShowDialog();
+                this.Close();
             }
             else
             {
@@ -51,5 +54,6 @@ namespace Lojinha
             loginErrorPanel.Visible = false;
             cryImagePanel.Visible = false;
         }
+
     }
 }
