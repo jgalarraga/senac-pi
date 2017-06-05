@@ -121,17 +121,32 @@
   <data name="noBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="addProductLocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addProductLocked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MessageBoxBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MessageBoxBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="purbleButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\purbleButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="viewProductsLocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\viewProductsLocked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loginForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginForm2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="txtBoxEnterValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtBoxEnterValue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="purbleButton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\purbleButton1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maximizeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximizeButton1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mainScreenBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainScreenBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="otherScreensBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\otherScreensBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,8 +160,14 @@
   <data name="yellowButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yellowButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="closeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="retroGirl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\retroGirl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="txtBoxError3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtBoxError3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="txtBoxFilled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtBoxFilled.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="addProductBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addProductBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +181,20 @@
   <data name="logoLoja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoLoja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="txtBoxFocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtBoxFocus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="normalSizeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\normalSizeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yesBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yesBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="viewStorageButton2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\viewStorageButton2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loginFormError" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginFormError.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="createUserLocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\createUserLocked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="questionMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\questionMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,20 +211,32 @@
   <data name="addCategoryButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addCategoryButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mainScreenBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mainScreenBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="addProductButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addProductButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yesBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yesBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="balao2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\balao2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="addProductButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\addProductButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="closeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="capa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\capa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="txtBox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtBox1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="addPaymentButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addPaymentButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="viewClientsLocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\viewClientsLocked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="viewProductsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\viewProductsButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,7 +247,16 @@
   <data name="viewClientsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\viewClientsButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="retroGirl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\retroGirl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="telaLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telaLogin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="addCategoriaLocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addCategoriaLocked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purbleButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purbleButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="viewSalesLocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\viewSalesLocked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

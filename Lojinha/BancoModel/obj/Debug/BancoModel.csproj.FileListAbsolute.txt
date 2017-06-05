@@ -23,3 +23,30 @@ C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\BancoModel\bin\Debug\BancoMode
 C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\BancoModel\obj\Debug\BancoModel.csprojResolveAssemblyReference.cache
 C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\BancoModel\obj\Debug\BancoModel.dll
 C:\Users\JGalarraga.DNNG2V1\Downloads\LojinhaJoao\BancoModel\obj\Debug\BancoModel.pdb
+C:\Users\User\Programas\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.dll
+C:\Users\User\Programas\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.pdb
+C:\Users\User\Programas\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.csprojResolveAssemblyReference.cache
+C:\Users\User\Programas\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.dll
+C:\Users\User\Programas\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.pdb
+C:\Users\luciano.mlima1\Downloads\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.dll
+C:\Users\luciano.mlima1\Downloads\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.pdb
+C:\Users\luciano.mlima1\Downloads\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.csprojResolveAssemblyReference.cache
+C:\Users\luciano.mlima1\Downloads\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.dll
+C:\Users\luciano.mlima1\Downloads\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.pdb
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.dll
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.pdb
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.csprojResolveAssemblyReference.cache
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.dll
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.pdb
+C:\Users\User\Desktop\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.dll
+C:\Users\User\Desktop\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.pdb
+C:\Users\User\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.dll
+C:\Users\User\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.pdb
+<<<<<<< HEAD
+C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.dll
+C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.pdb
+C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.dll
+C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.pdb
+=======
+>>>>>>> 07843b5739acb018fdb3ac6d0d20a5f3758175a7

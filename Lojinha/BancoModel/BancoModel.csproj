@@ -44,6 +44,7 @@
     <Compile Include="clsCategoria.cs" />
     <Compile Include="clsCliente.cs" />
     <Compile Include="clsConexao.cs" />
+    <Compile Include="clsEndereco.cs" />
     <Compile Include="clsEstoque.cs" />
     <Compile Include="clsProduto.cs" />
     <Compile Include="clsUsuario.cs" />

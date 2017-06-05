@@ -50,12 +50,12 @@
             this.versãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaParaEsteFormulárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.addProductButton = new System.Windows.Forms.Button();
-            this.viewStorageButton = new System.Windows.Forms.Button();
+            this.adicionarProdutoBtn = new System.Windows.Forms.Button();
+            this.visualizarEstoqueBtn = new System.Windows.Forms.Button();
             this.addCategoryButton = new System.Windows.Forms.Button();
             this.viewOrdersButton = new System.Windows.Forms.Button();
             this.viewClientsButton = new System.Windows.Forms.Button();
-            this.createUserButton = new System.Windows.Forms.Button();
+            this.criarUsuarioBtn = new System.Windows.Forms.Button();
             this.addPaymentButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
             this.helpButton = new System.Windows.Forms.Button();
@@ -66,7 +66,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.closeButton = new System.Windows.Forms.Button();
             this.normalSizeButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.visualizarClientesBtn = new System.Windows.Forms.Button();
+            this.adicionarProdutoBtn2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.visualizarClientesBtn2 = new System.Windows.Forms.Button();
+            this.adicionarCategoriaBtn2 = new System.Windows.Forms.Button();
+            this.criarUsuarioBtn2 = new System.Windows.Forms.Button();
+            this.visualizarProdutosBtn2 = new System.Windows.Forms.Button();
+            this.visualizarPedidosBtn2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.helpBalloon2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.retroGirlImage)).BeginInit();
@@ -222,23 +229,23 @@
             this.label1.Name = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // addProductButton
+            // adicionarProdutoBtn
             // 
-            resources.ApplyResources(this.addProductButton, "addProductButton");
-            this.addProductButton.BackgroundImage = global::Lojinha.Properties.Resources.addProductButton;
-            this.addProductButton.FlatAppearance.BorderSize = 0;
-            this.addProductButton.Name = "addProductButton";
-            this.addProductButton.UseVisualStyleBackColor = true;
-            this.addProductButton.Click += new System.EventHandler(this.addProductButton_Click);
+            resources.ApplyResources(this.adicionarProdutoBtn, "adicionarProdutoBtn");
+            this.adicionarProdutoBtn.BackgroundImage = global::Lojinha.Properties.Resources.addProductButton;
+            this.adicionarProdutoBtn.FlatAppearance.BorderSize = 0;
+            this.adicionarProdutoBtn.Name = "adicionarProdutoBtn";
+            this.adicionarProdutoBtn.UseVisualStyleBackColor = true;
+            this.adicionarProdutoBtn.Click += new System.EventHandler(this.addProductButton_Click);
             // 
-            // viewStorageButton
+            // visualizarEstoqueBtn
             // 
-            resources.ApplyResources(this.viewStorageButton, "viewStorageButton");
-            this.viewStorageButton.BackgroundImage = global::Lojinha.Properties.Resources.viewStorageButton;
-            this.viewStorageButton.FlatAppearance.BorderSize = 0;
-            this.viewStorageButton.Name = "viewStorageButton";
-            this.viewStorageButton.UseVisualStyleBackColor = true;
-            this.viewStorageButton.Click += new System.EventHandler(this.viewStorageButton_Click);
+            resources.ApplyResources(this.visualizarEstoqueBtn, "visualizarEstoqueBtn");
+            this.visualizarEstoqueBtn.BackgroundImage = global::Lojinha.Properties.Resources.viewStorageButton;
+            this.visualizarEstoqueBtn.FlatAppearance.BorderSize = 0;
+            this.visualizarEstoqueBtn.Name = "visualizarEstoqueBtn";
+            this.visualizarEstoqueBtn.UseVisualStyleBackColor = true;
+            this.visualizarEstoqueBtn.Click += new System.EventHandler(this.viewStorageButton_Click);
             // 
             // addCategoryButton
             // 
@@ -267,14 +274,14 @@
             this.viewClientsButton.UseVisualStyleBackColor = true;
             this.viewClientsButton.Click += new System.EventHandler(this.viewClientsButton_Click);
             // 
-            // createUserButton
+            // criarUsuarioBtn
             // 
-            resources.ApplyResources(this.createUserButton, "createUserButton");
-            this.createUserButton.BackgroundImage = global::Lojinha.Properties.Resources.createUserButton;
-            this.createUserButton.FlatAppearance.BorderSize = 0;
-            this.createUserButton.Name = "createUserButton";
-            this.createUserButton.UseVisualStyleBackColor = true;
-            this.createUserButton.Click += new System.EventHandler(this.createUserButton_Click);
+            resources.ApplyResources(this.criarUsuarioBtn, "criarUsuarioBtn");
+            this.criarUsuarioBtn.BackgroundImage = global::Lojinha.Properties.Resources.createUserButton;
+            this.criarUsuarioBtn.FlatAppearance.BorderSize = 0;
+            this.criarUsuarioBtn.Name = "criarUsuarioBtn";
+            this.criarUsuarioBtn.UseVisualStyleBackColor = true;
+            this.criarUsuarioBtn.Click += new System.EventHandler(this.createUserButton_Click);
             // 
             // addPaymentButton
             // 
@@ -375,13 +382,72 @@
             this.normalSizeButton.UseVisualStyleBackColor = false;
             this.normalSizeButton.Click += new System.EventHandler(this.normalSizeButton_Click);
             // 
-            // button1
+            // visualizarClientesBtn
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.BackgroundImage = global::Lojinha.Properties.Resources.viewClientsButton;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.visualizarClientesBtn, "visualizarClientesBtn");
+            this.visualizarClientesBtn.BackgroundImage = global::Lojinha.Properties.Resources.viewClientsButton;
+            this.visualizarClientesBtn.FlatAppearance.BorderSize = 0;
+            this.visualizarClientesBtn.Name = "visualizarClientesBtn";
+            this.visualizarClientesBtn.UseVisualStyleBackColor = true;
+            // 
+            // adicionarProdutoBtn2
+            // 
+            resources.ApplyResources(this.adicionarProdutoBtn2, "adicionarProdutoBtn2");
+            this.adicionarProdutoBtn2.BackgroundImage = global::Lojinha.Properties.Resources.addProductLocked;
+            this.adicionarProdutoBtn2.FlatAppearance.BorderSize = 0;
+            this.adicionarProdutoBtn2.Name = "adicionarProdutoBtn2";
+            this.adicionarProdutoBtn2.UseVisualStyleBackColor = true;
+            this.adicionarProdutoBtn2.Click += new System.EventHandler(this.visualizarEstoqueBtn2_Click);
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // visualizarClientesBtn2
+            // 
+            resources.ApplyResources(this.visualizarClientesBtn2, "visualizarClientesBtn2");
+            this.visualizarClientesBtn2.BackgroundImage = global::Lojinha.Properties.Resources.viewClientsLocked;
+            this.visualizarClientesBtn2.FlatAppearance.BorderSize = 0;
+            this.visualizarClientesBtn2.Name = "visualizarClientesBtn2";
+            this.visualizarClientesBtn2.UseVisualStyleBackColor = true;
+            this.visualizarClientesBtn2.Click += new System.EventHandler(this.visualizarClientesBtn2_Click);
+            // 
+            // adicionarCategoriaBtn2
+            // 
+            resources.ApplyResources(this.adicionarCategoriaBtn2, "adicionarCategoriaBtn2");
+            this.adicionarCategoriaBtn2.BackgroundImage = global::Lojinha.Properties.Resources.addCategoriaLocked;
+            this.adicionarCategoriaBtn2.FlatAppearance.BorderSize = 0;
+            this.adicionarCategoriaBtn2.Name = "adicionarCategoriaBtn2";
+            this.adicionarCategoriaBtn2.UseVisualStyleBackColor = true;
+            this.adicionarCategoriaBtn2.Click += new System.EventHandler(this.adicionarCategoriaBtn2_Click);
+            // 
+            // criarUsuarioBtn2
+            // 
+            resources.ApplyResources(this.criarUsuarioBtn2, "criarUsuarioBtn2");
+            this.criarUsuarioBtn2.BackgroundImage = global::Lojinha.Properties.Resources.createUserLocked;
+            this.criarUsuarioBtn2.FlatAppearance.BorderSize = 0;
+            this.criarUsuarioBtn2.Name = "criarUsuarioBtn2";
+            this.criarUsuarioBtn2.UseVisualStyleBackColor = true;
+            this.criarUsuarioBtn2.Click += new System.EventHandler(this.criarUsuarioBtn2_Click);
+            // 
+            // visualizarProdutosBtn2
+            // 
+            resources.ApplyResources(this.visualizarProdutosBtn2, "visualizarProdutosBtn2");
+            this.visualizarProdutosBtn2.BackgroundImage = global::Lojinha.Properties.Resources.viewProductsLocked;
+            this.visualizarProdutosBtn2.FlatAppearance.BorderSize = 0;
+            this.visualizarProdutosBtn2.Name = "visualizarProdutosBtn2";
+            this.visualizarProdutosBtn2.UseVisualStyleBackColor = true;
+            this.visualizarProdutosBtn2.Click += new System.EventHandler(this.visualizarProdutosBtn2_Click);
+            // 
+            // visualizarPedidosBtn2
+            // 
+            resources.ApplyResources(this.visualizarPedidosBtn2, "visualizarPedidosBtn2");
+            this.visualizarPedidosBtn2.BackgroundImage = global::Lojinha.Properties.Resources.viewSalesLocked;
+            this.visualizarPedidosBtn2.FlatAppearance.BorderSize = 0;
+            this.visualizarPedidosBtn2.Name = "visualizarPedidosBtn2";
+            this.visualizarPedidosBtn2.UseVisualStyleBackColor = true;
+            this.visualizarPedidosBtn2.Click += new System.EventHandler(this.visualizarPedidosBtn2_Click);
             // 
             // TelaPrincipal
             // 
@@ -389,7 +455,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::Lojinha.Properties.Resources.mainScreenBG;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.visualizarPedidosBtn2);
+            this.Controls.Add(this.adicionarCategoriaBtn2);
+            this.Controls.Add(this.visualizarClientesBtn2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.adicionarProdutoBtn2);
+            this.Controls.Add(this.visualizarClientesBtn);
             this.Controls.Add(this.normalSizeButton);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.helpBalloon2);
@@ -398,17 +469,19 @@
             this.Controls.Add(this.maximizeButton);
             this.Controls.Add(this.addCategoryButton);
             this.Controls.Add(this.viewOrdersButton);
-            this.Controls.Add(this.viewClientsButton);
             this.Controls.Add(this.addPaymentButton);
-            this.Controls.Add(this.viewStorageButton);
-            this.Controls.Add(this.addProductButton);
+            this.Controls.Add(this.visualizarEstoqueBtn);
+            this.Controls.Add(this.adicionarProdutoBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.retroGirlImage);
             this.Controls.Add(this.helpButton);
-            this.Controls.Add(this.createUserButton);
+            this.Controls.Add(this.criarUsuarioBtn2);
+            this.Controls.Add(this.viewClientsButton);
+            this.Controls.Add(this.visualizarProdutosBtn2);
+            this.Controls.Add(this.criarUsuarioBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TelaPrincipal";
@@ -439,12 +512,12 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastrarUsuárioToolStripMenuItem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button addProductButton;
-        private System.Windows.Forms.Button viewStorageButton;
+        private System.Windows.Forms.Button adicionarProdutoBtn;
+        private System.Windows.Forms.Button visualizarEstoqueBtn;
         private System.Windows.Forms.Button addCategoryButton;
         private System.Windows.Forms.Button viewOrdersButton;
         private System.Windows.Forms.Button viewClientsButton;
-        private System.Windows.Forms.Button createUserButton;
+        private System.Windows.Forms.Button criarUsuarioBtn;
         private System.Windows.Forms.Button addPaymentButton;
         private System.Windows.Forms.Button maximizeButton;
         private System.Windows.Forms.Button minimizeButton;
@@ -461,8 +534,15 @@
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.ToolStripMenuItem adicionarCategoriaToolStripMenuItem;
         private System.Windows.Forms.Button normalSizeButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button visualizarClientesBtn;
         private System.Windows.Forms.ToolStripMenuItem alterarSenhaToolStripMenuItem;
+        private System.Windows.Forms.Button adicionarProdutoBtn2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button visualizarClientesBtn2;
+        private System.Windows.Forms.Button adicionarCategoriaBtn2;
+        private System.Windows.Forms.Button criarUsuarioBtn2;
+        private System.Windows.Forms.Button visualizarProdutosBtn2;
+        private System.Windows.Forms.Button visualizarPedidosBtn2;
     }
 }
 

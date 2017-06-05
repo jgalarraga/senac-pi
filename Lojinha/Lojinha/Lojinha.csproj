@@ -128,11 +128,17 @@
     <Compile Include="CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teste.cs">
-      <SubType>Form</SubType>
+    <Compile Include="textBoxUserControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Teste.Designer.cs">
-      <DependentUpon>Teste.cs</DependentUpon>
+    <Compile Include="textBoxUserControl.Designer.cs">
+      <DependentUpon>textBoxUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtBoxUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="txtBoxUserControl.Designer.cs">
+      <DependentUpon>txtBoxUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="VisualizarEstoque.cs">
       <SubType>Form</SubType>
@@ -146,14 +152,46 @@
     <Compile Include="AdicionarPedido.Designer.cs">
       <DependentUpon>AdicionarPedido.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\viewSalesLocked.jpg" />
+    <None Include="Resources\viewProductsLocked.jpg" />
+    <None Include="Resources\viewClientsLocked.jpg" />
+    <None Include="Resources\txtBoxEnterValue.jpg" />
+    <None Include="bin\Debug\Lojinha.exe.config" />
+    <None Include="bin\Debug\Lojinha.vshost.exe.config" />
+    <None Include="bin\Debug\Lojinha.vshost.exe.manifest" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-Black.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-BlackItalic.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-Bold.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-BoldItalic.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-Italic.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-Light.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-LightItalic.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-Medium.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-MediumItalic.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-Regular.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-Thin.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\Roboto-ThinItalic.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\RobotoCondensed-Bold.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\RobotoCondensed-BoldItalic.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\RobotoCondensed-Italic.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\RobotoCondensed-Light.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\RobotoCondensed-LightItalic.ttf" />
+    <None Include="bin\Debug\Resources\Fontes\RobotoCondensed-Regular.ttf" />
+    <None Include="Resources\txtBoxFilled.jpg" />
+    <None Include="Resources\txtBoxError3.jpg" />
+    <None Include="Resources\txtBoxFocus.jpg" />
+    <None Include="Resources\txtBox1.jpg" />
+    <None Include="Resources\loginForm2.jpg" />
+    <None Include="Resources\loginFormError.jpg" />
+    <None Include="Resources\loginForm1.jpg" />
+    <None Include="Resources\loginForm.jpg" />
+    <None Include="Resources\telaLogin.jpg" />
+    <None Include="Resources\viewStorageButton2.jpg" />
     <None Include="Resources\retroGirl.jpg" />
     <None Include="Resources\normalSizeButton.png" />
     <None Include="Resources\yellowButton.jpg" />
     <None Include="Resources\purbleButton1.jpg" />
     <None Include="Resources\purbleButton.jpg" />
-    <None Include="bin\Debug\Lojinha.exe.config" />
-    <None Include="bin\Debug\Lojinha.vshost.exe.config" />
-    <None Include="bin\Debug\Lojinha.vshost.exe.manifest" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Lojinha.csproj.GenerateResource.Cache" />
@@ -198,8 +236,11 @@
     <EmbeddedResource Include="CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Teste.resx">
-      <DependentUpon>Teste.cs</DependentUpon>
+    <EmbeddedResource Include="textBoxUserControl.resx">
+      <DependentUpon>textBoxUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="txtBoxUserControl.resx">
+      <DependentUpon>txtBoxUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VisualizarEstoque.resx">
       <DependentUpon>VisualizarEstoque.cs</DependentUpon>
@@ -242,12 +283,20 @@
     <None Include="Resources\capa.jpg" />
     <None Include="Resources\balao2.jpg" />
     <None Include="Resources\24h.jpg" />
+    <Content Include="bin\Debug\BancoModel.dll" />
+    <Content Include="bin\Debug\BancoModel.pdb" />
+    <Content Include="bin\Debug\Lojinha.exe" />
+    <Content Include="bin\Debug\Lojinha.pdb" />
     <Content Include="bin\Debug\Lojinha.vshost.exe" />
     <Content Include="obj\Debug\Lojinha.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\TempPE\DataSet1.Designer.cs.dll" />
     <Content Include="obj\Debug\TempPE\Lojinha.Designer.cs.dll" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <None Include="Resources\blueButton.jpg" />
+    <None Include="Resources\cry.jpg" />
+    <None Include="Resources\addProductLocked.jpg" />
+    <None Include="Resources\addCategoriaLocked.jpg" />
+    <None Include="Resources\createUserLocked.jpg" />
     <Content Include="Resources\Fontes\Roboto-Black.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -316,9 +365,10 @@
     <None Include="Resources\questionMark.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Debug\Resources\Fontes\" />
     <Folder Include="bin\Release\" />
+    <Folder Include="Formularios\" />
     <Folder Include="obj\Nova pasta\" />
+    <Folder Include="User Controls\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BancoModel\BancoModel.csproj">

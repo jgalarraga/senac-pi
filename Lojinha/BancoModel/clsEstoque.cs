@@ -46,7 +46,7 @@ namespace BancoModel
                 cmd.Parameters.Add("idProduto", SqlDbType.Int).Value = idProduto;
             }
 
-            cmd.Parameters.Add("@qtdProdutoDisponivel", SqlDbType.Int,50).Value = this.qtdProdutoDisponivel;
+            cmd.Parameters.Add("@qtdProdutoDisponivel", SqlDbType.Int, 50).Value = this.qtdProdutoDisponivel;
             cmd.ExecuteNonQuery();
 
             if (inserir)
@@ -62,7 +62,7 @@ namespace BancoModel
 
         public static List<clsEstoque> SelecionarEstoque()
         {
-            string sql = "SELECT dbo.Estoque.idProduto, dbo.Produto.nomeProduto, qtdProdutoDisponivel, nomeCategoria FROM dbo.Estoque " + 
+            string sql = "SELECT dbo.Estoque.idProduto, dbo.Produto.nomeProduto, qtdProdutoDisponivel, nomeCategoria FROM dbo.Estoque " +
                 " inner join dbo.Produto on dbo.Estoque.idProduto = dbo.Produto.idProduto " +
                 " inner join dbo.Categoria on dbo.Produto.idCategoria = dbo.Categoria.idCategoria";
             SqlConnection cn = clsConexao.Conectar();
@@ -90,7 +90,7 @@ namespace BancoModel
                 " inner join dbo.Produto on dbo.Estoque.idProduto = dbo.Produto.idProduto " +
                 " inner join dbo.Categoria on dbo.Produto.idCategoria = dbo.Categoria.idCategoria" +
                 "WHERE idProduto = @idProduto";
-            
+
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
             cmd.CommandText = sql;
@@ -112,47 +112,83 @@ namespace BancoModel
 
         // filtar categoria por nome E/OU categoria
         // este método deve ser chamado no evento do botão pesquisar
-        public static List<clsEstoque> SelecionarEstoque(TextBox nomeProdTextBox, ComboBox categoriaComboBox)
+        public static List<clsEstoque> SelecionarEstoque(string nomeProd, string nomeCat)
         {
             List<clsEstoque> Estoque = new List<clsEstoque>();
-            string sql = "SELECT dbo.Produto.nomeProduto AS [Produto], dbo.Estoque.qtdProdutoDisponivel, dbo.Categoria.nomeCategoria " +
-                   "FROM dbo.Produto INNER JOIN dbo.Estoque " +
-                   "ON dbo.Produto.idProduto = dbo.Estoque.idProduto " +
-                   "INNER JOIN dbo.Categoria " +
-                   "ON dbo.Categoria.idCategoria = dbo.Produto.idCategoria " +
-                   "WHERE dbo.Produto.nomeProduto LIKE '%" + "@field" + "%'";
+            string sql = "SELECT Produto.idProduto, dbo.Produto.nomeProduto, dbo.Estoque.qtdProdutoDisponivel, dbo.Categoria.nomeCategoria " +
+                    "FROM dbo.Produto INNER JOIN dbo.Estoque " +
+                     "ON dbo.Produto.idProduto = dbo.Estoque.idProduto " +
+                    "INNER JOIN dbo.Categoria " +
+                    "ON dbo.Categoria.idCategoria = dbo.Produto.idCategoria ";
+
+
+            if (!nomeProd.Equals("") && nomeCat.Equals(""))
+            {
+                sql += "WHERE dbo.Produto.nomeProduto LIKE @nomeProd";
+            }
+            else if (nomeProd.Equals("") && !nomeCat.Equals(""))
+            {
+                sql += "WHERE dbo.Categoria.nomeCategoria LIKE @nomeCat";
+            }
+            else if (!nomeProd.Equals("") && !nomeCat.Equals(""))
+            {
+                sql += "WHERE dbo.Produto.nomeProduto LIKE @nomeProd AND dbo.Categoria.nomeCategoria LIKE @nomeCat";
+            }
+            else
+            {
+                sql += "WHERE dbo.Produto.nomeProduto LIKE @nomeProd AND dbo.Categoria.nomeCategoria LIKE @nomeCat";
+            }
 
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
             cmd.CommandText = sql;
-            cmd.Parameters.AddWithValue("@field", nomeProdTextBox.Text);
+            cmd.Parameters.Add("@field", SqlDbType.VarChar, 50).Value = "%" + nomeProd + "%";
+            cmd.Parameters.AddWithValue("@nomeProd", "%" + nomeProd + "%");
+            cmd.Parameters.AddWithValue("@nomeCat", "%" + nomeCat + "%");
 
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
                 clsEstoque E = new clsEstoque();
                 E.idProduto = dr.GetInt32(dr.GetOrdinal("idProduto"));
+                E.nomeProduto = dr.GetString(dr.GetOrdinal("nomeProduto"));
                 E.qtdProdutoDisponivel = dr.GetInt32(dr.GetOrdinal("qtdProdutoDisponivel"));
+                E.nomeCategoria = dr.GetString(dr.GetOrdinal("nomeCategoria"));
                 Estoque.Add(E);
             }
-
-            //if (!nomeProdTextBox.Text.Equals("") && categoriaComboBox.Text.Equals(""))
-            //{
-
-            //} else if (!categoriaComboBox.Text.Equals("") && nomeProdTextBox.Text.Equals("")) {
-            //    // somente a textbox da categoria está preenchida  
-
-            //} else if (!categoriaComboBox.Text.Equals("") && !nomeProdTextBox.Text.Equals("")) {
-            //     // somente a textBox do nome está preenchida
-              
-            //    // ambas estão preenchidas
-            //} else {
-            //    // nenhuma está preenchida
-            //}
 
             return Estoque;
 
         }
 
+        public static List<clsEstoque> SelecionarEstoque(string pesquisarTxt)
+        {
+            List<clsEstoque> Estoque = new List<clsEstoque>();
+            string sql = "SELECT Produto.idProduto, dbo.Produto.nomeProduto, dbo.Estoque.qtdProdutoDisponivel, dbo.Categoria.nomeCategoria " +
+                   "FROM dbo.Produto INNER JOIN dbo.Estoque " +
+                   "ON dbo.Produto.idProduto = dbo.Estoque.idProduto " +
+                   "INNER JOIN dbo.Categoria " +
+                   "ON dbo.Categoria.idCategoria = dbo.Produto.idCategoria " +
+                   "WHERE dbo.Produto.nomeProduto LIKE @field";
+
+            SqlConnection cn = clsConexao.Conectar();
+            SqlCommand cmd = cn.CreateCommand();
+            cmd.CommandText = sql;
+            //cmd.Parameters.Add("@field", SqlDbType.VarChar,50).Value = "%" + nomeProd + "%";
+            cmd.Parameters.AddWithValue("@field", "%" + pesquisarTxt + "%");
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                clsEstoque E = new clsEstoque();
+                E.idProduto = dr.GetInt32(dr.GetOrdinal("idProduto"));
+                E.nomeProduto = dr.GetString(dr.GetOrdinal("nomeProduto"));
+                E.qtdProdutoDisponivel = dr.GetInt32(dr.GetOrdinal("qtdProdutoDisponivel"));
+                E.nomeCategoria = dr.GetString(dr.GetOrdinal("nomeCategoria"));
+                Estoque.Add(E);
+            }
+
+            return Estoque;
+        }
     }
 }

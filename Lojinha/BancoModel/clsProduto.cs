@@ -95,13 +95,25 @@ namespace BancoModel
                 clsProduto P = new clsProduto();
                 P.idProduto = dr.GetInt32(dr.GetOrdinal("idProduto"));
                 P.nomeProduto = dr.GetString(dr.GetOrdinal("nomeProduto"));
-                P.descProduto = dr.GetString(dr.GetOrdinal("descProduto"));
+                if (!dr.IsDBNull(dr.GetOrdinal("descProduto")))
+                {
+                    P.descProduto = dr.GetString(dr.GetOrdinal("descProduto"));
+                }
                 P.precProduto = dr.GetDecimal(dr.GetOrdinal("precProduto"));
-                P.descontoPromocao = dr.GetDecimal(dr.GetOrdinal("descontoPromocao"));
+                if (!dr.IsDBNull(dr.GetOrdinal("descontoPromocao")))
+                {
+                    P.descontoPromocao = dr.GetDecimal(dr.GetOrdinal("descontoPromocao"));
+                }
                 P.IdCategoria = dr.GetInt32(dr.GetOrdinal("IdCategoria"));
                 P.ativoProduto = dr.GetString(dr.GetOrdinal("ativoProduto"));
-                P.IdUsuario = dr.GetInt32(dr.GetOrdinal("IdUsuario"));
-                P.qtdMinEstoque = dr.GetInt32(dr.GetOrdinal("qtdMinEstoque"));
+                if (!dr.IsDBNull(dr.GetOrdinal("IdUsuario")))
+                {
+                    P.IdUsuario = dr.GetInt32(dr.GetOrdinal("IdUsuario"));
+                }
+                if (!dr.IsDBNull(dr.GetOrdinal("qtdMinEstoque")))
+                {
+                    P.qtdMinEstoque = dr.GetInt32(dr.GetOrdinal("qtdMinEstoque"));
+                }
                 P.nomeCategoria = dr.GetString(dr.GetOrdinal("nomeCategoria"));
                 Produtos.Add(P);
             }
