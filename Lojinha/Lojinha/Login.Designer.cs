@@ -35,6 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.loginErrorPanel = new System.Windows.Forms.Panel();
             this.cryImagePanel = new System.Windows.Forms.Panel();
+            this.closeButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +69,7 @@
             this.loginBtn.TabIndex = 2;
             this.loginBtn.UseVisualStyleBackColor = false;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            this.loginBtn.MouseEnter += new System.EventHandler(this.loginBtn_MouseEnter);
             // 
             // panel1
             // 
@@ -96,12 +98,26 @@
             this.cryImagePanel.Size = new System.Drawing.Size(117, 157);
             this.cryImagePanel.TabIndex = 4;
             // 
+            // closeButton
+            // 
+            this.closeButton.BackgroundImage = global::Lojinha.Properties.Resources.delete_button;
+            this.closeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.closeButton.Location = new System.Drawing.Point(763, 14);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(30, 30);
+            this.closeButton.TabIndex = 5;
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Lojinha.Properties.Resources.telaLogin;
             this.ClientSize = new System.Drawing.Size(800, 492);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.cryImagePanel);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.panel1);
@@ -123,5 +139,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel loginErrorPanel;
         private System.Windows.Forms.Panel cryImagePanel;
+        private System.Windows.Forms.Button closeButton;
     }
 }

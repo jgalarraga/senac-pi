@@ -30,7 +30,11 @@ namespace Lojinha
             if (senhaTextBox.Text.Equals(senhaTextBox2.Text))
             {
                 clsUsuario usuario = new clsUsuario();
-
+                if(loginTextBox.Text == "" && senhaTextBox.Text == "")
+                {
+                    MessageBox.Show("Favor preencher todos os campos");
+                    return;
+                }
                 // valido o login
                 // variável userCount recebe o retorno do método efetuarLogin que está na classe clsUsuario
                 // se um registro for encontrado, a classe retorna 1
@@ -42,12 +46,16 @@ namespace Lojinha
                 {
                     // deixo o usuário excluir
                     usuario.Excluir(loginTextBox.Text);
+                    MessageBox.Show("Usuário excluído com sucesso");
                 }
                 else
                 {
                     // senão, não permito
                     loginTextBox.textBoxEscrever_Error();
                 }
+            }else
+            {
+                MessageBox.Show("As senhas diferem");
             }
         }
 

@@ -162,6 +162,12 @@
   <data name="&gt;&gt;exitButton.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
+  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Usuários</value>
+  </data>
   <data name="cadastrarUsuárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 22</value>
   </data>
@@ -174,11 +180,11 @@
   <data name="alterarSenhaToolStripMenuItem.Text" xml:space="preserve">
     <value>Alterar Senha</value>
   </data>
-  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 24</value>
+  <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 24</value>
   </data>
-  <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Usuários</value>
+  <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produtos</value>
   </data>
   <data name="adicionarProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 22</value>
@@ -198,11 +204,11 @@
   <data name="cadastrarCategoriaToolStripMenuItem.Text" xml:space="preserve">
     <value>Adicionar Categoria</value>
   </data>
-  <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+  <data name="pedidosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 24</value>
   </data>
-  <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Produtos</value>
+  <data name="pedidosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clientes</value>
   </data>
   <data name="visualizarClientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 22</value>
@@ -210,11 +216,11 @@
   <data name="visualizarClientesToolStripMenuItem.Text" xml:space="preserve">
     <value>Visualizar Clientes</value>
   </data>
-  <data name="pedidosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pedidosToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 24</value>
   </data>
-  <data name="pedidosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clientes</value>
+  <data name="pedidosToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Pedidos</value>
   </data>
   <data name="cadastrarPedidoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 22</value>
@@ -246,35 +252,11 @@
   <data name="adicionarCategoriaToolStripMenuItem.Text" xml:space="preserve">
     <value>Adicionar Categoria</value>
   </data>
-  <data name="pedidosToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 24</value>
-  </data>
-  <data name="pedidosToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Pedidos</value>
-  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="menuStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="versãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 22</value>
-  </data>
-  <data name="versãoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sobre o SOS! Ajude a Minha Loja...</value>
-  </data>
-  <data name="ajudaParaEsteFormulárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 22</value>
-  </data>
-  <data name="ajudaParaEsteFormulárioToolStripMenuItem.Text" xml:space="preserve">
-    <value>Estou tendo dificuldades com o formuário...</value>
-  </data>
-  <data name="ajudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 24</value>
-  </data>
-  <data name="ajudaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ajuda</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -299,6 +281,24 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>21</value>
+  </data>
+  <data name="ajudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 24</value>
+  </data>
+  <data name="ajudaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="versãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 22</value>
+  </data>
+  <data name="versãoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sobre o SOS! Ajude a Minha Loja...</value>
+  </data>
+  <data name="ajudaParaEsteFormulárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 22</value>
+  </data>
+  <data name="ajudaParaEsteFormulárioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Estou tendo dificuldades com o formuário...</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -1205,6 +1205,9 @@
   <data name="&gt;&gt;visualizarPedidosBtn2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1212,7 +1215,7 @@
     <value>Corbel, 11.25pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 225</value>
+    <value>455, 225</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 18</value>

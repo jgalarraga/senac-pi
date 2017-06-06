@@ -54,9 +54,9 @@ namespace BancoModel
             cmd.Parameters.Add("@loginUsuario", SqlDbType.VarChar, 50).Value = this.loginUsuario;
             cmd.Parameters.Add("@senhaUsuario", SqlDbType.VarChar, 50).Value = this.senhaUsuario;
             cmd.Parameters.Add("@nomeUsuario", SqlDbType.VarChar, 50).Value = this.nomeUsuario;
-            cmd.Parameters.Add("@tipoPerfil", SqlDbType.VarChar, 50).Value = this.tipoPerfil;
+            cmd.Parameters.Add("@tipoPerfil", SqlDbType.Char, 1).Value = this.tipoPerfil;
             // verificar o tipo do campo no sql management studio
-            cmd.Parameters.Add("@usuarioAtivo", SqlDbType.VarChar, 50).Value = this.usuarioAtivo;
+            cmd.Parameters.Add("@usuarioAtivo", SqlDbType.TinyInt, 1).Value = this.usuarioAtivo;
             cmd.ExecuteNonQuery();
 
             if (inserir)
@@ -188,6 +188,22 @@ namespace BancoModel
             // ou diferente da "A" para outro
             // só o adm pode mexer no estoque
             return perfilUsuario;
+        }
+
+        public string selecionarNomeUsuario(string usuario, string senha)
+        {
+            string sql = "SELECT nomeUsuario FROM Usuario " +
+               "WHERE loginUsuario LIKE @usuario AND senhaUsuario LIKE @senha";
+            SqlConnection cn = clsConexao.Conectar();
+            SqlCommand cmd = cn.CreateCommand();
+            cmd.CommandText = sql;
+
+            cmd.Parameters.AddWithValue("@usuario", "%" + usuario + "%");
+            cmd.Parameters.AddWithValue("@senha", "%" + senha + "%");
+
+            string nomeUsuario = (string)cmd.ExecuteScalar();
+
+            return nomeUsuario;
         }
     }
 

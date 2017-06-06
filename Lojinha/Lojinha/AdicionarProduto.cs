@@ -36,12 +36,28 @@ namespace Lojinha
             // crio um objeto do tipo Produto
             clsProduto produto = new clsProduto();
             // faço com que os campos recebam o que for digitado nas text boxs
+            if(this.nomeProdTextBox.Text == "")
+            {
+                MessageBox.Show("Favor digitar o nome do produto");
+                return;
+            }
+            if (this.precoTextBox.Text == "")
+            {
+                MessageBox.Show("Favor digitar o preço do produto");
+                return;
+            }
             produto.nomeProduto = this.nomeProdTextBox.Text;
             produto.descProduto = this.descProdTextBox.Text;
             produto.precProduto = (decimal)Convert.ChangeType(this.precoTextBox.Text, typeof(decimal));
-            produto.descontoPromocao = (decimal)Convert.ChangeType(this.descontoTextBox.Text, typeof(decimal));
-            produto.IdCategoria = (int)Convert.ChangeType(CategoriaComboBox.SelectedValue, typeof(int));
-            produto.qtdMinEstoque = (int)Convert.ChangeType(this.qntMinTextBox.Text, typeof(int));
+            if(this.descontoTextBox.Text != "")
+            {
+                produto.descontoPromocao = (decimal)Convert.ChangeType(this.descontoTextBox.Text, typeof(decimal));
+            }
+            if (this.qntMinTextBox.Text != "")
+            {
+                produto.qtdMinEstoque = (int)Convert.ChangeType(this.qntMinTextBox.Text, typeof(int));
+            }
+                produto.IdCategoria = (int)Convert.ChangeType(CategoriaComboBox.SelectedValue, typeof(int));
             produto.ativoProduto = "1";
             produto.IdUsuario = 1;
             produto.imagem = (byte[])Convert.ChangeType(this.imagem, typeof(byte[]));
@@ -51,67 +67,84 @@ namespace Lojinha
             List<clsProduto> produtos = clsProduto.SelecionarProdutos();
             produtoDataGrid.DataSource = produtos;
             produtoDataGrid.Refresh();
-            //MessageBox.Show((string)Convert.ChangeType(CategoriaComboBox.SelectedValue, typeof(string)));
+            MessageBox.Show("Produto adicionado com sucesso !");
         }
 
         private void alterarButton_Click(object sender, EventArgs e)
         {
+            if (this.nomeProdTextBox.Text == "")
+            {
+                MessageBox.Show("Favor digitar o nome do produto");
+                return;
+            }
+            if (this.precoTextBox.Text == "")
+            {
+                MessageBox.Show("Favor digitar o preço do produto");
+                return;
+            }
             //funcao do demo para converter objeto em inteiro
             int id = (int)Convert.ChangeType(produtoDataGrid.SelectedRows[0].Cells[0].Value, typeof(int));
-            // crio um objeto do tipo Categoria
-            clsProduto produto = new clsProduto();
-            // Faço com que o idProduto receba o valor do id da linha selecionada
-            produto.idProduto = id;
-            // faço com que os campos recebam o que for digitado nas text boxs
-            // chamo o método salvar da classe clsCategoria
-            produto.Salvar();
-            // atualizo a lista de categorias
-            List<clsProduto> produtos = clsProduto.SelecionarProdutos();
-            produtoDataGrid.DataSource = produtos;
-            produtoDataGrid.Refresh();
+            //Vejo se o produto está sendo utilizado em algum pedido
+            List<clsItemPedido> pedidos = clsItemPedido.SelecionarItens(id);
+            if (!(pedidos.Count > 0))
+            {
+                // crio um objeto do tipo Categoria
+                clsProduto produto = new clsProduto();
+                // Faço com que o idProduto receba o valor do id da linha selecionada
+                produto.idProduto = id;
+                // faço com que os campos recebam o que for digitado nas text boxs
+                produto.nomeProduto = this.nomeProdTextBox.Text;
+                produto.descProduto = this.descProdTextBox.Text;
+                produto.precProduto = (decimal)Convert.ChangeType(this.precoTextBox.Text, typeof(decimal));
+                produto.descontoPromocao = (decimal)Convert.ChangeType(this.descontoTextBox.Text, typeof(decimal));
+                produto.IdCategoria = (int)Convert.ChangeType(CategoriaComboBox.SelectedValue, typeof(int));
+                produto.qtdMinEstoque = (int)Convert.ChangeType(this.qntMinTextBox.Text, typeof(int));
+                produto.ativoProduto = "1";
+                produto.IdUsuario = 1;
+                produto.imagem = (byte[])Convert.ChangeType(this.imagem, typeof(byte[]));
+                // faço com que os campos recebam o que for digitado nas text boxs
+                // chamo o método salvar da classe clsCategoria
+                produto.Salvar();
+                // atualizo a lista de categorias
+                List<clsProduto> produtos = clsProduto.SelecionarProdutos();
+                produtoDataGrid.DataSource = produtos;
+                produtoDataGrid.Refresh();
+                MessageBox.Show("Produto alterado com sucesso !");
+            }
+            else
+            {
+                MessageBox.Show("Produto está sendo utilizado em um pedido, favor deletar o pedido primeiro");
+            }
         }
 
         private void excluirButton_Click(object sender, EventArgs e)
         {
             //funcao do demo para converter objeto em inteiro
             int id = (int)Convert.ChangeType(produtoDataGrid.SelectedRows[0].Cells[0].Value, typeof(int));
-            // crio um objeto do tipo Categoria
-            clsProduto produto = new clsProduto();
-            // Faço com que o idProduto receba o valor do id da linha selecionada
-            produto.idProduto = id;
-            //chamo a função de excluir
-            produto.Excluir();
-            List<clsProduto> produtos = clsProduto.SelecionarProdutos();
-            produtoDataGrid.DataSource = produtos;
-            produtoDataGrid.Refresh();
+            //Vejo se o produto está sendo utilizado em algum pedido
+            List<clsItemPedido> pedidos = clsItemPedido.SelecionarItens(id);
+            if (!(pedidos.Count > 0))
+            {
+                // crio um objeto do tipo Categoria
+                clsProduto produto = new clsProduto();
+                // Faço com que o idProduto receba o valor do id da linha selecionada
+                produto.idProduto = id;
+                //chamo a função de excluir
+                produto.Excluir();
+                List<clsProduto> produtos = clsProduto.SelecionarProdutos();
+                produtoDataGrid.DataSource = produtos;
+                produtoDataGrid.Refresh();
+                MessageBox.Show("Produto excluído com sucesso !");
+            }
+            else
+            {
+                MessageBox.Show("Produto está sendo utilizado em um pedido, favor deletar o pedido primeiro");
+            }
         }
 
         private void produtoDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (produtoDataGrid.SelectedRows.Count > 0)
-            {
-                nomeProdTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[1].Value.ToString();
-                descProdTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[2].Value.ToString();
-                precoTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[3].Value.ToString();
-                descontoTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[4].Value.ToString();
-                qntMinTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[8].Value.ToString();
-                CategoriaComboBox.Text = produtoDataGrid.SelectedRows[0].Cells[9].Value.ToString();
-                if ((string)produtoDataGrid.SelectedRows[0].Cells[6].Value == "1")
-                {
-                    ativoComboBox.Text = "Ativo";
-                }
-                else
-                {
-                    ativoComboBox.Text = "Desativado";
-                }
-
-                if (produtoDataGrid.SelectedRows[0].Cells[10].Value != null)
-                {
-                    imagem = new byte[0];
-                    imagem = (byte[])(produtoDataGrid.SelectedRows[0].Cells["Imagem"].Value);
-                    mostraFoto(imagem);
-                } 
-            }
+            
         }
 
         private void mostraFoto(byte[] dados)
@@ -207,6 +240,34 @@ namespace Lojinha
                 {
                     imagem = new byte[0];
                     MessageBox.Show("Arquivo Inválido! :C Tente novamente...");
+                }
+            }
+        }
+
+        private void produtoDataGrid_SelectionChanged(object sender, EventArgs e)
+        {
+            if (produtoDataGrid.SelectedRows.Count > 0)
+            {
+                nomeProdTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[1].Value.ToString();
+                descProdTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[2].Value.ToString();
+                precoTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[3].Value.ToString();
+                descontoTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[4].Value.ToString();
+                qntMinTextBox.Text = produtoDataGrid.SelectedRows[0].Cells[8].Value.ToString();
+                CategoriaComboBox.Text = produtoDataGrid.SelectedRows[0].Cells[9].Value.ToString();
+                if ((string)produtoDataGrid.SelectedRows[0].Cells[6].Value == "1")
+                {
+                    ativoComboBox.Text = "Ativo";
+                }
+                else
+                {
+                    ativoComboBox.Text = "Desativado";
+                }
+
+                if (produtoDataGrid.SelectedRows[0].Cells[10].Value != null)
+                {
+                    imagem = new byte[0];
+                    imagem = (byte[])(produtoDataGrid.SelectedRows[0].Cells["Imagem"].Value);
+                    mostraFoto(imagem);
                 }
             }
         }

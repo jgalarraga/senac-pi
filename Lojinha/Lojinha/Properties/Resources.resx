@@ -121,17 +121,26 @@
   <data name="txtBoxTiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBoxTiny.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="status" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="loginForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginForm2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="txtBoxEnterValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBoxEnterValue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="estoqueTip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\estoqueTip.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="removeUserBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addPaymentButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete-button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="closeBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\closeBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +151,14 @@
   <data name="visualizarClientesButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\visualizarClientesButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="visualizarProdutosTip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\visualizarProdutosTip.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="txtBoxBasic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBox1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="adicionarUsuarioTip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adicionarUsuarioTip.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="addCategoriaLocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addCategoriaLocked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -153,6 +168,9 @@
   </data>
   <data name="questionMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\questionMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="viewClientsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\viewClientsButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="txtBoxEnterValueTiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBoxEnterValueTiny.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,20 +196,17 @@
   <data name="yesBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yesBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logoLoja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoLoja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="helpButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\helpButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NaoBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NaoBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="blueButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blueButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="addCategoryButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addCategoryButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,11 +229,17 @@
   <data name="normalSizeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\normalSizeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loginForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loginForm2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="addProdutosTip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addProdutosTip.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="txtBoxErrorSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\txtBoxErrorSmall.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="txtBoxFocusMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBoxFocusMedium.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="visualizarEstoqueButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\visualizarEstoqueButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,17 +265,20 @@
   <data name="viewSalesLocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\viewSalesLocked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="txtBoxErrorSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\txtBoxErrorSmall.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="txtBoxSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBoxSmall.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shutdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="txtBoxMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBoxMedium.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="viewProductsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\viewProductsButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="removerUsuarioTIp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\removerUsuarioTIp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="yellowButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yellowButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -268,8 +292,8 @@
   <data name="removeUserButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\removeUserButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="helpButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helpButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="txtBoxFocus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBoxFocus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,6 +310,9 @@
   <data name="txtBoxError" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBoxError3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pedidosTip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pedidosTip.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="txtBoxEnterValueMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\txtBoxEnterValueMedium.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -294,6 +321,9 @@
   </data>
   <data name="otherScreensBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\otherScreensBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pizza.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SimBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SimBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -307,6 +337,9 @@
   <data name="mainScreenBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mainScreenBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="photoAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photoAdd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="createUserLocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\createUserLocked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -319,8 +352,8 @@
   <data name="telaLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\telaLogin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="viewClientsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\viewClientsButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="addProductButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addProductButton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -340,7 +373,13 @@
   <data name="noBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="photoAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photoAdd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="adicionarCategoriaTip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adicionarCategoriaTip.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visualizarClientesTip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\visualizarClientesTip.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonClicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonClicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

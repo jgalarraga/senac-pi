@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.menuStrip = new System.Windows.Forms.Panel();
+            this.adicionarUsuarioTip = new System.Windows.Forms.Panel();
+            this.pedidosTip = new System.Windows.Forms.Panel();
+            this.removerUsuarioTip = new System.Windows.Forms.Panel();
+            this.visualizarProdutosTip = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.adicionarCategoria = new System.Windows.Forms.Button();
             this.visualizarPedidos = new System.Windows.Forms.Button();
             this.visualizarClientes = new System.Windows.Forms.Button();
@@ -42,23 +47,22 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarSenhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fazerLogoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pedidosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visualizarPedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adicionarStatusDePedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adicionarFormaDePagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adicionarCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.versãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajudaParaEsteFormulárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.painel = new System.Windows.Forms.Panel();
+            this.logoffButton = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
+            this.addProdutosTip = new System.Windows.Forms.Panel();
+            this.estoqueTip = new System.Windows.Forms.Panel();
+            this.adicionarCategoriaTip = new System.Windows.Forms.Panel();
+            this.visualizarClientesTip = new System.Windows.Forms.Panel();
             this.menuStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +71,11 @@
             // 
             this.menuStrip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.menuStrip.BackgroundImage = global::Lojinha.Properties.Resources.Menu;
+            this.menuStrip.Controls.Add(this.adicionarUsuarioTip);
+            this.menuStrip.Controls.Add(this.pedidosTip);
+            this.menuStrip.Controls.Add(this.removerUsuarioTip);
+            this.menuStrip.Controls.Add(this.visualizarProdutosTip);
+            this.menuStrip.Controls.Add(this.label1);
             this.menuStrip.Controls.Add(this.adicionarCategoria);
             this.menuStrip.Controls.Add(this.visualizarPedidos);
             this.menuStrip.Controls.Add(this.visualizarClientes);
@@ -75,10 +84,63 @@
             this.menuStrip.Controls.Add(this.Estoque);
             this.menuStrip.Controls.Add(this.visualizarProdutos);
             this.menuStrip.Controls.Add(this.addProdutoButton);
-            this.menuStrip.Location = new System.Drawing.Point(272, 28);
+            this.menuStrip.Location = new System.Drawing.Point(272, 38);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1088, 150);
             this.menuStrip.TabIndex = 0;
+            // 
+            // adicionarUsuarioTip
+            // 
+            this.adicionarUsuarioTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.adicionarUsuarioTip.BackgroundImage = global::Lojinha.Properties.Resources.adicionarUsuarioTip;
+            this.adicionarUsuarioTip.Location = new System.Drawing.Point(958, 112);
+            this.adicionarUsuarioTip.Name = "adicionarUsuarioTip";
+            this.adicionarUsuarioTip.Size = new System.Drawing.Size(111, 33);
+            this.adicionarUsuarioTip.TabIndex = 29;
+            this.adicionarUsuarioTip.Visible = false;
+            // 
+            // pedidosTip
+            // 
+            this.pedidosTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pedidosTip.BackgroundImage = global::Lojinha.Properties.Resources.pedidosTip;
+            this.pedidosTip.Location = new System.Drawing.Point(773, 112);
+            this.pedidosTip.Name = "pedidosTip";
+            this.pedidosTip.Size = new System.Drawing.Size(93, 33);
+            this.pedidosTip.TabIndex = 29;
+            this.pedidosTip.Visible = false;
+            // 
+            // removerUsuarioTip
+            // 
+            this.removerUsuarioTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.removerUsuarioTip.BackgroundImage = global::Lojinha.Properties.Resources.removerUsuarioTIp;
+            this.removerUsuarioTip.Location = new System.Drawing.Point(302, 112);
+            this.removerUsuarioTip.Name = "removerUsuarioTip";
+            this.removerUsuarioTip.Size = new System.Drawing.Size(116, 33);
+            this.removerUsuarioTip.TabIndex = 29;
+            this.removerUsuarioTip.Visible = false;
+            // 
+            // visualizarProdutosTip
+            // 
+            this.visualizarProdutosTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.visualizarProdutosTip.BackgroundImage = global::Lojinha.Properties.Resources.visualizarProdutosTip;
+            this.visualizarProdutosTip.Location = new System.Drawing.Point(117, 112);
+            this.visualizarProdutosTip.Name = "visualizarProdutosTip";
+            this.visualizarProdutosTip.Size = new System.Drawing.Size(126, 33);
+            this.visualizarProdutosTip.TabIndex = 28;
+            this.visualizarProdutosTip.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(505, 121);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
             // 
             // adicionarCategoria
             // 
@@ -92,6 +154,9 @@
             this.adicionarCategoria.Size = new System.Drawing.Size(53, 55);
             this.adicionarCategoria.TabIndex = 7;
             this.adicionarCategoria.UseVisualStyleBackColor = true;
+            this.adicionarCategoria.Click += new System.EventHandler(this.adicionarCategoria_Click);
+            this.adicionarCategoria.MouseEnter += new System.EventHandler(this.adicionarCategoria_MouseEnter);
+            this.adicionarCategoria.MouseLeave += new System.EventHandler(this.adicionarCategoria_MouseLeave);
             // 
             // visualizarPedidos
             // 
@@ -105,6 +170,8 @@
             this.visualizarPedidos.Size = new System.Drawing.Size(53, 47);
             this.visualizarPedidos.TabIndex = 6;
             this.visualizarPedidos.UseVisualStyleBackColor = true;
+            this.visualizarPedidos.MouseEnter += new System.EventHandler(this.visualizarPedidos_MouseEnter);
+            this.visualizarPedidos.MouseLeave += new System.EventHandler(this.visualizarPedidos_MouseLeave);
             // 
             // visualizarClientes
             // 
@@ -118,6 +185,9 @@
             this.visualizarClientes.Size = new System.Drawing.Size(57, 55);
             this.visualizarClientes.TabIndex = 5;
             this.visualizarClientes.UseVisualStyleBackColor = true;
+            this.visualizarClientes.Click += new System.EventHandler(this.visualizarClientes_Click);
+            this.visualizarClientes.MouseEnter += new System.EventHandler(this.visualizarClientes_MouseEnter);
+            this.visualizarClientes.MouseLeave += new System.EventHandler(this.visualizarClientes_MouseLeave);
             // 
             // criarUsuario
             // 
@@ -131,6 +201,9 @@
             this.criarUsuario.Size = new System.Drawing.Size(52, 47);
             this.criarUsuario.TabIndex = 4;
             this.criarUsuario.UseVisualStyleBackColor = true;
+            this.criarUsuario.Click += new System.EventHandler(this.criarUsuario_Click);
+            this.criarUsuario.Leave += new System.EventHandler(this.criarUsuario_Leave);
+            this.criarUsuario.MouseEnter += new System.EventHandler(this.criarUsuario_MouseEnter);
             // 
             // removerUsuario
             // 
@@ -144,6 +217,9 @@
             this.removerUsuario.Size = new System.Drawing.Size(46, 49);
             this.removerUsuario.TabIndex = 3;
             this.removerUsuario.UseVisualStyleBackColor = true;
+            this.removerUsuario.Click += new System.EventHandler(this.removerUsuario_Click);
+            this.removerUsuario.MouseEnter += new System.EventHandler(this.removerUsuario_MouseEnter);
+            this.removerUsuario.MouseLeave += new System.EventHandler(this.removerUsuario_MouseLeave);
             // 
             // Estoque
             // 
@@ -157,6 +233,9 @@
             this.Estoque.Size = new System.Drawing.Size(53, 57);
             this.Estoque.TabIndex = 2;
             this.Estoque.UseVisualStyleBackColor = true;
+            this.Estoque.Click += new System.EventHandler(this.Estoque_Click_1);
+            this.Estoque.MouseEnter += new System.EventHandler(this.Estoque_MouseEnter);
+            this.Estoque.MouseLeave += new System.EventHandler(this.Estoque_MouseLeave);
             // 
             // visualizarProdutos
             // 
@@ -170,6 +249,9 @@
             this.visualizarProdutos.Size = new System.Drawing.Size(53, 53);
             this.visualizarProdutos.TabIndex = 1;
             this.visualizarProdutos.UseVisualStyleBackColor = true;
+            this.visualizarProdutos.Click += new System.EventHandler(this.visualizarProdutos_Click);
+            this.visualizarProdutos.MouseEnter += new System.EventHandler(this.visualizarProdutos_MouseEnter);
+            this.visualizarProdutos.MouseLeave += new System.EventHandler(this.visualizarProdutos_MouseLeave);
             // 
             // addProdutoButton
             // 
@@ -184,6 +266,8 @@
             this.addProdutoButton.TabIndex = 0;
             this.addProdutoButton.UseVisualStyleBackColor = true;
             this.addProdutoButton.Click += new System.EventHandler(this.addProdutoButton_Click);
+            this.addProdutoButton.MouseEnter += new System.EventHandler(this.addProdutoButton_MouseEnter);
+            this.addProdutoButton.MouseLeave += new System.EventHandler(this.addProdutoButton_MouseLeave);
             // 
             // minimizeButton
             // 
@@ -234,9 +318,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.produtosToolStripMenuItem,
             this.clientesToolStripMenuItem,
-            this.pedidosToolStripMenuItem,
-            this.pedidosToolStripMenuItem1,
-            this.ajudaToolStripMenuItem});
+            this.pedidosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1669, 28);
@@ -247,7 +329,9 @@
             // 
             this.produtosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrarUsuárioToolStripMenuItem,
-            this.alterarSenhaToolStripMenuItem});
+            this.excluirUsuárioToolStripMenuItem,
+            this.alterarSenhaToolStripMenuItem,
+            this.fazerLogoffToolStripMenuItem});
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             this.produtosToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.produtosToolStripMenuItem.Text = "Usuários";
@@ -255,14 +339,29 @@
             // cadastrarUsuárioToolStripMenuItem
             // 
             this.cadastrarUsuárioToolStripMenuItem.Name = "cadastrarUsuárioToolStripMenuItem";
-            this.cadastrarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.cadastrarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cadastrarUsuárioToolStripMenuItem.Text = "Criar Usuário";
+            this.cadastrarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarUsuárioToolStripMenuItem_Click);
+            // 
+            // excluirUsuárioToolStripMenuItem
+            // 
+            this.excluirUsuárioToolStripMenuItem.Name = "excluirUsuárioToolStripMenuItem";
+            this.excluirUsuárioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.excluirUsuárioToolStripMenuItem.Text = "Excluir Usuário";
+            this.excluirUsuárioToolStripMenuItem.Click += new System.EventHandler(this.excluirUsuárioToolStripMenuItem_Click);
             // 
             // alterarSenhaToolStripMenuItem
             // 
             this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
-            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.alterarSenhaToolStripMenuItem.Text = "Alterar Senha";
+            // 
+            // fazerLogoffToolStripMenuItem
+            // 
+            this.fazerLogoffToolStripMenuItem.Name = "fazerLogoffToolStripMenuItem";
+            this.fazerLogoffToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fazerLogoffToolStripMenuItem.Text = "Fazer Logoff";
+            this.fazerLogoffToolStripMenuItem.Click += new System.EventHandler(this.fazerLogoffToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -306,78 +405,83 @@
             this.visualizarClientesToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.visualizarClientesToolStripMenuItem.Text = "Visualizar Clientes";
             // 
-            // pedidosToolStripMenuItem1
-            // 
-            this.pedidosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarPedidoToolStripMenuItem,
-            this.visualizarPedidosToolStripMenuItem,
-            this.adicionarStatusDePedidoToolStripMenuItem,
-            this.adicionarFormaDePagamentoToolStripMenuItem,
-            this.adicionarCategoriaToolStripMenuItem});
-            this.pedidosToolStripMenuItem1.Name = "pedidosToolStripMenuItem1";
-            this.pedidosToolStripMenuItem1.Size = new System.Drawing.Size(61, 24);
-            this.pedidosToolStripMenuItem1.Text = "Pedidos";
-            // 
-            // cadastrarPedidoToolStripMenuItem
-            // 
-            this.cadastrarPedidoToolStripMenuItem.Name = "cadastrarPedidoToolStripMenuItem";
-            this.cadastrarPedidoToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.cadastrarPedidoToolStripMenuItem.Text = "Cadastrar Pedido";
-            // 
-            // visualizarPedidosToolStripMenuItem
-            // 
-            this.visualizarPedidosToolStripMenuItem.Name = "visualizarPedidosToolStripMenuItem";
-            this.visualizarPedidosToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.visualizarPedidosToolStripMenuItem.Text = "Visualizar Pedidos";
-            // 
-            // adicionarStatusDePedidoToolStripMenuItem
-            // 
-            this.adicionarStatusDePedidoToolStripMenuItem.Name = "adicionarStatusDePedidoToolStripMenuItem";
-            this.adicionarStatusDePedidoToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.adicionarStatusDePedidoToolStripMenuItem.Text = "Adicionar Status de Pedido";
-            // 
-            // adicionarFormaDePagamentoToolStripMenuItem
-            // 
-            this.adicionarFormaDePagamentoToolStripMenuItem.Name = "adicionarFormaDePagamentoToolStripMenuItem";
-            this.adicionarFormaDePagamentoToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.adicionarFormaDePagamentoToolStripMenuItem.Text = "Adicionar Forma de Pagamento";
-            // 
-            // adicionarCategoriaToolStripMenuItem
-            // 
-            this.adicionarCategoriaToolStripMenuItem.Name = "adicionarCategoriaToolStripMenuItem";
-            this.adicionarCategoriaToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.adicionarCategoriaToolStripMenuItem.Text = "Adicionar Categoria";
-            // 
-            // ajudaToolStripMenuItem
-            // 
-            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.versãoToolStripMenuItem,
-            this.ajudaParaEsteFormulárioToolStripMenuItem});
-            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
-            this.ajudaToolStripMenuItem.Text = "Ajuda";
-            // 
-            // versãoToolStripMenuItem
-            // 
-            this.versãoToolStripMenuItem.Name = "versãoToolStripMenuItem";
-            this.versãoToolStripMenuItem.Size = new System.Drawing.Size(306, 22);
-            this.versãoToolStripMenuItem.Text = "Sobre o SOS! Ajude a Minha Loja...";
-            // 
-            // ajudaParaEsteFormulárioToolStripMenuItem
-            // 
-            this.ajudaParaEsteFormulárioToolStripMenuItem.Name = "ajudaParaEsteFormulárioToolStripMenuItem";
-            this.ajudaParaEsteFormulárioToolStripMenuItem.Size = new System.Drawing.Size(306, 22);
-            this.ajudaParaEsteFormulárioToolStripMenuItem.Text = "Estou tendo dificuldades com o formuário...";
-            // 
             // painel
             // 
             this.painel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.painel.BackColor = System.Drawing.SystemColors.Control;
+            this.painel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.painel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.painel.Location = new System.Drawing.Point(272, 253);
+            this.painel.Location = new System.Drawing.Point(272, 260);
             this.painel.Name = "painel";
             this.painel.Size = new System.Drawing.Size(1088, 485);
             this.painel.TabIndex = 24;
+            // 
+            // logoffButton
+            // 
+            this.logoffButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.logoffButton.BackgroundImage = global::Lojinha.Properties.Resources.shutdown;
+            this.logoffButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoffButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoffButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.logoffButton.Location = new System.Drawing.Point(21, 910);
+            this.logoffButton.Name = "logoffButton";
+            this.logoffButton.Size = new System.Drawing.Size(56, 51);
+            this.logoffButton.TabIndex = 25;
+            this.logoffButton.UseVisualStyleBackColor = false;
+            this.logoffButton.Click += new System.EventHandler(this.logoffButton_Click);
+            // 
+            // homeButton
+            // 
+            this.homeButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homeButton.BackgroundImage = global::Lojinha.Properties.Resources.home;
+            this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homeButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homeButton.Location = new System.Drawing.Point(92, 910);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(47, 48);
+            this.homeButton.TabIndex = 26;
+            this.homeButton.UseVisualStyleBackColor = false;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            // 
+            // addProdutosTip
+            // 
+            this.addProdutosTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.addProdutosTip.BackgroundImage = global::Lojinha.Properties.Resources.addProdutosTip;
+            this.addProdutosTip.Location = new System.Drawing.Point(303, 31);
+            this.addProdutosTip.Name = "addProdutosTip";
+            this.addProdutosTip.Size = new System.Drawing.Size(126, 33);
+            this.addProdutosTip.TabIndex = 27;
+            this.addProdutosTip.Visible = false;
+            // 
+            // estoqueTip
+            // 
+            this.estoqueTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.estoqueTip.BackgroundImage = global::Lojinha.Properties.Resources.estoqueTip;
+            this.estoqueTip.Location = new System.Drawing.Point(493, 31);
+            this.estoqueTip.Name = "estoqueTip";
+            this.estoqueTip.Size = new System.Drawing.Size(104, 33);
+            this.estoqueTip.TabIndex = 28;
+            this.estoqueTip.Visible = false;
+            // 
+            // adicionarCategoriaTip
+            // 
+            this.adicionarCategoriaTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.adicionarCategoriaTip.BackgroundImage = global::Lojinha.Properties.Resources.adicionarCategoriaTip;
+            this.adicionarCategoriaTip.Location = new System.Drawing.Point(948, 31);
+            this.adicionarCategoriaTip.Name = "adicionarCategoriaTip";
+            this.adicionarCategoriaTip.Size = new System.Drawing.Size(126, 33);
+            this.adicionarCategoriaTip.TabIndex = 28;
+            this.adicionarCategoriaTip.Visible = false;
+            // 
+            // visualizarClientesTip
+            // 
+            this.visualizarClientesTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.visualizarClientesTip.BackgroundImage = global::Lojinha.Properties.Resources.visualizarClientesTip;
+            this.visualizarClientesTip.Location = new System.Drawing.Point(1123, 31);
+            this.visualizarClientesTip.Name = "visualizarClientesTip";
+            this.visualizarClientesTip.Size = new System.Drawing.Size(126, 33);
+            this.visualizarClientesTip.TabIndex = 29;
+            this.visualizarClientesTip.Visible = false;
             // 
             // Menu
             // 
@@ -386,6 +490,12 @@
             this.BackgroundImage = global::Lojinha.Properties.Resources.otherScreensBG1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1669, 1020);
+            this.Controls.Add(this.visualizarClientesTip);
+            this.Controls.Add(this.adicionarCategoriaTip);
+            this.Controls.Add(this.estoqueTip);
+            this.Controls.Add(this.addProdutosTip);
+            this.Controls.Add(this.homeButton);
+            this.Controls.Add(this.logoffButton);
             this.Controls.Add(this.minimizeButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.menuStrip1);
@@ -396,6 +506,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -416,16 +527,6 @@
         private System.Windows.Forms.ToolStripMenuItem visualizarEstoqueToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarCategoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visualizarClientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarPedidoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visualizarPedidosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adicionarStatusDePedidoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adicionarFormaDePagamentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adicionarCategoriaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem versãoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ajudaParaEsteFormulárioToolStripMenuItem;
         private System.Windows.Forms.Button addProdutoButton;
         private System.Windows.Forms.Panel painel;
         private System.Windows.Forms.Button visualizarProdutos;
@@ -435,5 +536,19 @@
         private System.Windows.Forms.Button visualizarClientes;
         private System.Windows.Forms.Button visualizarPedidos;
         private System.Windows.Forms.Button adicionarCategoria;
+        private System.Windows.Forms.ToolStripMenuItem excluirUsuárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fazerLogoffToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualizarClientesToolStripMenuItem;
+        private System.Windows.Forms.Button logoffButton;
+        private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel addProdutosTip;
+        private System.Windows.Forms.Panel visualizarProdutosTip;
+        private System.Windows.Forms.Panel estoqueTip;
+        private System.Windows.Forms.Panel removerUsuarioTip;
+        private System.Windows.Forms.Panel adicionarCategoriaTip;
+        private System.Windows.Forms.Panel pedidosTip;
+        private System.Windows.Forms.Panel visualizarClientesTip;
+        private System.Windows.Forms.Panel adicionarUsuarioTip;
     }
 }

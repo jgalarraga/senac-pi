@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.nomeFormulario = new System.Windows.Forms.Label();
             this.coloredStripAdorn = new System.Windows.Forms.Panel();
             this.emailCadClienteLabel = new System.Windows.Forms.Label();
@@ -85,7 +85,7 @@
             this.nomeFormulario.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nomeFormulario.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomeFormulario.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.nomeFormulario.Location = new System.Drawing.Point(434, 53);
+            this.nomeFormulario.Location = new System.Drawing.Point(434, 83);
             this.nomeFormulario.Name = "nomeFormulario";
             this.nomeFormulario.Size = new System.Drawing.Size(272, 33);
             this.nomeFormulario.TabIndex = 30;
@@ -94,16 +94,16 @@
             // coloredStripAdorn
             // 
             this.coloredStripAdorn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(88)))), ((int)(((byte)(235)))));
-            this.coloredStripAdorn.Location = new System.Drawing.Point(254, 89);
+            this.coloredStripAdorn.Location = new System.Drawing.Point(48, 119);
             this.coloredStripAdorn.Name = "coloredStripAdorn";
-            this.coloredStripAdorn.Size = new System.Drawing.Size(629, 3);
+            this.coloredStripAdorn.Size = new System.Drawing.Size(1000, 3);
             this.coloredStripAdorn.TabIndex = 29;
             // 
             // emailCadClienteLabel
             // 
             this.emailCadClienteLabel.AutoSize = true;
             this.emailCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.emailCadClienteLabel.Location = new System.Drawing.Point(317, 195);
+            this.emailCadClienteLabel.Location = new System.Drawing.Point(317, 225);
             this.emailCadClienteLabel.Name = "emailCadClienteLabel";
             this.emailCadClienteLabel.Size = new System.Drawing.Size(32, 13);
             this.emailCadClienteLabel.TabIndex = 39;
@@ -113,7 +113,7 @@
             // 
             this.senhaCadClienteLabel.AutoSize = true;
             this.senhaCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.senhaCadClienteLabel.Location = new System.Drawing.Point(639, 196);
+            this.senhaCadClienteLabel.Location = new System.Drawing.Point(639, 226);
             this.senhaCadClienteLabel.Name = "senhaCadClienteLabel";
             this.senhaCadClienteLabel.Size = new System.Drawing.Size(38, 13);
             this.senhaCadClienteLabel.TabIndex = 43;
@@ -123,7 +123,7 @@
             // 
             this.cpfCadClienteLabel.AutoSize = true;
             this.cpfCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.cpfCadClienteLabel.Location = new System.Drawing.Point(636, 143);
+            this.cpfCadClienteLabel.Location = new System.Drawing.Point(636, 173);
             this.cpfCadClienteLabel.Name = "cpfCadClienteLabel";
             this.cpfCadClienteLabel.Size = new System.Drawing.Size(27, 13);
             this.cpfCadClienteLabel.TabIndex = 44;
@@ -133,7 +133,7 @@
             // 
             this.nomeCadClienteLabel.AutoSize = true;
             this.nomeCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.nomeCadClienteLabel.Location = new System.Drawing.Point(317, 143);
+            this.nomeCadClienteLabel.Location = new System.Drawing.Point(317, 173);
             this.nomeCadClienteLabel.Name = "nomeCadClienteLabel";
             this.nomeCadClienteLabel.Size = new System.Drawing.Size(35, 13);
             this.nomeCadClienteLabel.TabIndex = 45;
@@ -143,7 +143,7 @@
             // 
             this.celularCadClienteLabel.AutoSize = true;
             this.celularCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.celularCadClienteLabel.Location = new System.Drawing.Point(808, 195);
+            this.celularCadClienteLabel.Location = new System.Drawing.Point(808, 225);
             this.celularCadClienteLabel.Name = "celularCadClienteLabel";
             this.celularCadClienteLabel.Size = new System.Drawing.Size(60, 13);
             this.celularCadClienteLabel.TabIndex = 46;
@@ -153,7 +153,7 @@
             // 
             this.telComCadClienteLabel.AutoSize = true;
             this.telComCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.telComCadClienteLabel.Location = new System.Drawing.Point(485, 247);
+            this.telComCadClienteLabel.Location = new System.Drawing.Point(485, 277);
             this.telComCadClienteLabel.Name = "telComCadClienteLabel";
             this.telComCadClienteLabel.Size = new System.Drawing.Size(74, 13);
             this.telComCadClienteLabel.TabIndex = 47;
@@ -163,7 +163,7 @@
             // 
             this.telResCadClienteLabel.AutoSize = true;
             this.telResCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.telResCadClienteLabel.Location = new System.Drawing.Point(317, 247);
+            this.telResCadClienteLabel.Location = new System.Drawing.Point(317, 277);
             this.telResCadClienteLabel.Name = "telResCadClienteLabel";
             this.telResCadClienteLabel.Size = new System.Drawing.Size(83, 13);
             this.telResCadClienteLabel.TabIndex = 48;
@@ -172,7 +172,7 @@
             // cadastrarCadClienteButton
             // 
             this.cadastrarCadClienteButton.Image = global::Lojinha.Properties.Resources.purbleButton;
-            this.cadastrarCadClienteButton.Location = new System.Drawing.Point(514, 666);
+            this.cadastrarCadClienteButton.Location = new System.Drawing.Point(514, 696);
             this.cadastrarCadClienteButton.Name = "cadastrarCadClienteButton";
             this.cadastrarCadClienteButton.Size = new System.Drawing.Size(149, 41);
             this.cadastrarCadClienteButton.TabIndex = 49;
@@ -184,7 +184,7 @@
             // 
             this.nascCadClienteLabel.AutoSize = true;
             this.nascCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.nascCadClienteLabel.Location = new System.Drawing.Point(877, 142);
+            this.nascCadClienteLabel.Location = new System.Drawing.Point(877, 172);
             this.nascCadClienteLabel.Name = "nascCadClienteLabel";
             this.nascCadClienteLabel.Size = new System.Drawing.Size(80, 13);
             this.nascCadClienteLabel.TabIndex = 58;
@@ -195,7 +195,7 @@
             // 
             this.tipoEndCadClienteLabel.AutoSize = true;
             this.tipoEndCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.tipoEndCadClienteLabel.Location = new System.Drawing.Point(317, 325);
+            this.tipoEndCadClienteLabel.Location = new System.Drawing.Point(317, 355);
             this.tipoEndCadClienteLabel.Name = "tipoEndCadClienteLabel";
             this.tipoEndCadClienteLabel.Size = new System.Drawing.Size(77, 13);
             this.tipoEndCadClienteLabel.TabIndex = 59;
@@ -205,7 +205,7 @@
             // 
             this.logadouroCadClienteLabel.AutoSize = true;
             this.logadouroCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.logadouroCadClienteLabel.Location = new System.Drawing.Point(485, 325);
+            this.logadouroCadClienteLabel.Location = new System.Drawing.Point(485, 355);
             this.logadouroCadClienteLabel.Name = "logadouroCadClienteLabel";
             this.logadouroCadClienteLabel.Size = new System.Drawing.Size(58, 13);
             this.logadouroCadClienteLabel.TabIndex = 60;
@@ -215,7 +215,7 @@
             // 
             this.nrResEndCadClienteLabel.AutoSize = true;
             this.nrResEndCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.nrResEndCadClienteLabel.Location = new System.Drawing.Point(808, 325);
+            this.nrResEndCadClienteLabel.Location = new System.Drawing.Point(808, 355);
             this.nrResEndCadClienteLabel.Name = "nrResEndCadClienteLabel";
             this.nrResEndCadClienteLabel.Size = new System.Drawing.Size(19, 13);
             this.nrResEndCadClienteLabel.TabIndex = 61;
@@ -225,7 +225,7 @@
             // 
             this.cepCadClienteLabel.AutoSize = true;
             this.cepCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.cepCadClienteLabel.Location = new System.Drawing.Point(317, 376);
+            this.cepCadClienteLabel.Location = new System.Drawing.Point(317, 406);
             this.cepCadClienteLabel.Name = "cepCadClienteLabel";
             this.cepCadClienteLabel.Size = new System.Drawing.Size(28, 13);
             this.cepCadClienteLabel.TabIndex = 62;
@@ -235,7 +235,7 @@
             // 
             this.compleCadClienteLabel.AutoSize = true;
             this.compleCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.compleCadClienteLabel.Location = new System.Drawing.Point(485, 378);
+            this.compleCadClienteLabel.Location = new System.Drawing.Point(485, 408);
             this.compleCadClienteLabel.Name = "compleCadClienteLabel";
             this.compleCadClienteLabel.Size = new System.Drawing.Size(71, 13);
             this.compleCadClienteLabel.TabIndex = 63;
@@ -245,7 +245,7 @@
             // 
             this.cidadeCadClienteLabel.AutoSize = true;
             this.cidadeCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.cidadeCadClienteLabel.Location = new System.Drawing.Point(732, 376);
+            this.cidadeCadClienteLabel.Location = new System.Drawing.Point(732, 406);
             this.cidadeCadClienteLabel.Name = "cidadeCadClienteLabel";
             this.cidadeCadClienteLabel.Size = new System.Drawing.Size(40, 13);
             this.cidadeCadClienteLabel.TabIndex = 64;
@@ -255,7 +255,7 @@
             // 
             this.paisCadClienteLabel.AutoSize = true;
             this.paisCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.paisCadClienteLabel.Location = new System.Drawing.Point(317, 428);
+            this.paisCadClienteLabel.Location = new System.Drawing.Point(317, 458);
             this.paisCadClienteLabel.Name = "paisCadClienteLabel";
             this.paisCadClienteLabel.Size = new System.Drawing.Size(29, 13);
             this.paisCadClienteLabel.TabIndex = 66;
@@ -265,7 +265,7 @@
             // 
             this.ufCadClienteLabel.AutoSize = true;
             this.ufCadClienteLabel.BackColor = System.Drawing.SystemColors.Window;
-            this.ufCadClienteLabel.Location = new System.Drawing.Point(901, 376);
+            this.ufCadClienteLabel.Location = new System.Drawing.Point(901, 406);
             this.ufCadClienteLabel.Name = "ufCadClienteLabel";
             this.ufCadClienteLabel.Size = new System.Drawing.Size(21, 13);
             this.ufCadClienteLabel.TabIndex = 67;
@@ -274,7 +274,7 @@
             // alterarCadClienteButton
             // 
             this.alterarCadClienteButton.Image = global::Lojinha.Properties.Resources.purbleButton;
-            this.alterarCadClienteButton.Location = new System.Drawing.Point(684, 666);
+            this.alterarCadClienteButton.Location = new System.Drawing.Point(684, 696);
             this.alterarCadClienteButton.Name = "alterarCadClienteButton";
             this.alterarCadClienteButton.Size = new System.Drawing.Size(149, 41);
             this.alterarCadClienteButton.TabIndex = 70;
@@ -285,7 +285,7 @@
             // excluirCadClienteButton
             // 
             this.excluirCadClienteButton.Image = global::Lojinha.Properties.Resources.purbleButton;
-            this.excluirCadClienteButton.Location = new System.Drawing.Point(856, 667);
+            this.excluirCadClienteButton.Location = new System.Drawing.Point(856, 697);
             this.excluirCadClienteButton.Name = "excluirCadClienteButton";
             this.excluirCadClienteButton.Size = new System.Drawing.Size(149, 41);
             this.excluirCadClienteButton.TabIndex = 71;
@@ -303,29 +303,29 @@
             this.enderecoDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.enderecoDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.enderecoDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.enderecoDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.enderecoDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.enderecoDataGridView.ColumnHeadersHeight = 30;
             this.enderecoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.enderecoDataGridView.EnableHeadersVisualStyles = false;
             this.enderecoDataGridView.GridColor = System.Drawing.Color.Gainsboro;
-            this.enderecoDataGridView.Location = new System.Drawing.Point(320, 496);
+            this.enderecoDataGridView.Location = new System.Drawing.Point(320, 526);
             this.enderecoDataGridView.Name = "enderecoDataGridView";
             this.enderecoDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.enderecoDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.enderecoDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.enderecoDataGridView.RowHeadersVisible = false;
             this.enderecoDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.enderecoDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -346,39 +346,39 @@
             this.clienteDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.clienteDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.clienteDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clienteDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.clienteDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.clienteDataGridView.ColumnHeadersHeight = 30;
             this.clienteDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.clienteDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.clienteDataGridView.DefaultCellStyle = dataGridViewCellStyle9;
             this.clienteDataGridView.EnableHeadersVisualStyles = false;
             this.clienteDataGridView.GridColor = System.Drawing.Color.Gainsboro;
-            this.clienteDataGridView.Location = new System.Drawing.Point(47, 159);
+            this.clienteDataGridView.Location = new System.Drawing.Point(47, 189);
             this.clienteDataGridView.MultiSelect = false;
             this.clienteDataGridView.Name = "clienteDataGridView";
             this.clienteDataGridView.ReadOnly = true;
             this.clienteDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.clienteDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.clienteDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.clienteDataGridView.RowHeadersVisible = false;
             this.clienteDataGridView.RowHeadersWidth = 72;
             this.clienteDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -394,7 +394,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(88)))), ((int)(((byte)(235)))));
-            this.panel1.Location = new System.Drawing.Point(48, 189);
+            this.panel1.Location = new System.Drawing.Point(48, 219);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(210, 3);
             this.panel1.TabIndex = 30;
@@ -402,14 +402,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(88)))), ((int)(((byte)(235)))));
-            this.panel2.Location = new System.Drawing.Point(320, 527);
+            this.panel2.Location = new System.Drawing.Point(320, 557);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(671, 3);
             this.panel2.TabIndex = 31;
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(953, 163);
+            this.panel3.Location = new System.Drawing.Point(953, 193);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(48, 20);
             this.panel3.TabIndex = 96;
@@ -417,7 +417,7 @@
             // cepEndCadClienteTextBox
             // 
             this.cepEndCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cepEndCadClienteTextBox.Location = new System.Drawing.Point(237, 392);
+            this.cepEndCadClienteTextBox.Location = new System.Drawing.Point(237, 422);
             this.cepEndCadClienteTextBox.Name = "cepEndCadClienteTextBox";
             this.cepEndCadClienteTextBox.Size = new System.Drawing.Size(242, 34);
             this.cepEndCadClienteTextBox.TabIndex = 94;
@@ -425,7 +425,7 @@
             // logradouroCadClienteTextBox
             // 
             this.logradouroCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logradouroCadClienteTextBox.Location = new System.Drawing.Point(481, 341);
+            this.logradouroCadClienteTextBox.Location = new System.Drawing.Point(481, 371);
             this.logradouroCadClienteTextBox.Name = "logradouroCadClienteTextBox";
             this.logradouroCadClienteTextBox.Size = new System.Drawing.Size(320, 34);
             this.logradouroCadClienteTextBox.TabIndex = 92;
@@ -433,7 +433,7 @@
             // emailCadClienteTextBox
             // 
             this.emailCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.emailCadClienteTextBox.Location = new System.Drawing.Point(313, 210);
+            this.emailCadClienteTextBox.Location = new System.Drawing.Point(313, 240);
             this.emailCadClienteTextBox.Name = "emailCadClienteTextBox";
             this.emailCadClienteTextBox.Size = new System.Drawing.Size(320, 34);
             this.emailCadClienteTextBox.TabIndex = 85;
@@ -441,7 +441,7 @@
             // nomeCadClienteTextBox
             // 
             this.nomeCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nomeCadClienteTextBox.Location = new System.Drawing.Point(313, 158);
+            this.nomeCadClienteTextBox.Location = new System.Drawing.Point(313, 188);
             this.nomeCadClienteTextBox.Name = "nomeCadClienteTextBox";
             this.nomeCadClienteTextBox.Size = new System.Drawing.Size(320, 30);
             this.nomeCadClienteTextBox.TabIndex = 80;
@@ -449,7 +449,7 @@
             // cpfCadClienteTextBox
             // 
             this.cpfCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cpfCadClienteTextBox.Location = new System.Drawing.Point(595, 158);
+            this.cpfCadClienteTextBox.Location = new System.Drawing.Point(595, 188);
             this.cpfCadClienteTextBox.Name = "cpfCadClienteTextBox";
             this.cpfCadClienteTextBox.Size = new System.Drawing.Size(283, 34);
             this.cpfCadClienteTextBox.TabIndex = 81;
@@ -457,7 +457,7 @@
             // senhaCadClienteTextBox
             // 
             this.senhaCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.senhaCadClienteTextBox.Location = new System.Drawing.Point(557, 210);
+            this.senhaCadClienteTextBox.Location = new System.Drawing.Point(557, 240);
             this.senhaCadClienteTextBox.Name = "senhaCadClienteTextBox";
             this.senhaCadClienteTextBox.Size = new System.Drawing.Size(241, 33);
             this.senhaCadClienteTextBox.TabIndex = 82;
@@ -465,7 +465,7 @@
             // dtNascCadClienteTextBox
             // 
             this.dtNascCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dtNascCadClienteTextBox.Location = new System.Drawing.Point(799, 158);
+            this.dtNascCadClienteTextBox.Location = new System.Drawing.Point(799, 188);
             this.dtNascCadClienteTextBox.Name = "dtNascCadClienteTextBox";
             this.dtNascCadClienteTextBox.Size = new System.Drawing.Size(320, 34);
             this.dtNascCadClienteTextBox.TabIndex = 83;
@@ -473,7 +473,7 @@
             // numEndCadClienteTextBox
             // 
             this.numEndCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.numEndCadClienteTextBox.Location = new System.Drawing.Point(683, 341);
+            this.numEndCadClienteTextBox.Location = new System.Drawing.Point(683, 371);
             this.numEndCadClienteTextBox.Name = "numEndCadClienteTextBox";
             this.numEndCadClienteTextBox.Size = new System.Drawing.Size(219, 34);
             this.numEndCadClienteTextBox.TabIndex = 84;
@@ -481,7 +481,7 @@
             // celularCadClienteTextBox
             // 
             this.celularCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.celularCadClienteTextBox.Location = new System.Drawing.Point(725, 210);
+            this.celularCadClienteTextBox.Location = new System.Drawing.Point(725, 240);
             this.celularCadClienteTextBox.Name = "celularCadClienteTextBox";
             this.celularCadClienteTextBox.Size = new System.Drawing.Size(241, 34);
             this.celularCadClienteTextBox.TabIndex = 87;
@@ -489,7 +489,7 @@
             // complEndCadClienteTextBox
             // 
             this.complEndCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.complEndCadClienteTextBox.Location = new System.Drawing.Point(440, 392);
+            this.complEndCadClienteTextBox.Location = new System.Drawing.Point(440, 422);
             this.complEndCadClienteTextBox.Name = "complEndCadClienteTextBox";
             this.complEndCadClienteTextBox.Size = new System.Drawing.Size(281, 34);
             this.complEndCadClienteTextBox.TabIndex = 86;
@@ -497,7 +497,7 @@
             // telResCadClienteTextBox
             // 
             this.telResCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.telResCadClienteTextBox.Location = new System.Drawing.Point(237, 262);
+            this.telResCadClienteTextBox.Location = new System.Drawing.Point(237, 292);
             this.telResCadClienteTextBox.Name = "telResCadClienteTextBox";
             this.telResCadClienteTextBox.Size = new System.Drawing.Size(242, 34);
             this.telResCadClienteTextBox.TabIndex = 89;
@@ -505,7 +505,7 @@
             // telComCadClienteTextBox
             // 
             this.telComCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.telComCadClienteTextBox.Location = new System.Drawing.Point(404, 262);
+            this.telComCadClienteTextBox.Location = new System.Drawing.Point(404, 292);
             this.telComCadClienteTextBox.Name = "telComCadClienteTextBox";
             this.telComCadClienteTextBox.Size = new System.Drawing.Size(244, 34);
             this.telComCadClienteTextBox.TabIndex = 90;
@@ -513,7 +513,7 @@
             // cidadeEndCadClienteTextBox
             // 
             this.cidadeEndCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cidadeEndCadClienteTextBox.Location = new System.Drawing.Point(649, 392);
+            this.cidadeEndCadClienteTextBox.Location = new System.Drawing.Point(649, 422);
             this.cidadeEndCadClienteTextBox.Name = "cidadeEndCadClienteTextBox";
             this.cidadeEndCadClienteTextBox.Size = new System.Drawing.Size(242, 34);
             this.cidadeEndCadClienteTextBox.TabIndex = 93;
@@ -521,7 +521,7 @@
             // ufEndCadClienteTextBox
             // 
             this.ufEndCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ufEndCadClienteTextBox.Location = new System.Drawing.Point(777, 392);
+            this.ufEndCadClienteTextBox.Location = new System.Drawing.Point(777, 422);
             this.ufEndCadClienteTextBox.Name = "ufEndCadClienteTextBox";
             this.ufEndCadClienteTextBox.Size = new System.Drawing.Size(204, 34);
             this.ufEndCadClienteTextBox.TabIndex = 88;
@@ -529,7 +529,7 @@
             // tipoEndCadClienteTextBox
             // 
             this.tipoEndCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tipoEndCadClienteTextBox.Location = new System.Drawing.Point(237, 341);
+            this.tipoEndCadClienteTextBox.Location = new System.Drawing.Point(237, 371);
             this.tipoEndCadClienteTextBox.Name = "tipoEndCadClienteTextBox";
             this.tipoEndCadClienteTextBox.Size = new System.Drawing.Size(242, 34);
             this.tipoEndCadClienteTextBox.TabIndex = 91;
@@ -537,7 +537,7 @@
             // paisEndCadClienteTextBox
             // 
             this.paisEndCadClienteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.paisEndCadClienteTextBox.Location = new System.Drawing.Point(239, 444);
+            this.paisEndCadClienteTextBox.Location = new System.Drawing.Point(239, 474);
             this.paisEndCadClienteTextBox.Name = "paisEndCadClienteTextBox";
             this.paisEndCadClienteTextBox.Size = new System.Drawing.Size(244, 34);
             this.paisEndCadClienteTextBox.TabIndex = 95;

@@ -19,6 +19,9 @@ namespace Lojinha
             adicionarProdutoBtn2.Visible = false;
 
             string tipoPerfil = Login.tipoUsuario;
+            string nomeUsuario = Login.nomeUsuario;
+
+            label2.Text = "Seja Bem-Vindo " + nomeUsuario + "! :)";
 
             // se o usuário não for administrador
             if (!tipoPerfil.Equals("A"))

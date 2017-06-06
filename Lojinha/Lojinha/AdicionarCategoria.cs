@@ -12,13 +12,20 @@ namespace Lojinha
             InitializeComponent();
             List<clsCategoria> categorias = clsCategoria.SelecionarCategorias();
             dataGridView1.DataSource = categorias;
-
-            // TRAVAR AS COLUNAS
+            configurarColunas();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void configurarColunas()
+        {
+            dataGridView1.Columns[1].Width = 150;
+            dataGridView1.Columns[2].Width = 306;
+            dataGridView1.Columns[1].HeaderText = "Nome";
+            dataGridView1.Columns[2].HeaderText = "Descrição";
         }
 
         private void addCatProdButton_Click(object sender, EventArgs e)
@@ -39,6 +46,7 @@ namespace Lojinha
             List<clsCategoria> categorias = clsCategoria.SelecionarCategorias();
             dataGridView1.DataSource = categorias;
             dataGridView1.Refresh();
+            MessageBox.Show("Categoria adicionada com sucesso !");
         }
 
         /**
@@ -83,7 +91,7 @@ namespace Lojinha
             List<clsCategoria> categorias = clsCategoria.SelecionarCategorias();
             dataGridView1.DataSource = categorias;
             dataGridView1.Refresh();
-
+            MessageBox.Show("Categoria alterada com sucesso !");
         }
 
         private void excCatProdButton_Click(object sender, EventArgs e)
@@ -99,6 +107,7 @@ namespace Lojinha
             List<clsCategoria> categorias = clsCategoria.SelecionarCategorias();
             dataGridView1.DataSource = categorias;
             dataGridView1.Refresh();
+            MessageBox.Show("Categoria excluída com sucesso !");
         }
     }
 }

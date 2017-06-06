@@ -133,9 +133,39 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addProdutosTip {
+            get {
+                object obj = ResourceManager.GetObject("addProdutosTip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap addUsuarioButton {
             get {
                 object obj = ResourceManager.GetObject("addUsuarioButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap adicionarCategoriaTip {
+            get {
+                object obj = ResourceManager.GetObject("adicionarCategoriaTip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap adicionarUsuarioTip {
+            get {
+                object obj = ResourceManager.GetObject("adicionarUsuarioTip", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,16 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap button {
             get {
                 object obj = ResourceManager.GetObject("button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonClicked {
+            get {
+                object obj = ResourceManager.GetObject("buttonClicked", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +263,26 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete_button {
+            get {
+                object obj = ResourceManager.GetObject("delete-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap estoqueTip {
+            get {
+                object obj = ResourceManager.GetObject("estoqueTip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap excluirUsuarioButton {
             get {
                 object obj = ResourceManager.GetObject("excluirUsuarioButton", resourceCulture);
@@ -236,6 +296,16 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap helpButton {
             get {
                 object obj = ResourceManager.GetObject("helpButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home {
+            get {
+                object obj = ResourceManager.GetObject("home", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +463,29 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pedidosTip {
+            get {
+                object obj = ResourceManager.GetObject("pedidosTip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photoAdd {
             get {
                 object obj = ResourceManager.GetObject("photoAdd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pizza {
+            get {
+                object obj = ResourceManager.GetObject("pizza", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +516,16 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap questionMark {
             get {
                 object obj = ResourceManager.GetObject("questionMark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap removerUsuarioTIp {
+            get {
+                object obj = ResourceManager.GetObject("removerUsuarioTIp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +566,16 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap retroGirlHelp {
             get {
                 object obj = ResourceManager.GetObject("retroGirlHelp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutdown {
+            get {
+                object obj = ResourceManager.GetObject("shutdown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -763,6 +873,16 @@ namespace Lojinha.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap visualizarClientesTip {
+            get {
+                object obj = ResourceManager.GetObject("visualizarClientesTip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap visualizarEstoqueButton {
             get {
                 object obj = ResourceManager.GetObject("visualizarEstoqueButton", resourceCulture);
@@ -786,6 +906,16 @@ namespace Lojinha.Properties {
         internal static System.Drawing.Bitmap visualizarProdutosButton {
             get {
                 object obj = ResourceManager.GetObject("visualizarProdutosButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visualizarProdutosTip {
+            get {
+                object obj = ResourceManager.GetObject("visualizarProdutosTip", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

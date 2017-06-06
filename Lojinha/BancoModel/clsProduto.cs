@@ -48,7 +48,7 @@ namespace BancoModel
                                 "(@nomeProduto, @descProduto, @precProduto, @descontoPromocao, @IdCategoria, @ativoProduto, @IdUsuario, @qtdMinEstoque, @imagem)";
             else
             {
-                cmd.CommandText = "UPDATE Cliente " +
+                cmd.CommandText = "UPDATE Produto " +
                                     "SET nomeProduto = @nomeProduto, " +
                                     "descProduto = @descProduto, " +
                                     "precProduto = @precProduto, " +
@@ -57,21 +57,21 @@ namespace BancoModel
                                     "ativoProduto = @ativoProduto, " +
                                     "IdUsuario = @IdUsuario, " +
                                     "qtdMinEstoque = @qtdMinEstoque, " +
-                                    "imagem = @imagem " +
-                                    "WHERE idCliente = @idProduto";
+                                    "imagem = @imagem " + 
+                                    "WHERE idProduto = @idProduto";
 
                 cmd.Parameters.Add("idProduto", SqlDbType.Int).Value = idProduto;
             }
 
             cmd.Parameters.Add("@nomeProduto", SqlDbType.VarChar, 70).Value = this.nomeProduto;
-            cmd.Parameters.Add("@descProduto", SqlDbType.Money, 0).Value = this.descProduto;
-            cmd.Parameters.Add("@precProduto", SqlDbType.Money, 0).Value = this.precProduto;
-            cmd.Parameters.Add("@descontoPromocao", SqlDbType.Decimal, 18).Value = this.descontoPromocao;
-            cmd.Parameters.Add("@IdCategoria", SqlDbType.Int, 50).Value = this.IdCategoria;
+            cmd.Parameters.Add("@descProduto", SqlDbType.VarChar, 500).Value = this.descProduto;
+            cmd.Parameters.Add("@precProduto", SqlDbType.Money).Value = this.precProduto;
+            cmd.Parameters.Add("@descontoPromocao", SqlDbType.Decimal,18).Value = this.descontoPromocao;
+            cmd.Parameters.Add("@IdCategoria", SqlDbType.Int).Value = this.IdCategoria;
             cmd.Parameters.Add("@ativoProduto", SqlDbType.Char, 1).Value = this.ativoProduto;
-            cmd.Parameters.Add("@IdUsuario", SqlDbType.Int, 50).Value = this.IdUsuario;
-            cmd.Parameters.Add("@qtdMinEstoque", SqlDbType.Int, 50).Value = this.qtdMinEstoque;
-            cmd.Parameters.Add("@imagem", SqlDbType.Image, 50).Value = this.imagem;
+            cmd.Parameters.Add("@IdUsuario", SqlDbType.Int).Value = this.IdUsuario;
+            cmd.Parameters.Add("@qtdMinEstoque", SqlDbType.Int).Value = this.qtdMinEstoque;
+            cmd.Parameters.Add("@imagem", SqlDbType.Image).Value = this.imagem;
             cmd.ExecuteNonQuery();
 
             if (inserir)
@@ -151,27 +151,32 @@ namespace BancoModel
 
             return Produtos;
         }
+
         public void Excluir()
         {
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
 
-            cmd.CommandText = "Delete from Produto " +
-                                "WHERE idProduto = @idProduto";
+            List<clsItemPedido> produtos = clsItemPedido.SelecionarItens(idProduto);
+            if(!(produtos.Count > 0))
+            {
+                cmd.CommandText = "Delete from Produto " +
+                    "WHERE idProduto = @idProduto";
 
-            cmd.Parameters.Add("idProduto", SqlDbType.Int).Value = idProduto;
+                cmd.Parameters.Add("idProduto", SqlDbType.Int).Value = idProduto;
 
-            cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
 
-            cn.Close();
-            cn.Dispose();
+                cn.Close();
+                cn.Dispose();
+            }
         }
 
         public static List<clsProduto> SelecionarProdutos(string tipoFiltro, string filtro)
         {
             List<clsEstoque> Estoque = new List<clsEstoque>();
             string sql = "SELECT Produto.idProduto, Produto.nomeProduto, Produto.descProduto, Produto.precProduto, Produto.descontoPromocao, Categoria.nomeCategoria, " +
-                "Produto.ativoProduto, Estoque.qtdProdutoDisponivel " +
+                "Produto.ativoProduto, Estoque.qtdProdutoDisponivel, imagem, qtdMinEstoque  " +
                 "FROM dbo.Produto INNER JOIN dbo.Estoque ON dbo.Produto.idProduto = dbo.Estoque.idProduto " +
                 "INNER JOIN dbo.Categoria ON dbo.Categoria.idCategoria = dbo.Produto.idCategoria ";
 
@@ -219,6 +224,12 @@ namespace BancoModel
                 P.precProduto = dr.GetDecimal(dr.GetOrdinal("precProduto"));
                 P.descontoPromocao = dr.GetDecimal(dr.GetOrdinal("descontoPromocao"));
                 P.ativoProduto = dr.GetString(dr.GetOrdinal("ativoProduto"));
+                P.qtdMinEstoque = dr.GetInt32(dr.GetOrdinal("qtdMinEstoque"));
+                P.nomeCategoria = dr.GetString(dr.GetOrdinal("nomeCategoria"));
+                if (dr["Imagem"] != DBNull.Value)
+                    P.imagem = (byte[])dr["Imagem"];
+                else
+                    P.imagem = new byte[0];
                 Produtos.Add(P);
             }
 

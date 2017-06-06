@@ -46,6 +46,7 @@
     <Compile Include="clsConexao.cs" />
     <Compile Include="clsEndereco.cs" />
     <Compile Include="clsEstoque.cs" />
+    <Compile Include="clsItemPedido.cs" />
     <Compile Include="clsProduto.cs" />
     <Compile Include="clsUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
