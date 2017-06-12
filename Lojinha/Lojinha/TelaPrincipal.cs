@@ -26,6 +26,7 @@ namespace Lojinha
             // se o usuário não for administrador
             if (!tipoPerfil.Equals("A"))
             {
+                menuStrip1.Enabled = false;
                 // bloqueio os formulários
                 // e exibo uma mensagem
                 adicionarProdutoBtn2.Visible = true;
@@ -111,21 +112,16 @@ namespace Lojinha
         private void viewClientsButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            VisualizarClientes vc = new VisualizarClientes();
-            vc.TopLevel = false;
-            Menu m = new Menu(vc);
+            CadastroUsuario cu = new CadastroUsuario();
+            cu.TopLevel = false;
+            Menu m = new Menu(cu);
             m.ShowDialog();
             this.Close();
         }
 
         private void viewOrdersButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            CadastroCliente cc = new CadastroCliente();
-            cc.TopLevel = false;
-            Menu m = new Menu(cc);
-            m.ShowDialog();
-            this.Close();
+            MessageBox.Show("Em manutenção. Contate o suporte. :C");
         }
 
         private void addCategoryButton_Click(object sender, EventArgs e)
@@ -178,14 +174,22 @@ namespace Lojinha
 
         private void adicionarCategoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AdicionarCategoria ac = new AdicionarCategoria();
-            ac.Show();
+            ac.TopLevel = false;
+            Menu m = new Menu(ac);
+            m.ShowDialog();
+            this.Close();
         }
 
         private void adicionarProdutoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AdicionarProduto ap = new AdicionarProduto();
-            ap.Show();
+            ap.TopLevel = false;
+            Menu m = new Menu(ap);
+            m.ShowDialog();
+            this.Close();
         }
 
         private void normalSizeButton_Click(object sender, EventArgs e)
@@ -222,6 +226,52 @@ namespace Lojinha
         private void adicionarCategoriaBtn2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Você não tem permissão para adicionar categorias.");
+        }
+
+        private void excluirUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ExcluirUsuario eu = new ExcluirUsuario();
+            eu.TopLevel = false;
+            Menu m = new Menu(eu);
+            m.ShowDialog();
+            this.Close();
+        }
+
+        private void fazerLogoffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login l = new Login();
+            l.ShowDialog();
+            this.Close();
+        }
+
+        private void visualizarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CadastroCliente cc = new CadastroCliente();
+            cc.TopLevel = false;
+            Menu m = new Menu(cc);
+            m.ShowDialog();
+            this.Close();
+        }
+
+        private void logoffButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login l = new Login();
+            l.ShowDialog();
+            this.Close();
+        }
+
+        private void visualizarClientesBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            VisualizarClientes cc = new VisualizarClientes();
+            cc.TopLevel = false;
+            Menu m = new Menu(cc);
+            m.ShowDialog();
+            this.Close();
         }
     }
 }

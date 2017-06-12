@@ -14,6 +14,17 @@ namespace Lojinha
         public AdicionarProduto()
         {
             InitializeComponent();
+        }
+
+        private void AdicionarProduto_Shown(object sender, EventArgs e)
+        {
+            // já que o usuário ainda não clicou em nada
+            // não deixo controles ativos no primeiro momento
+            this.ActiveControl = null;
+        }
+
+        private void visualizarProdutos_Click(object sender, EventArgs e)
+        {
             // preenche o dataGridView
             List<clsProduto> produtos = clsProduto.SelecionarProdutos();
             produtoDataGrid.DataSource = produtos;
@@ -29,6 +40,71 @@ namespace Lojinha
             produtoDataGrid.Columns[5].Visible = false;
             produtoDataGrid.Columns[6].Visible = false;
             produtoDataGrid.Columns[10].Visible = false;
+
+            configurarColunas();
+
+            // deixo as textBox em branco
+            nomeProdTextBox.Text = "";
+            precoTextBox.Text = "";
+            descontoTextBox.Text = "";
+            qntMinTextBox.Text = "";
+            descProdTextBox.Text = "";
+            CategoriaComboBox.SelectedIndex = -1;
+            ativoComboBox.Text = "";
+            productPicture.Image = null;
+            // deixo o data grid view deselecionado
+            produtoDataGrid.Rows[0].Selected = false;
+        }
+        private void AdicionarProduto_Click(object sender, EventArgs e)
+        {
+            // já que o usuário ainda não clicou em nada
+            // não deixo controles ativos no primeiro momento
+            this.ActiveControl = null;
+            // deixo as textBox em branco
+            nomeProdTextBox.Text = "";
+            precoTextBox.Text = "";
+            descontoTextBox.Text = "";
+            qntMinTextBox.Text = "";
+            descProdTextBox.Text = "";
+            CategoriaComboBox.SelectedIndex = -1;
+            ativoComboBox.Text = "";
+            productPicture.Image = null;
+            // deixo o data grid view deselecionado
+            try
+            {
+                produtoDataGrid.Rows[0].Selected = false;
+            }
+            catch (System.ArgumentOutOfRangeException ex)
+            {
+
+            }
+        }
+
+        private void configurarColunas()
+        {
+            produtoDataGrid.Columns[0].Width = 70;
+            produtoDataGrid.Columns[0].HeaderText = "Código";
+
+            produtoDataGrid.Columns[1].Width = 150;
+            produtoDataGrid.Columns[1].HeaderText = "Nome do Produto";
+
+            produtoDataGrid.Columns[2].Width = 161;
+            produtoDataGrid.Columns[2].HeaderText = "Descrição";
+
+            produtoDataGrid.Columns[3].Width = 70;
+            produtoDataGrid.Columns[3].HeaderText = "Preço";
+
+            produtoDataGrid.Columns[4].Width = 140;
+            produtoDataGrid.Columns[4].HeaderText = "Desconto Promo";
+
+            produtoDataGrid.Columns[7].Width = 100;
+            produtoDataGrid.Columns[7].HeaderText = "Usuário";
+
+            produtoDataGrid.Columns[8].Width = 120;
+            produtoDataGrid.Columns[8].HeaderText = "Qtd Disponível";
+
+            produtoDataGrid.Columns[9].Width = 120;
+            produtoDataGrid.Columns[9].HeaderText = "Categoria";
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -59,14 +135,22 @@ namespace Lojinha
             }
                 produto.IdCategoria = (int)Convert.ChangeType(CategoriaComboBox.SelectedValue, typeof(int));
             produto.ativoProduto = "1";
-            produto.IdUsuario = 1;
+            //produto.IdUsuario = 1;
             produto.imagem = (byte[])Convert.ChangeType(this.imagem, typeof(byte[]));
             // chamo o método salvar da classe clsCategoria
             produto.Salvar();
+
+            // adiciono o mesmo produto no estoque
+            clsEstoque estoque = new clsEstoque();
+            estoque.idProduto = (int)Convert.ChangeType(produtoDataGrid.SelectedRows[0].Cells[0].Value, typeof(int));
+            estoque.qtdProdutoDisponivel = (int)Convert.ChangeType(this.qntMinTextBox.Text, typeof(int));
+            estoque.Salvar();
+
             //atualizo a lista de Produtos
             List<clsProduto> produtos = clsProduto.SelecionarProdutos();
             produtoDataGrid.DataSource = produtos;
             produtoDataGrid.Refresh();
+
             MessageBox.Show("Produto adicionado com sucesso !");
         }
 
@@ -100,7 +184,6 @@ namespace Lojinha
                 produto.IdCategoria = (int)Convert.ChangeType(CategoriaComboBox.SelectedValue, typeof(int));
                 produto.qtdMinEstoque = (int)Convert.ChangeType(this.qntMinTextBox.Text, typeof(int));
                 produto.ativoProduto = "1";
-                produto.IdUsuario = 1;
                 produto.imagem = (byte[])Convert.ChangeType(this.imagem, typeof(byte[]));
                 // faço com que os campos recebam o que for digitado nas text boxs
                 // chamo o método salvar da classe clsCategoria

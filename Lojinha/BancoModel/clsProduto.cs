@@ -17,7 +17,8 @@ namespace BancoModel
         public decimal descontoPromocao { get; set; }
         public int IdCategoria { get; set; }
         public string ativoProduto { get; set; }
-        public int IdUsuario { get; set; }
+        public string nomeUsuario { get; set; }
+        //public int IdUsuario { get; set; }
         public int qtdMinEstoque { get; set; }
         public string nomeCategoria { get; set; }
         public byte[] imagem { get; set; }
@@ -43,9 +44,9 @@ namespace BancoModel
 
             if (inserir)
                 cmd.CommandText = "INSERT INTO Produto " +
-                                "(nomeProduto, descProduto, precProduto, descontoPromocao, IdCategoria, ativoProduto, IdUsuario, qtdMinEstoque, imagem)" +
+                                "(nomeProduto, descProduto, precProduto, descontoPromocao, IdCategoria, ativoProduto, nomeUsuario, qtdMinEstoque, imagem)" +
                                 "VALUES " +
-                                "(@nomeProduto, @descProduto, @precProduto, @descontoPromocao, @IdCategoria, @ativoProduto, @IdUsuario, @qtdMinEstoque, @imagem)";
+                                "(@nomeProduto, @descProduto, @precProduto, @descontoPromocao, @IdCategoria, @ativoProduto, @nomeUsuario, @qtdMinEstoque, @imagem)";
             else
             {
                 cmd.CommandText = "UPDATE Produto " +
@@ -55,7 +56,7 @@ namespace BancoModel
                                     "descontoPromocao = @descontoPromocao, " +
                                     "IdCategoria = @IdCategoria, " +
                                     "ativoProduto = @ativoProduto, " +
-                                    "IdUsuario = @IdUsuario, " +
+                                    "nomeUsuario = @nomeUsuario, " +
                                     "qtdMinEstoque = @qtdMinEstoque, " +
                                     "imagem = @imagem " + 
                                     "WHERE idProduto = @idProduto";
@@ -69,7 +70,7 @@ namespace BancoModel
             cmd.Parameters.Add("@descontoPromocao", SqlDbType.Decimal,18).Value = this.descontoPromocao;
             cmd.Parameters.Add("@IdCategoria", SqlDbType.Int).Value = this.IdCategoria;
             cmd.Parameters.Add("@ativoProduto", SqlDbType.Char, 1).Value = this.ativoProduto;
-            cmd.Parameters.Add("@IdUsuario", SqlDbType.Int).Value = this.IdUsuario;
+            cmd.Parameters.Add("@nomeUsuario", SqlDbType.VarChar,500).Value = this.nomeUsuario;
             cmd.Parameters.Add("@qtdMinEstoque", SqlDbType.Int).Value = this.qtdMinEstoque;
             cmd.Parameters.Add("@imagem", SqlDbType.Image).Value = this.imagem;
             cmd.ExecuteNonQuery();
@@ -86,7 +87,9 @@ namespace BancoModel
         }
         public static List<clsProduto> SelecionarProdutos()
         {
-            string sql = "SELECT idProduto, nomeProduto, descProduto, precProduto, descontoPromocao, ativoProduto, IdUsuario, qtdMinEstoque, nomeCategoria, imagem FROM dbo.Produto inner join dbo.Categoria on dbo.Produto.idCategoria = dbo.Categoria.idCategoria";
+            string sql = "SELECT idProduto, nomeProduto, descProduto, precProduto, descontoPromocao, ativoProduto, Usuario.nomeUsuario, qtdMinEstoque, nomeCategoria, imagem " +
+                         "FROM dbo.Produto INNER JOIN dbo.Categoria on dbo.Produto.idCategoria = dbo.Categoria.idCategoria " + 
+                         "INNER JOIN dbo.Usuario on dbo.Produto.IdUsuario = Usuario.idUsuario";
             SqlConnection cn = clsConexao.Conectar();
             SqlCommand cmd = cn.CreateCommand();
             cmd.CommandText = sql;
@@ -102,9 +105,9 @@ namespace BancoModel
                 P.precProduto = dr.GetDecimal(dr.GetOrdinal("precProduto"));
                 P.descontoPromocao = dr.GetDecimal(dr.GetOrdinal("descontoPromocao"));             
                 P.ativoProduto = dr.GetString(dr.GetOrdinal("ativoProduto"));
-                if (!dr.IsDBNull(dr.GetOrdinal("IdUsuario")))
+                if (!dr.IsDBNull(dr.GetOrdinal("nomeUsuario")))
                 {
-                    P.IdUsuario = dr.GetInt32(dr.GetOrdinal("IdUsuario"));
+                    P.nomeUsuario = dr.GetString(dr.GetOrdinal("nomeUsuario"));
                 }
                 P.qtdMinEstoque = dr.GetInt32(dr.GetOrdinal("qtdMinEstoque"));
                 P.nomeCategoria = dr.GetString(dr.GetOrdinal("nomeCategoria"));
@@ -140,7 +143,7 @@ namespace BancoModel
                 P.descontoPromocao = dr.GetDecimal(dr.GetOrdinal("descontoPromocao"));
                 P.IdCategoria = dr.GetInt32(dr.GetOrdinal("IdCategoria"));
                 P.ativoProduto = dr.GetString(dr.GetOrdinal("ativoProduto"));
-                P.IdUsuario = dr.GetInt32(dr.GetOrdinal("IdUsuario"));
+                P.nomeUsuario = dr.GetString(dr.GetOrdinal("nomeUsuario"));
                 P.qtdMinEstoque = dr.GetInt32(dr.GetOrdinal("qntMinEstoque"));
                 if (dr["Imagem"] != DBNull.Value)
                     P.imagem = (byte[])dr["Imagem"];

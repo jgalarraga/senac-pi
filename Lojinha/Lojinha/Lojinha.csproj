@@ -330,6 +330,7 @@
     <None Include="Resources\adicionarCategoriaTip.jpg" />
     <None Include="Resources\adicionarUsuarioTip.jpg" />
     <None Include="Resources\buttonClicked.jpg" />
+    <None Include="Resources\createUserButton1.jpg" />
     <Content Include="Resources\Fontes\Roboto-Black.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

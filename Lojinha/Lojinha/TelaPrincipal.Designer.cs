@@ -32,29 +32,20 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarSenhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.excluirUsuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fazerLogoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pedidosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrarPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visualizarPedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adicionarStatusDePedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adicionarFormaDePagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adicionarCategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.versãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajudaParaEsteFormulárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.adicionarProdutoBtn = new System.Windows.Forms.Button();
             this.visualizarEstoqueBtn = new System.Windows.Forms.Button();
             this.addCategoryButton = new System.Windows.Forms.Button();
             this.viewOrdersButton = new System.Windows.Forms.Button();
-            this.viewClientsButton = new System.Windows.Forms.Button();
             this.criarUsuarioBtn = new System.Windows.Forms.Button();
             this.addPaymentButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
@@ -75,6 +66,9 @@
             this.visualizarPedidosBtn2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.removeUserButton = new System.Windows.Forms.Button();
+            this.logoffButton = new System.Windows.Forms.Button();
+            this.viewClientsButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.helpBalloon2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.retroGirlImage)).BeginInit();
@@ -98,7 +92,8 @@
             // 
             this.produtosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrarUsuárioToolStripMenuItem,
-            this.alterarSenhaToolStripMenuItem});
+            this.excluirUsuárioToolStripMenuItem,
+            this.fazerLogoffToolStripMenuItem});
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             resources.ApplyResources(this.produtosToolStripMenuItem, "produtosToolStripMenuItem");
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
@@ -109,10 +104,17 @@
             resources.ApplyResources(this.cadastrarUsuárioToolStripMenuItem, "cadastrarUsuárioToolStripMenuItem");
             this.cadastrarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarUsuárioToolStripMenuItem_Click);
             // 
-            // alterarSenhaToolStripMenuItem
+            // excluirUsuárioToolStripMenuItem
             // 
-            this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
-            resources.ApplyResources(this.alterarSenhaToolStripMenuItem, "alterarSenhaToolStripMenuItem");
+            this.excluirUsuárioToolStripMenuItem.Name = "excluirUsuárioToolStripMenuItem";
+            resources.ApplyResources(this.excluirUsuárioToolStripMenuItem, "excluirUsuárioToolStripMenuItem");
+            this.excluirUsuárioToolStripMenuItem.Click += new System.EventHandler(this.excluirUsuárioToolStripMenuItem_Click);
+            // 
+            // fazerLogoffToolStripMenuItem
+            // 
+            this.fazerLogoffToolStripMenuItem.Name = "fazerLogoffToolStripMenuItem";
+            resources.ApplyResources(this.fazerLogoffToolStripMenuItem, "fazerLogoffToolStripMenuItem");
+            this.fazerLogoffToolStripMenuItem.Click += new System.EventHandler(this.fazerLogoffToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -152,43 +154,7 @@
             // 
             this.visualizarClientesToolStripMenuItem.Name = "visualizarClientesToolStripMenuItem";
             resources.ApplyResources(this.visualizarClientesToolStripMenuItem, "visualizarClientesToolStripMenuItem");
-            // 
-            // pedidosToolStripMenuItem1
-            // 
-            this.pedidosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrarPedidoToolStripMenuItem,
-            this.visualizarPedidosToolStripMenuItem,
-            this.adicionarStatusDePedidoToolStripMenuItem,
-            this.adicionarFormaDePagamentoToolStripMenuItem,
-            this.adicionarCategoriaToolStripMenuItem});
-            this.pedidosToolStripMenuItem1.Name = "pedidosToolStripMenuItem1";
-            resources.ApplyResources(this.pedidosToolStripMenuItem1, "pedidosToolStripMenuItem1");
-            // 
-            // cadastrarPedidoToolStripMenuItem
-            // 
-            this.cadastrarPedidoToolStripMenuItem.Name = "cadastrarPedidoToolStripMenuItem";
-            resources.ApplyResources(this.cadastrarPedidoToolStripMenuItem, "cadastrarPedidoToolStripMenuItem");
-            // 
-            // visualizarPedidosToolStripMenuItem
-            // 
-            this.visualizarPedidosToolStripMenuItem.Name = "visualizarPedidosToolStripMenuItem";
-            resources.ApplyResources(this.visualizarPedidosToolStripMenuItem, "visualizarPedidosToolStripMenuItem");
-            // 
-            // adicionarStatusDePedidoToolStripMenuItem
-            // 
-            this.adicionarStatusDePedidoToolStripMenuItem.Name = "adicionarStatusDePedidoToolStripMenuItem";
-            resources.ApplyResources(this.adicionarStatusDePedidoToolStripMenuItem, "adicionarStatusDePedidoToolStripMenuItem");
-            // 
-            // adicionarFormaDePagamentoToolStripMenuItem
-            // 
-            this.adicionarFormaDePagamentoToolStripMenuItem.Name = "adicionarFormaDePagamentoToolStripMenuItem";
-            resources.ApplyResources(this.adicionarFormaDePagamentoToolStripMenuItem, "adicionarFormaDePagamentoToolStripMenuItem");
-            // 
-            // adicionarCategoriaToolStripMenuItem
-            // 
-            this.adicionarCategoriaToolStripMenuItem.Name = "adicionarCategoriaToolStripMenuItem";
-            resources.ApplyResources(this.adicionarCategoriaToolStripMenuItem, "adicionarCategoriaToolStripMenuItem");
-            this.adicionarCategoriaToolStripMenuItem.Click += new System.EventHandler(this.adicionarCategoriaToolStripMenuItem_Click);
+            this.visualizarClientesToolStripMenuItem.Click += new System.EventHandler(this.visualizarClientesToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -197,29 +163,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.produtosToolStripMenuItem,
             this.clientesToolStripMenuItem,
-            this.pedidosToolStripMenuItem,
-            this.pedidosToolStripMenuItem1,
-            this.ajudaToolStripMenuItem});
+            this.pedidosToolStripMenuItem});
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
-            // ajudaToolStripMenuItem
-            // 
-            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.versãoToolStripMenuItem,
-            this.ajudaParaEsteFormulárioToolStripMenuItem});
-            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            resources.ApplyResources(this.ajudaToolStripMenuItem, "ajudaToolStripMenuItem");
-            // 
-            // versãoToolStripMenuItem
-            // 
-            this.versãoToolStripMenuItem.Name = "versãoToolStripMenuItem";
-            resources.ApplyResources(this.versãoToolStripMenuItem, "versãoToolStripMenuItem");
-            // 
-            // ajudaParaEsteFormulárioToolStripMenuItem
-            // 
-            this.ajudaParaEsteFormulárioToolStripMenuItem.Name = "ajudaParaEsteFormulárioToolStripMenuItem";
-            resources.ApplyResources(this.ajudaParaEsteFormulárioToolStripMenuItem, "ajudaParaEsteFormulárioToolStripMenuItem");
             // 
             // label1
             // 
@@ -262,15 +208,6 @@
             this.viewOrdersButton.Name = "viewOrdersButton";
             this.viewOrdersButton.UseVisualStyleBackColor = true;
             this.viewOrdersButton.Click += new System.EventHandler(this.viewOrdersButton_Click);
-            // 
-            // viewClientsButton
-            // 
-            resources.ApplyResources(this.viewClientsButton, "viewClientsButton");
-            this.viewClientsButton.BackgroundImage = global::Lojinha.Properties.Resources.viewClientsButton;
-            this.viewClientsButton.FlatAppearance.BorderSize = 0;
-            this.viewClientsButton.Name = "viewClientsButton";
-            this.viewClientsButton.UseVisualStyleBackColor = true;
-            this.viewClientsButton.Click += new System.EventHandler(this.viewClientsButton_Click);
             // 
             // criarUsuarioBtn
             // 
@@ -383,6 +320,7 @@
             this.visualizarClientesBtn.FlatAppearance.BorderSize = 0;
             this.visualizarClientesBtn.Name = "visualizarClientesBtn";
             this.visualizarClientesBtn.UseVisualStyleBackColor = true;
+            this.visualizarClientesBtn.Click += new System.EventHandler(this.visualizarClientesBtn_Click);
             // 
             // adicionarProdutoBtn2
             // 
@@ -452,12 +390,37 @@
             this.removeUserButton.Name = "removeUserButton";
             this.removeUserButton.UseVisualStyleBackColor = true;
             // 
+            // logoffButton
+            // 
+            this.logoffButton.BackgroundImage = global::Lojinha.Properties.Resources.shutdown;
+            resources.ApplyResources(this.logoffButton, "logoffButton");
+            this.logoffButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logoffButton.Name = "logoffButton";
+            this.logoffButton.UseVisualStyleBackColor = true;
+            this.logoffButton.Click += new System.EventHandler(this.logoffButton_Click);
+            // 
+            // viewClientsButton
+            // 
+            resources.ApplyResources(this.viewClientsButton, "viewClientsButton");
+            this.viewClientsButton.BackgroundImage = global::Lojinha.Properties.Resources.createUserButton1;
+            this.viewClientsButton.FlatAppearance.BorderSize = 0;
+            this.viewClientsButton.Name = "viewClientsButton";
+            this.viewClientsButton.UseVisualStyleBackColor = true;
+            this.viewClientsButton.Click += new System.EventHandler(this.viewClientsButton_Click);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
             // TelaPrincipal
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::Lojinha.Properties.Resources.mainScreenBG;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.logoffButton);
             this.Controls.Add(this.removeUserButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.visualizarPedidosBtn2);
@@ -510,8 +473,6 @@
         private System.Windows.Forms.ToolStripMenuItem cadastrarCategoriaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualizarClientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem cadastrarPedidoToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastrarUsuárioToolStripMenuItem;
         private System.Windows.Forms.Label label1;
@@ -519,26 +480,17 @@
         private System.Windows.Forms.Button visualizarEstoqueBtn;
         private System.Windows.Forms.Button addCategoryButton;
         private System.Windows.Forms.Button viewOrdersButton;
-        private System.Windows.Forms.Button viewClientsButton;
         private System.Windows.Forms.Button criarUsuarioBtn;
         private System.Windows.Forms.Button addPaymentButton;
         private System.Windows.Forms.Button maximizeButton;
         private System.Windows.Forms.Button minimizeButton;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ToolStripMenuItem adicionarStatusDePedidoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visualizarPedidosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem adicionarFormaDePagamentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem versãoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ajudaParaEsteFormulárioToolStripMenuItem;
         private System.Windows.Forms.Button helpButton;
         private System.Windows.Forms.PictureBox retroGirlImage;
         private System.Windows.Forms.PictureBox helpBalloon2;
         private System.Windows.Forms.Button closeButton;
-        private System.Windows.Forms.ToolStripMenuItem adicionarCategoriaToolStripMenuItem;
         private System.Windows.Forms.Button normalSizeButton;
         private System.Windows.Forms.Button visualizarClientesBtn;
-        private System.Windows.Forms.ToolStripMenuItem alterarSenhaToolStripMenuItem;
         private System.Windows.Forms.Button adicionarProdutoBtn2;
         private System.Windows.Forms.Button visualizarClientesBtn2;
         private System.Windows.Forms.Button adicionarCategoriaBtn2;
@@ -547,6 +499,11 @@
         private System.Windows.Forms.Button visualizarPedidosBtn2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button removeUserButton;
+        private System.Windows.Forms.ToolStripMenuItem excluirUsuárioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fazerLogoffToolStripMenuItem;
+        private System.Windows.Forms.Button logoffButton;
+        private System.Windows.Forms.Button viewClientsButton;
+        private System.Windows.Forms.Label label3;
     }
 }
 

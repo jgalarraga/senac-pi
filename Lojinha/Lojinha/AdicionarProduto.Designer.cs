@@ -60,6 +60,7 @@
             this.productPicture = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox2BG = new System.Windows.Forms.Panel();
+            this.visualizarProdutos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.produtoDataGrid)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productPicture)).BeginInit();
@@ -216,7 +217,7 @@
             "Preço",
             "Desconto",
             "Quantidade"});
-            this.filtroComboBox.Location = new System.Drawing.Point(169, 519);
+            this.filtroComboBox.Location = new System.Drawing.Point(166, 448);
             this.filtroComboBox.Name = "filtroComboBox";
             this.filtroComboBox.Size = new System.Drawing.Size(121, 21);
             this.filtroComboBox.TabIndex = 28;
@@ -231,6 +232,7 @@
             this.produtoDataGrid.AllowUserToResizeRows = false;
             this.produtoDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.produtoDataGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.produtoDataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -249,8 +251,9 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.produtoDataGrid.DefaultCellStyle = dataGridViewCellStyle2;
+            this.produtoDataGrid.EnableHeadersVisualStyles = false;
             this.produtoDataGrid.GridColor = System.Drawing.Color.Gainsboro;
-            this.produtoDataGrid.Location = new System.Drawing.Point(107, 544);
+            this.produtoDataGrid.Location = new System.Drawing.Point(104, 473);
             this.produtoDataGrid.Name = "produtoDataGrid";
             this.produtoDataGrid.ReadOnly = true;
             this.produtoDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -285,7 +288,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(199)))), ((int)(((byte)(235)))));
-            this.panel1.Location = new System.Drawing.Point(107, 573);
+            this.panel1.Location = new System.Drawing.Point(104, 502);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(900, 3);
             this.panel1.TabIndex = 6;
@@ -294,7 +297,7 @@
             // 
             this.filtroComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.filtroComboBox2.FormattingEnabled = true;
-            this.filtroComboBox2.Location = new System.Drawing.Point(311, 519);
+            this.filtroComboBox2.Location = new System.Drawing.Point(308, 448);
             this.filtroComboBox2.Name = "filtroComboBox2";
             this.filtroComboBox2.Size = new System.Drawing.Size(137, 21);
             this.filtroComboBox2.TabIndex = 41;
@@ -303,7 +306,7 @@
             // 
             // filtroTextBox
             // 
-            this.filtroTextBox.Location = new System.Drawing.Point(305, 520);
+            this.filtroTextBox.Location = new System.Drawing.Point(302, 449);
             this.filtroTextBox.Name = "filtroTextBox";
             this.filtroTextBox.Size = new System.Drawing.Size(202, 20);
             this.filtroTextBox.TabIndex = 42;
@@ -313,7 +316,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(107, 514);
+            this.panel3.Location = new System.Drawing.Point(104, 443);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(921, 30);
             this.panel3.TabIndex = 45;
@@ -321,7 +324,7 @@
             // limparFiltroButton
             // 
             this.limparFiltroButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
-            this.limparFiltroButton.Location = new System.Drawing.Point(881, 700);
+            this.limparFiltroButton.Location = new System.Drawing.Point(878, 629);
             this.limparFiltroButton.Name = "limparFiltroButton";
             this.limparFiltroButton.Size = new System.Drawing.Size(149, 34);
             this.limparFiltroButton.TabIndex = 31;
@@ -333,7 +336,7 @@
             // 
             this.excluirButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
             this.excluirButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.excluirButton.Location = new System.Drawing.Point(685, 397);
+            this.excluirButton.Location = new System.Drawing.Point(681, 382);
             this.excluirButton.Name = "excluirButton";
             this.excluirButton.Size = new System.Drawing.Size(149, 41);
             this.excluirButton.TabIndex = 32;
@@ -345,7 +348,7 @@
             // 
             this.alterarButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
             this.alterarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.alterarButton.Location = new System.Drawing.Point(504, 397);
+            this.alterarButton.Location = new System.Drawing.Point(500, 382);
             this.alterarButton.Name = "alterarButton";
             this.alterarButton.Size = new System.Drawing.Size(149, 41);
             this.alterarButton.TabIndex = 31;
@@ -357,7 +360,7 @@
             // 
             this.addButton.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addButton.Location = new System.Drawing.Point(322, 397);
+            this.addButton.Location = new System.Drawing.Point(318, 382);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(149, 41);
             this.addButton.TabIndex = 24;
@@ -384,7 +387,7 @@
             // 
             this.panel2.BackgroundImage = global::Lojinha.Properties.Resources.txtBoxSmall;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(163, 516);
+            this.panel2.Location = new System.Drawing.Point(160, 445);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(133, 28);
             this.panel2.TabIndex = 43;
@@ -393,11 +396,22 @@
             // 
             this.comboBox2BG.BackgroundImage = global::Lojinha.Properties.Resources.txtBoxSmall;
             this.comboBox2BG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.comboBox2BG.Location = new System.Drawing.Point(302, 516);
+            this.comboBox2BG.Location = new System.Drawing.Point(299, 445);
             this.comboBox2BG.Name = "comboBox2BG";
             this.comboBox2BG.Size = new System.Drawing.Size(155, 28);
             this.comboBox2BG.TabIndex = 44;
             this.comboBox2BG.Visible = false;
+            // 
+            // visualizarProdutos
+            // 
+            this.visualizarProdutos.BackgroundImage = global::Lojinha.Properties.Resources.blueButton;
+            this.visualizarProdutos.Location = new System.Drawing.Point(723, 629);
+            this.visualizarProdutos.Name = "visualizarProdutos";
+            this.visualizarProdutos.Size = new System.Drawing.Size(149, 34);
+            this.visualizarProdutos.TabIndex = 46;
+            this.visualizarProdutos.Text = "Visualizar Produtos";
+            this.visualizarProdutos.UseVisualStyleBackColor = true;
+            this.visualizarProdutos.Click += new System.EventHandler(this.visualizarProdutos_Click);
             // 
             // AdicionarProduto
             // 
@@ -405,7 +419,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1158, 756);
+            this.ClientSize = new System.Drawing.Size(1139, 679);
+            this.Controls.Add(this.visualizarProdutos);
             this.Controls.Add(this.limparFiltroButton);
             this.Controls.Add(this.filtroTextBox);
             this.Controls.Add(this.filtroComboBox2);
@@ -439,6 +454,8 @@
             this.Name = "AdicionarProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StatusPedido";
+            this.Shown += new System.EventHandler(this.AdicionarProduto_Shown);
+            this.Click += new System.EventHandler(this.AdicionarProduto_Click);
             ((System.ComponentModel.ISupportInitialize)(this.produtoDataGrid)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -480,5 +497,6 @@
         private System.Windows.Forms.Panel comboBox2BG;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button limparFiltroButton;
+        private System.Windows.Forms.Button visualizarProdutos;
     }
 }

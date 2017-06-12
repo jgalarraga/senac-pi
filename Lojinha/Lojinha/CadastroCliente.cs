@@ -143,22 +143,8 @@ namespace Lojinha
                 //DataGridView dos endereços do cliente
                 enderecoDataGridView.Columns[0].Visible = false;
                 enderecoDataGridView.Columns[1].Visible = false;
-
-                if (enderecoDataGridView.SelectedRows.Count > 0)
-                {
-                    tipoEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[2].Value.ToString();
-                    logradouroCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[3].Value.ToString();
-                    numEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[4].Value.ToString();
-                    cepEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[5].Value.ToString();
-                    if (enderecoDataGridView.SelectedRows[0].Cells[6].Value != null)
-                    {
-                        complEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[6].Value.ToString();
-                    }
-                    cidadeEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[7].Value.ToString();
-                    ufEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[8].Value.ToString();
-                    paisEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[9].Value.ToString();
-                }
             }
+
         }
 
         // BOTÕES
@@ -191,7 +177,7 @@ namespace Lojinha
                 }
             }
 
-            foreach(TextBoxPequenaUserControl u in textboxesPequenas)
+            foreach (TextBoxPequenaUserControl u in textboxesPequenas)
             {
                 if (u.Text.Length == 0)
                 {
@@ -203,7 +189,7 @@ namespace Lojinha
                 }
             }
 
-            foreach(TextBoxMuitoPequenaUserControl u in textboxesMuitoPequenas)
+            foreach (TextBoxMuitoPequenaUserControl u in textboxesMuitoPequenas)
             {
                 if (u.Text.Length == 0)
                 {
@@ -231,6 +217,46 @@ namespace Lojinha
         private void excluirCadClienteButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void enderecoDataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            if (enderecoDataGridView.SelectedRows.Count > 0)
+            {
+                tipoEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+                logradouroCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+                numEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[4].Value.ToString();
+                cepEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+                if (enderecoDataGridView.SelectedRows[0].Cells[6].Value != null)
+                {
+                    complEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[6].Value.ToString();
+                }
+                cidadeEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[7].Value.ToString();
+                ufEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[8].Value.ToString();
+                paisEndCadClienteTextBox.Text = enderecoDataGridView.SelectedRows[0].Cells[9].Value.ToString();
+            }
+        }
+
+        private void VisualizarClientes_Shown(object sender, EventArgs e)
+        {
+            // já que o usuário ainda não clicou em nada
+            // não deixo controles ativos no primeiro momento
+            this.ActiveControl = null;
+            // deixo o data grid view deselecionado
+            clienteDataGridView.Rows[0].Selected = false;
+        }
+
+        private void VisualizarClientes_Click(object sender, EventArgs e)
+        {
+            // já que o usuário ainda não clicou em nada
+            // não deixo controles ativos no primeiro momento
+            this.ActiveControl = null;
+            nomeCadClienteTextBox.Text = "";
+            cpfCadClienteTextBox.Text = "";
+            dtNascCadClienteTextBox.Text = "";
+            emailCadClienteTextBox.Text = "";
+            // deixo o data grid view deselecionado
+            clienteDataGridView.Rows[0].Selected = false;
         }
     }
 }

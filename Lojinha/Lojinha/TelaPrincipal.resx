@@ -160,13 +160,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;exitButton.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 24</value>
-  </data>
-  <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Usuários</value>
+    <value>22</value>
   </data>
   <data name="cadastrarUsuárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 22</value>
@@ -174,83 +168,59 @@
   <data name="cadastrarUsuárioToolStripMenuItem.Text" xml:space="preserve">
     <value>Criar Usuário</value>
   </data>
-  <data name="alterarSenhaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="excluirUsuárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 22</value>
   </data>
-  <data name="alterarSenhaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Alterar Senha</value>
+  <data name="excluirUsuárioToolStripMenuItem.Text" xml:space="preserve">
+    <value>Excluir Usuário</value>
   </data>
-  <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 24</value>
+  <data name="fazerLogoffToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
   </data>
-  <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Produtos</value>
+  <data name="fazerLogoffToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fazer Logoff</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 24</value>
+  </data>
+  <data name="produtosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Usuários</value>
   </data>
   <data name="adicionarProdutoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
+    <value>168, 22</value>
   </data>
   <data name="adicionarProdutoToolStripMenuItem.Text" xml:space="preserve">
     <value>Adicionar Produto</value>
   </data>
   <data name="visualizarEstoqueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
+    <value>168, 22</value>
   </data>
   <data name="visualizarEstoqueToolStripMenuItem.Text" xml:space="preserve">
     <value>Visualizar Estoque</value>
   </data>
   <data name="cadastrarCategoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
+    <value>168, 22</value>
   </data>
   <data name="cadastrarCategoriaToolStripMenuItem.Text" xml:space="preserve">
     <value>Adicionar Categoria</value>
   </data>
-  <data name="pedidosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 24</value>
+  <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 24</value>
   </data>
-  <data name="pedidosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clientes</value>
+  <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Produtos</value>
   </data>
   <data name="visualizarClientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
+    <value>159, 22</value>
   </data>
   <data name="visualizarClientesToolStripMenuItem.Text" xml:space="preserve">
     <value>Visualizar Clientes</value>
   </data>
-  <data name="pedidosToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 24</value>
+  <data name="pedidosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 24</value>
   </data>
-  <data name="pedidosToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Pedidos</value>
-  </data>
-  <data name="cadastrarPedidoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 22</value>
-  </data>
-  <data name="cadastrarPedidoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Cadastrar Pedido</value>
-  </data>
-  <data name="visualizarPedidosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 22</value>
-  </data>
-  <data name="visualizarPedidosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Visualizar Pedidos</value>
-  </data>
-  <data name="adicionarStatusDePedidoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 22</value>
-  </data>
-  <data name="adicionarStatusDePedidoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Adicionar Status de Pedido</value>
-  </data>
-  <data name="adicionarFormaDePagamentoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 22</value>
-  </data>
-  <data name="adicionarFormaDePagamentoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Adicionar Forma de Pagamento</value>
-  </data>
-  <data name="adicionarCategoriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 22</value>
-  </data>
-  <data name="adicionarCategoriaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Adicionar Categoria</value>
+  <data name="pedidosToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clientes</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -280,25 +250,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="ajudaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 24</value>
-  </data>
-  <data name="ajudaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ajuda</value>
-  </data>
-  <data name="versãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 22</value>
-  </data>
-  <data name="versãoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sobre o SOS! Ajude a Minha Loja...</value>
-  </data>
-  <data name="ajudaParaEsteFormulárioToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 22</value>
-  </data>
-  <data name="ajudaParaEsteFormulárioToolStripMenuItem.Text" xml:space="preserve">
-    <value>Estou tendo dificuldades com o formuário...</value>
+    <value>23</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -334,7 +286,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="adicionarProdutoBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -367,7 +319,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;adicionarProdutoBtn.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="visualizarEstoqueBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -400,7 +352,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;visualizarEstoqueBtn.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="addCategoryButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -433,7 +385,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;addCategoryButton.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="viewOrdersButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -466,40 +418,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;viewOrdersButton.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="viewClientsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="viewClientsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="viewClientsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="viewClientsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="viewClientsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 462</value>
-  </data>
-  <data name="viewClientsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 145</value>
-  </data>
-  <data name="viewClientsButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;viewClientsButton.Name" xml:space="preserve">
-    <value>viewClientsButton</value>
-  </data>
-  <data name="&gt;&gt;viewClientsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;viewClientsButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;viewClientsButton.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>16</value>
   </data>
   <data name="criarUsuarioBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -532,7 +451,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;criarUsuarioBtn.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="addPaymentButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -565,7 +484,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;addPaymentButton.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="minimizeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -607,7 +526,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;minimizeButton.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="helpButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -640,7 +559,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;helpButton.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="helpBalloon2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -670,7 +589,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;helpBalloon2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="retroGirlImage.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -700,7 +619,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;retroGirlImage.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="pictureBox2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -727,7 +646,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="maximizeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -834,7 +753,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;maximizeButton.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -864,7 +783,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="closeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -909,7 +828,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;closeButton.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="normalSizeButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -954,7 +873,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;normalSizeButton.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="visualizarClientesBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -987,7 +906,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;visualizarClientesBtn.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="adicionarProdutoBtn2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1023,7 +942,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;adicionarProdutoBtn2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="visualizarClientesBtn2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1059,7 +978,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;visualizarClientesBtn2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="adicionarCategoriaBtn2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1095,7 +1014,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;adicionarCategoriaBtn2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="criarUsuarioBtn2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1131,7 +1050,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;criarUsuarioBtn2.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="visualizarProdutosBtn2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1167,7 +1086,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;visualizarProdutosBtn2.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="visualizarPedidosBtn2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1203,7 +1122,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;visualizarPedidosBtn2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -1236,7 +1155,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="removeUserButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1272,6 +1191,96 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;removeUserButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="logoffButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="logoffButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="logoffButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1068, 661</value>
+  </data>
+  <data name="logoffButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 56</value>
+  </data>
+  <data name="logoffButton.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;logoffButton.Name" xml:space="preserve">
+    <value>logoffButton</value>
+  </data>
+  <data name="&gt;&gt;logoffButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logoffButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;logoffButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="viewClientsButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="viewClientsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="viewClientsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="viewClientsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="viewClientsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 462</value>
+  </data>
+  <data name="viewClientsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 145</value>
+  </data>
+  <data name="viewClientsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;viewClientsButton.Name" xml:space="preserve">
+    <value>viewClientsButton</value>
+  </data>
+  <data name="&gt;&gt;viewClientsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewClientsButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;viewClientsButton.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Corbel, 18pt, style=Bold</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1052, 161</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 29</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>FoxTrot</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1310,10 +1319,16 @@
   <data name="&gt;&gt;cadastrarUsuárioToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;alterarSenhaToolStripMenuItem.Name" xml:space="preserve">
-    <value>alterarSenhaToolStripMenuItem</value>
+  <data name="&gt;&gt;excluirUsuárioToolStripMenuItem.Name" xml:space="preserve">
+    <value>excluirUsuárioToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;alterarSenhaToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;excluirUsuárioToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fazerLogoffToolStripMenuItem.Name" xml:space="preserve">
+    <value>fazerLogoffToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;fazerLogoffToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;clientesToolStripMenuItem.Name" xml:space="preserve">
@@ -1350,60 +1365,6 @@
     <value>visualizarClientesToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;visualizarClientesToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pedidosToolStripMenuItem1.Name" xml:space="preserve">
-    <value>pedidosToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;pedidosToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cadastrarPedidoToolStripMenuItem.Name" xml:space="preserve">
-    <value>cadastrarPedidoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;cadastrarPedidoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;visualizarPedidosToolStripMenuItem.Name" xml:space="preserve">
-    <value>visualizarPedidosToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;visualizarPedidosToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adicionarStatusDePedidoToolStripMenuItem.Name" xml:space="preserve">
-    <value>adicionarStatusDePedidoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;adicionarStatusDePedidoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adicionarFormaDePagamentoToolStripMenuItem.Name" xml:space="preserve">
-    <value>adicionarFormaDePagamentoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;adicionarFormaDePagamentoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adicionarCategoriaToolStripMenuItem.Name" xml:space="preserve">
-    <value>adicionarCategoriaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;adicionarCategoriaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ajudaToolStripMenuItem.Name" xml:space="preserve">
-    <value>ajudaToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;ajudaToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;versãoToolStripMenuItem.Name" xml:space="preserve">
-    <value>versãoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;versãoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ajudaParaEsteFormulárioToolStripMenuItem.Name" xml:space="preserve">
-    <value>ajudaParaEsteFormulárioToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;ajudaParaEsteFormulárioToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

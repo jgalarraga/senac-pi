@@ -63,6 +63,8 @@
             this.estoqueTip = new System.Windows.Forms.Panel();
             this.adicionarCategoriaTip = new System.Windows.Forms.Panel();
             this.visualizarClientesTip = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +86,7 @@
             this.menuStrip.Controls.Add(this.Estoque);
             this.menuStrip.Controls.Add(this.visualizarProdutos);
             this.menuStrip.Controls.Add(this.addProdutoButton);
-            this.menuStrip.Location = new System.Drawing.Point(272, 38);
+            this.menuStrip.Location = new System.Drawing.Point(84, 38);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(1088, 150);
             this.menuStrip.TabIndex = 0;
@@ -281,7 +283,7 @@
             this.minimizeButton.ForeColor = System.Drawing.Color.Black;
             this.minimizeButton.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.minimizeButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.minimizeButton.Location = new System.Drawing.Point(1608, 2);
+            this.minimizeButton.Location = new System.Drawing.Point(1231, 2);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.minimizeButton.Size = new System.Drawing.Size(29, 24);
@@ -302,7 +304,7 @@
             this.exitButton.Image = global::Lojinha.Properties.Resources.closeBtn;
             this.exitButton.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.exitButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.exitButton.Location = new System.Drawing.Point(1640, -1);
+            this.exitButton.Location = new System.Drawing.Point(1263, -1);
             this.exitButton.Name = "exitButton";
             this.exitButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.exitButton.Size = new System.Drawing.Size(29, 29);
@@ -321,7 +323,7 @@
             this.pedidosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1669, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1292, 28);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -339,27 +341,27 @@
             // cadastrarUsuárioToolStripMenuItem
             // 
             this.cadastrarUsuárioToolStripMenuItem.Name = "cadastrarUsuárioToolStripMenuItem";
-            this.cadastrarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarUsuárioToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.cadastrarUsuárioToolStripMenuItem.Text = "Criar Usuário";
             this.cadastrarUsuárioToolStripMenuItem.Click += new System.EventHandler(this.cadastrarUsuárioToolStripMenuItem_Click);
             // 
             // excluirUsuárioToolStripMenuItem
             // 
             this.excluirUsuárioToolStripMenuItem.Name = "excluirUsuárioToolStripMenuItem";
-            this.excluirUsuárioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.excluirUsuárioToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.excluirUsuárioToolStripMenuItem.Text = "Excluir Usuário";
             this.excluirUsuárioToolStripMenuItem.Click += new System.EventHandler(this.excluirUsuárioToolStripMenuItem_Click);
             // 
             // alterarSenhaToolStripMenuItem
             // 
             this.alterarSenhaToolStripMenuItem.Name = "alterarSenhaToolStripMenuItem";
-            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.alterarSenhaToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.alterarSenhaToolStripMenuItem.Text = "Alterar Senha";
             // 
             // fazerLogoffToolStripMenuItem
             // 
             this.fazerLogoffToolStripMenuItem.Name = "fazerLogoffToolStripMenuItem";
-            this.fazerLogoffToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fazerLogoffToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.fazerLogoffToolStripMenuItem.Text = "Fazer Logoff";
             this.fazerLogoffToolStripMenuItem.Click += new System.EventHandler(this.fazerLogoffToolStripMenuItem_Click);
             // 
@@ -410,7 +412,7 @@
             this.painel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.painel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.painel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.painel.Location = new System.Drawing.Point(272, 260);
+            this.painel.Location = new System.Drawing.Point(84, 202);
             this.painel.Name = "painel";
             this.painel.Size = new System.Drawing.Size(1088, 485);
             this.painel.TabIndex = 24;
@@ -447,7 +449,7 @@
             // 
             this.addProdutosTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.addProdutosTip.BackgroundImage = global::Lojinha.Properties.Resources.addProdutosTip;
-            this.addProdutosTip.Location = new System.Drawing.Point(303, 31);
+            this.addProdutosTip.Location = new System.Drawing.Point(115, 31);
             this.addProdutosTip.Name = "addProdutosTip";
             this.addProdutosTip.Size = new System.Drawing.Size(126, 33);
             this.addProdutosTip.TabIndex = 27;
@@ -457,7 +459,7 @@
             // 
             this.estoqueTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.estoqueTip.BackgroundImage = global::Lojinha.Properties.Resources.estoqueTip;
-            this.estoqueTip.Location = new System.Drawing.Point(493, 31);
+            this.estoqueTip.Location = new System.Drawing.Point(305, 31);
             this.estoqueTip.Name = "estoqueTip";
             this.estoqueTip.Size = new System.Drawing.Size(104, 33);
             this.estoqueTip.TabIndex = 28;
@@ -467,7 +469,7 @@
             // 
             this.adicionarCategoriaTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.adicionarCategoriaTip.BackgroundImage = global::Lojinha.Properties.Resources.adicionarCategoriaTip;
-            this.adicionarCategoriaTip.Location = new System.Drawing.Point(948, 31);
+            this.adicionarCategoriaTip.Location = new System.Drawing.Point(760, 31);
             this.adicionarCategoriaTip.Name = "adicionarCategoriaTip";
             this.adicionarCategoriaTip.Size = new System.Drawing.Size(126, 33);
             this.adicionarCategoriaTip.TabIndex = 28;
@@ -477,11 +479,39 @@
             // 
             this.visualizarClientesTip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.visualizarClientesTip.BackgroundImage = global::Lojinha.Properties.Resources.visualizarClientesTip;
-            this.visualizarClientesTip.Location = new System.Drawing.Point(1123, 31);
+            this.visualizarClientesTip.Location = new System.Drawing.Point(935, 31);
             this.visualizarClientesTip.Name = "visualizarClientesTip";
             this.visualizarClientesTip.Size = new System.Drawing.Size(126, 33);
             this.visualizarClientesTip.TabIndex = 29;
             this.visualizarClientesTip.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.BackgroundImage = global::Lojinha.Properties.Resources.shutdown;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(22, 800);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 56);
+            this.button1.TabIndex = 30;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.logoffButton_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.BackgroundImage = global::Lojinha.Properties.Resources.home;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(96, 805);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(48, 47);
+            this.button2.TabIndex = 31;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // Menu
             // 
@@ -489,7 +519,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Lojinha.Properties.Resources.otherScreensBG1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1669, 1020);
+            this.ClientSize = new System.Drawing.Size(1292, 904);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.visualizarClientesTip);
             this.Controls.Add(this.adicionarCategoriaTip);
             this.Controls.Add(this.estoqueTip);
@@ -550,5 +582,7 @@
         private System.Windows.Forms.Panel pedidosTip;
         private System.Windows.Forms.Panel visualizarClientesTip;
         private System.Windows.Forms.Panel adicionarUsuarioTip;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

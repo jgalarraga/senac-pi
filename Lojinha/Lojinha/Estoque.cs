@@ -14,7 +14,40 @@ namespace Lojinha
         public Estoque()
         {
             InitializeComponent();
+        }
 
+        private void Estoque_Shown(object sender, EventArgs e)
+        {
+            // já que o usuário ainda não clicou em nada
+            // não deixo controles ativos no primeiro momento
+            this.ActiveControl = null;
+        }
+
+        private void Estoque_Click(object sender, EventArgs e)
+        {
+            // já que o usuário ainda não clicou em nada
+            // não deixo controles ativos no primeiro momento
+            this.ActiveControl = null;
+            // deixo as textBox em branco
+            nomeProdTextBox.Text = "";
+            QtdTextBox.Text = "";
+            categoriaComboBox.SelectedIndex = -1;
+            // deixo o data grid view deselecionado
+            try
+            {
+                EstoqueDataGridView.Rows[0].Selected = false;
+            }
+            catch (System.ArgumentOutOfRangeException ex)
+            {
+                // entra aqui quando o usuário clica fora da tela no primeiro momento e não há nada no gridview
+            }
+        }
+
+        /// <summary>
+        /// botão visualizar estoque
+        /// </summary>
+        private void visualizarEstoque_Click(object sender, EventArgs e)
+        {
             nomeProdTextBox.Text = "";
             List<clsEstoque> estoque = clsEstoque.SelecionarEstoque();
             EstoqueDataGridView.DataSource = estoque;
@@ -31,6 +64,17 @@ namespace Lojinha
             // deixo a combobox em branco
             categoriaComboBox.SelectedIndex = -1;
             categoriaComboBox.Text = "<selecione uma categoria..>";
+
+            // deixo a coluna do id invisível
+            EstoqueDataGridView.Columns[0].Visible = false;
+            // organizo as colunas da forma que eu quero
+            ajustarOrdemColunas();
+            renomearCabecalhoColunas();
+
+            // deixo as textBox em branco
+            categoriaComboBox.SelectedIndex = -1;
+            // deixo o data grid view deselecionado
+            EstoqueDataGridView.Rows[0].Selected = false;
         }
 
         /* OUTROS MÉTODOS */
@@ -47,13 +91,7 @@ namespace Lojinha
             catch (Exception ex)
             {
                 MessageBox.Show("A pesquisa não retornou resultados. :C");
-            }            
-            
-            // deixo a coluna do id invisível
-            EstoqueDataGridView.Columns[0].Visible = false;
-            // organizo as colunas da forma que eu quero
-            ajustarOrdemColunas();
-            renomearCabecalhoColunas();
+            }                    
         }
 
         private void ajustarOrdemColunas()
@@ -98,12 +136,6 @@ namespace Lojinha
             EstoqueDataGridView.DataSource = estoque;
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            List<clsEstoque> estoque = clsEstoque.SelecionarEstoque(textBox3.Text);
-            EstoqueDataGridView.DataSource = estoque;
-        }
-
         private void nomeProdTextBox_DoubleClick(object sender, EventArgs e)
         {
             nomeProdTextBox.Text = "";
@@ -113,5 +145,77 @@ namespace Lojinha
             categoriaComboBox.Text = "<selecione uma categoria..>";
         }
 
-    }
+        private void alterarQuantidade_Click(object sender, EventArgs e)
+        {
+            // crio um objeto do tipo estoque
+            clsEstoque est = new clsEstoque();
+
+            if (this.nomeProdTextBox.Text == "")
+            {
+                MessageBox.Show("Escolha um produto para poder alterá-lo.");
+                return;
+            }
+
+            if (int.Parse(this.QtdTextBox.Text) < 0)
+            {
+                MessageBox.Show("Quantidade inválida! Favor colocar um valor maior ou igual a zero na quantidade.");
+                return;
+            }
+
+            est.idProduto = (int)Convert.ChangeType(EstoqueDataGridView.SelectedRows[0].Cells[0].Value, typeof(int));
+            est.qtdProdutoDisponivel = (int)Convert.ChangeType(this.QtdTextBox.Text, typeof(int));
+
+            // chamo o método salvar da classe clsCategoria
+            est.Salvar();
+            // atualizo a lista de categorias
+            List<clsEstoque> estoque = clsEstoque.SelecionarEstoque();
+            EstoqueDataGridView.DataSource = estoque;
+            EstoqueDataGridView.Refresh();
+            ajustarOrdemColunas();
+            renomearCabecalhoColunas();
+            MessageBox.Show("Quantidade alterada com sucesso !");
+
+        }
+
+        private void filtroComboBox_TextChanged(object sender, EventArgs e)
+        {
+            filtroTextBox.Visible = true;
+
+            if (filtroComboBox.Text.Equals("Categoria") || filtroComboBox.Text.Equals("Nome&Categoria"))
+            {
+                categoriaComboBox.Visible = true;
+                // preenche o comboBox de categorias
+                List<clsCategoria> categorias = clsCategoria.SelecionarCategorias();
+                categoriaComboBox.DataSource = categorias;
+                //NOME DO CAMPO QUE REPRESENTA A IDENTIFICAÇÃO DE CADA ITEM DO COMBOBOX
+                categoriaComboBox.ValueMember = "idCategoria";
+                //TEXTO QUE SERÁ MOSTRADO NO COMBOBOX
+                categoriaComboBox.DisplayMember = "nomeCategoria";
+            }
+            else
+            {
+                categoriaComboBox.Visible = false;
+            }
+        }
+
+        private void filtroTextBox_TextChanged(object sender, EventArgs e)
+        {
+            List<clsEstoque> estoque;
+
+            if (filtroComboBox.Text.Equals("Nome"))
+            {
+                estoque = clsEstoque.SelecionarEstoque(filtroTextBox.Text);
+                EstoqueDataGridView.DataSource = estoque;
+            }
+            else if (filtroComboBox.Text.Equals("Nome&Categoria"))
+            {
+                estoque = clsEstoque.SelecionarEstoque(filtroTextBox.Text, categoriaComboBox.Text);
+            }
+            else
+            {
+                estoque = clsEstoque.SelecionarEstoque(filtroTextBox.Text);
+                EstoqueDataGridView.DataSource = estoque;
+            }
+        }
+    } 
 }

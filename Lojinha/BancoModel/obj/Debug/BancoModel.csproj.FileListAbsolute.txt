@@ -52,3 +52,14 @@ C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel
 C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.csprojResolveAssemblyReference.cache
 C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.dll
 C:\Users\Usuario\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.pdb
+C:\Users\joao.lazamboni\Desktop\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.dll
+C:\Users\joao.lazamboni\Desktop\senac-pi-master\Lojinha\BancoModel\bin\Debug\BancoModel.pdb
+C:\Users\joao.lazamboni\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.csprojResolveAssemblyReference.cache
+C:\Users\joao.lazamboni\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.dll
+C:\Users\joao.lazamboni\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.pdb
+C:\Users\User\Desktop\senac-pi-master\Lojinha\BancoModel\obj\Debug\BancoModel.csprojResolveAssemblyReference.cache
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi\Lojinha\BancoModel\bin\Debug\BancoModel.dll
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi\Lojinha\BancoModel\bin\Debug\BancoModel.pdb
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi\Lojinha\BancoModel\obj\Debug\BancoModel.csprojResolveAssemblyReference.cache
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi\Lojinha\BancoModel\obj\Debug\BancoModel.dll
+C:\Users\JGalarraga.DNNG2V1\Downloads\senac-pi\Lojinha\BancoModel\obj\Debug\BancoModel.pdb
